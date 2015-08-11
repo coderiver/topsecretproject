@@ -1,0 +1,155 @@
+.help
+	a
+		color: #00BFBC 
+		text-decoration: none
+	+clr
+	.help__sidebar
+		float: left
+		width: 280px 
+		border-right: 2px solid #E6EDF2
+		padding: 40px 0 
+		ul
+			list-style: none
+			li
+				border-bottom: 1px solid #E6EDF2 
+				&:last-child
+					border-bottom: none 
+			a
+				display: block
+				font-size: 15px 
+				color: #353458
+				text-decoration: none
+				text-transform: uppercase
+				letter-spacing: 3px  
+				+psemi
+				padding: 20px 0 20px 50px 
+				&.is-active,&:hover
+					background: #FFFFFF 
+			ul
+				li
+					border-bottom: none 
+				a
+					font-size: 15px 
+					text-transform: none
+					+asemi
+					color: #353458  
+					letter-spacing: 0 
+					border-bottom: none 
+					padding: 10px 0 10px 50px 
+					&.is-active,&:hover
+						background: #FFFFFF 
+	.help__content
+		float: left
+		width: 910px 
+		margin-left: -2px 
+		border-left: 2px solid #E6EDF2
+		padding: 40px 0 
+		pre
+			box-shadow: inset 3px 3px 0 #ccc
+			background: #fafafa  
+			padding: 10px 
+			font-family: Courier,monospace 
+			display: block
+			background: #eee 
+			margin: 1em 0
+			overflow: auto 
+		code
+			padding: 3px 
+			font-family: Courier,monospace 
+			background: #eee 
+		table
+			margin: 15px 0 
+			td,th
+				text-align: left
+				background: #E6EEF2
+				border: 1px solid #fff  
+				padding: 15px 
+			th
+				font-weight: normal
+				+asemi
+		.text
+			padding: 0 50px
+			font-size: 15px 
+			+areg
+			color: #353458 
+			p
+				margin-bottom: 1em 
+			h2
+				letter-spacing: 3px 
+				font-size: 21px 
+				font-weight: normal
+				color: #353458 
+				+psemi
+				margin-bottom: 42px 
+			h3
+				font-size: 21px 
+				font-weight: normal
+				color: #353458 
+				+psemi
+				margin-bottom: 22px 
+		ul,ol
+			margin: 1em 2em
+		ul
+			list-style-type: disc 
+		ol
+			list-style-type: decimal 
+		.q
+			list-style: none
+			margin: 0
+			padding: 0  
+			a
+				border-bottom: 1px solid #E6EEF2 
+				display: block
+				text-decoration: none
+				padding: 16px 0 
+				font-size: 18px 
+				+areg
+				color: #00BFBC
+			li:last-child
+				a
+					border-bottom: none 
+		.po
+			margin: 0
+			padding: 0
+		.help__back
+			font-size: 15px  
+			text-transform: uppercase
+			color: #93C4D2 
+			border: 2px solid #93C4D2 
+			display: inline-block
+			letter-spacing: 3px 
+			font-size: 15px 
+			+asemi
+			text-decoration: none
+			margin-bottom: 20px 
+			padding: 12px 18px 12px 12px
+			i
+				font-size: 12px 
+				+transform(rotate(90deg))
+				display: inline-block
+				margin-right: 19px 
+		.tables
+			width: 100%
+			td,th
+				padding: 16px 0
+				border-bottom: 1px solid #E6EDF2  
+				
+			thead
+				td,th
+					font-size: 15px 
+					text-align: left
+					font-weight: normal
+					+asemi
+			tbody
+				th
+					font-size: 18px 
+					color: #00BFBC 
+					+areg
+					font-weight: normal
+					text-align: left
+				td
+					color: #353556
+					+areg
+					color: #353556  
+					font-size: 18px 
+			 

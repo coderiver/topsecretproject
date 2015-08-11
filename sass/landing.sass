@@ -1,0 +1,373 @@
+// done by Coderiver.com.ua
+@import lib/base
+@import reset
+@import common
+
+
+body
+	background: #E6EEF2 
+%in
+	min-width: 1024px 
+	max-width: 1200px 
+	margin: 0 auto 
+	width: 95% 
+.section__content
+	@extend %in
+	position: relative
+	
+.start
+	height: 100%
+	// background: #353656  url(../img/start.svg) no-repeat 50% 50%
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	overflow: hidden
+	.section__content
+		height: 100% 
+	.start__wallet
+		position: absolute
+		top: 26px 
+		left: 0 
+		text-decoration: none
+		text-transform: uppercase
+		color: #fff 
+		font-size: 15px 
+		z-index: 500 
+		padding: 0 20px 
+	.start__bg
+		position: absolute
+		left: 50%
+		top: 50%  
+		margin-left: -720px
+		margin-top: -450px  
+		background: #353657 
+		svg
+			position: absolute
+			left: 0
+			top: 0
+			background: #353657 
+			path
+				// stroke-dasharray: 20
+				stroke-dasharray: 1200
+				stroke-dashoffset: 1200
+				transition: all 2s linear
+	.animateme &
+		.start__bg svg
+			path
+				stroke-dashoffset: 0
+			
+	.start__right
+		position: absolute
+		right: 0
+		top: 17px  
+		z-index: 500
+		&>div
+			height: 40px 
+			line-height: 40px
+			text-decoration: none
+			text-transform: uppercase
+			color: #fff
+			font-size: 15px   
+			margin-left: 10px 
+			padding: 0 20px 
+			display: inline-block
+			cursor: pointer
+			&.start__signup
+				box-shadow: inset 0 0 0 2px #F7CE67
+				color: #F7CE67  
+	.start__logo
+		width: 300px 
+		left: 50%
+		margin-left: -165px  
+		top: 16px 
+		position: absolute
+		color: #fff 
+		text-transform: uppercase
+		cursor: pointer
+		text-align: center
+		letter-spacing: 3px 
+		font-size: 20px 
+		+preg
+		i
+			display: inline-block
+			margin: 0 16px 0 16px
+			vertical-align: middle
+			+svg(logo,33,47) 
+			-webkit-background-size: contain 
+			-o-background-size: contain 
+			background-size: contain 
+			position: relative
+			top: -2px 
+		strong
+			font-weight: normal
+			+pbold
+			color: #F7CE67 
+	
+	.start__centerwrap
+		height: 100%
+		position: absolute
+		top: 0
+		bottom: 0  
+		left: 0
+		right: 0  
+		display: table
+		width: 100% 
+		z-index: 400 
+	.start__centerwrap1
+		display: table-cell
+		vertical-align: middle
+		width: 100% 
+	.start__center
+		height: 400px 
+		//margin: 0 200px
+		width: 80%
+		margin: 0 10%  
+		text-align: center
+		h2
+			font-size: 46px 
+			font-weight: normal
+			text-transform: uppercase
+			color: #fff
+			+pbold
+		p,.start__cashout
+			font-size: 22px 
+			+amed
+			color: #fff
+			strong
+				float: none
+				color: #F8CF5E 
+				+abold
+		.start__cashout
+			margin-top: 230px 
+	.start__form
+		width: 560px
+		margin: 0 auto  
+		margin-top: 10px 
+		text-align: left
+		.start__input
+			margin-right: 4px 
+			display: inline-block
+			vertical-align: top
+		.start__input input
+			width: 350px
+			border: 2px solid #EA294C  
+			padding: 0 15px
+			height: 46px
+			background: transparent 
+			+box
+			line-height: 17px 
+			font-size: 17px 
+			padding: 10px 15px 
+			color: #fff 
+			border-radius: 2px
+			+areg
+			+placeholder
+				color: #fff
+				font-size: 17px  
+				line-height: 23px 
+				background: transparent 
+		.start__submit
+			display: inline-block
+			vertical-align: top
+			border-radius: 2px
+			height: 46px 
+			line-height: 46px
+			+gh(#EA294C,#383657) 
+			box-shadow: inset 0 0 0 2px #EA294C  
+			width: 200px 
+			text-align: center 
+			font-size: 17px 
+			+preg
+			color: #fff 
+			cursor: pointer
+			
+			em
+				letter-spacing: 3px 
+				font-style: normal 
+				text-transform: uppercase
+				margin-left: 6px 
+			strong
+				font-weight: normal
+				+pbold
+				font-size: 17px 
+$width:  120px
+.cube
+	position: fixed
+	top: 50%
+	left: 50%
+	z-index: 300
+	width: $width   
+	height: 200px 
+	margin-top: -90px 
+	margin-left: -($width/2)
+	
+	background:   url(../img/cube.svg) no-repeat 50% 50%
+	-webkit-background-size: contain 
+	-o-background-size: contain 
+	background-size: contain 
+
+
+// 
+.fee
+	// min-height: 600px 
+	padding: 200px 0 140px 
+	+clr
+	.fee__zero
+		float: left
+		width: 250px 
+		margin-left: 100px 
+		strong
+			font-weight: normal
+			+aital
+			font-size: 300px 
+			color: #ED1847 
+			line-height: 200px
+			span
+				font-size: 70px 
+				vertical-align: top
+				position: relative
+				top: -20px 
+				// top: 60px 
+		.fee__transaction
+			+areg
+			font-size: 31px 
+			color: #455473 
+			display: block
+			padding-top: 10px 
+				
+	.fee__content
+		float: right
+		width: 390px 
+		h2
+			font-weight: normal
+			+asemi
+			font-size: 42px 
+			color: #ED1847 
+			margin-bottom: 30px 
+			line-height: 1.2 
+		p
+			+areg
+			font-size: 22px 
+			color: #455473
+			line-height: 1.5  
+	
+
+// 
+.scr
+	background: #353556 
+	background: #353556 
+	// min-height: 810px 
+	
+	.section__content
+		+clr
+		padding: 53px 0
+	.scr__pic
+		float: left
+	.scr__content
+		float: right
+		width: 390px 
+		padding-top: 240px 
+		h2
+			font-size: 42px 
+			+asemi
+			color: #ED1847
+			line-height: 1.2
+			margin-bottom: 30px   
+		p
+			line-height: 1.5
+			font-size: 22px  
+			+areg
+			color: #FFFFFF 
+
+// 
+.bottom
+	height: 100vh 
+	overflow: hidden
+	width: 100%
+	position: relative
+	.section__content
+		height: 100% 
+		z-index: 100 
+	.bottom__bg
+		position: absolute
+		left: 50%
+		top: 50%
+		width: 1440px   
+		height: 900px 
+		margin-top: -450px + 10px
+		margin-left: -720px 
+		// background: url(../img/bottombg.svg) no-repeat 0 0 
+		z-index: 10 
+		svg
+			position: absolute
+			top: 0
+			left: 0
+			path
+				// stroke-dasharray: 20
+				stroke-dasharray: 1200
+				stroke-dashoffset: 1200
+				transition: all 2s linear
+			#cube
+				opacity: 0 
+				transition: all .5s linear
+	.is-bottom &
+		.bottom__bg
+			svg
+				path
+					stroke-dashoffset: 0
+				#cube
+					opacity: 1
+			  
+	.bottom__centerwrap
+		height: 100%
+		position: absolute
+		top: 0
+		bottom: 0  
+		left: 0
+		right: 0  
+		display: table
+		width: 100% 
+	.bottom__centerwrap1
+		display: table-cell
+		vertical-align: middle
+		width: 100% 
+	.bottom__center
+		//margin: 0 200px
+		width: 80%
+		margin: 0 10%  
+		text-align: center
+		position: relative
+		top: 10px 
+		// height: 200px
+	.bottom__title,.bottom__subtitle
+		font-size: 42px 
+		color: #353458
+		+amed
+		font-weight: normal 
+		white-space: nowrap
+		text-align: center
+	.bottom__subtitle
+		padding-top: 570px 
+		strong
+			font-weight: normal
+			font-style: normal
+			+aital
+			font-weight: bold
+			color: #EA294C 
+	.bottom__pic
+		width: 572px 
+		height: 550px 
+		background: url(../img/pic.png) no-repeat 0 0
+		position: absolute
+		left: 434px
+		top: 176px
+		z-index: 2000 
+.footer
+	background: #E5EDF1 
+	text-align: center
+	padding: 40px 0 
+	font-size: 21px 
+	border-top: 1px solid #CCD3DB 
+	display: none
+	+areg
+	color: #455473 

@@ -1,0 +1,135 @@
+.reg
+	margin: 25px 0
+	background: #fff  
+	float: left
+	width: 100% 
+	.reg__welcome
+		font-size: 18px 
+		color: #34495E
+		+areg
+		text-align: center
+		margin: 22px 0 25px 0 
+		strong
+			font-weight: normal
+			+asemi
+	.hr
+		margin: 25px 0 
+	.submit
+		 
+	.prefer
+		width: 340px 
+		margin: 0 auto 25px auto 
+		+clr
+		label
+			float: left
+			width: 225px 
+			font-size: 15px 
+			padding-top: 3px 
+			+amed
+			color: #34495E
+			span
+				display: block
+				font-size: 14px 
+				+aital
+				color: #A4A4B0 
+		.select
+			float: right
+			width: 115px
+			position: relative
+			input
+				border: 2px solid #95C4D1 
+				border-radius: 2px
+				box-shadow: inset 3px 3px 0 #EAEAEA
+				background: #fff
+				+box
+				height: 46px  
+				line-height: 46px 
+				width: 100% 
+				font-size: 31px 
+				color: #485878 
+				font-size: 17px 
+				padding-left: 14px 
+				+asemi
+			i
+				position: absolute
+				right: 16px 
+				top: 16px 
+			select
+				-webkit-appearance: none
+				position: absolute
+				top: 0 
+				left: 0
+				width: 100%
+				height: 100%
+				opacity: 0
+				z-index: 1
+	.privacypolicy
+		text-align: center
+		font-size: 12px   
+		+amed
+		color: #B8B7C2 
+		margin-bottom: 20px 
+		a
+			color: #00BFBC
+			text-decoration: none 
+.strength
+	height: 8px    
+	border: 2px solid #95C4D1 
+	background: #fff 
+	border-radius: 8px
+	width: 340px - 4px
+	margin: 0 auto 
+	margin-top: 25px 
+	i
+		display: block
+		height: 8px 
+		border-top-left-radius: 6px
+		border-bottom-left-radius: 6px
+		background: #1EBEBB 
+%submit
+	background: #1EBEBB 
+	font-size: 20px 
+	letter-spacing: 3px
+	text-align: center
+	+pbold
+	color: #fff
+	text-transform: uppercase
+	text-decoration: none
+	cursor: pointer
+	box-shadow: inset 0 0 0 3px #27E5E1  
+	+transition(all .1s ease)
+	height: 66px
+	line-height: 66px 
+	display: block
+	text-decoration: none
+	a
+		color: #fff
+		text-decoration: none 
+	&:hover
+		background: darken(#1EBEBB,10% )
+	i
+		color: #F8D37B 
+		margin-right: 5px 
+		font-size: 24px 
+		position: relative
+		top: 2px 
+		vertical-align: middle
+	&:active
+		position: relative
+		top: 2px 
+		.fancybox-wrap &
+			top: 0 
+	&.submit_subtle
+		background: #95C4D1 
+		box-shadow: inset 0 0 0 3px #A2D6E4  
+	&.submit_small
+		font-size: 16px 
+		height: 50px 
+		line-height: 50px 
+	&.submit_pay
+		letter-spacing: 0
+		+amed
+		strong
+			+abold
+.submit
+	@extend %submit

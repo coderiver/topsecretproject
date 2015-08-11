@@ -1,0 +1,213 @@
+.cashaccounts
+	background: #fff
+	margin: 20px 0  
+	overflow: hidden
+	h3
+		//copy from popups
+		letter-spacing: 3px 
+		font-weight: normal
+		text-transform: uppercase
+		text-align: center
+		font-size: 15px 
+		+preg
+		margin-bottom: 7px 
+	.cashaccounts__title
+		font-size: 18px 
+		letter-spacing: 3px 
+		text-align: center
+		font-weight: normal
+		+preg
+		color: #353458 
+		margin: 20px 0 27px 
+	.makedeposit
+		background: #1EBEBB
+		text-transform: uppercase
+		color: #fff  
+		width: 280px 
+		margin: 0 auto
+		height: 50px  
+		line-height: 50px
+		text-decoration: none 
+		box-shadow: 0 0 0 2px #27E5E1
+		cursor: pointer
+		+psemi
+		font-size: 15px 
+		text-align: center
+		letter-spacing: 3px 
+		margin-bottom: 23px
+	.actions
+		margin-bottom: 28px 
+		td,th
+			height: 69px
+			background: #fff 
+			border-bottom: 1px solid #E6EEF2   
+			vertical-align: middle
+		.actions__currency
+			padding-left: 60px 
+			width: 40px 
+			text-align: left
+		.actions__amount
+			text-align: right
+			padding-right: 32px 
+			span
+				margin-left: 30px 
+		.actions__buttons
+			text-align: right
+			padding-right: 30px 
+		.actions__time
+			color: #9EA3A6
+			font-size: 15px  
+			+aital
+		.actions__empty
+			text-align: center
+			+aital
+			color: #999  
+			font-size: 16px 
+		.actions__amount
+			font-size: 21px 
+			+asemi
+			color: #353458
+			padding-right: 20px 
+			span
+				margin-left: 20px 
+				color: #00BFBC 
+		.actions__currency
+			font-size: 21px 
+			+asemi
+			color: #353458
+	.button
+		height: 46px 
+		line-height: 46px
+		padding: 0 15px
+		border: 2px solid #96C4D0   
+		
+		display: inline-block
+		margin-left: 10px 
+		border-radius: 2px
+		text-transform: uppercase
+		letter-spacing: 3px 
+		color: #353557
+		text-decoration: none
+		cursor: pointer 
+		color: #95C4D1
+		border-color: #95C4D1  
+		font-size: 15px 
+		background: #1EBBB8 
+		color: #fff 
+		border-color: #27E5E1 
+		+psemi
+		i
+			font-size: 20px 
+			vertical-align: middle
+			display: inline-block
+			position: relative
+			top: 2px 
+			margin-right: 10px 
+		&:hover
+			background: darken(#1EBBB8, 10%) 
+
+	.showmore
+		height: 35px 
+		cursor: pointer
+		line-height: 35px
+		text-align: center
+		font-size: 13px  
+		text-decoration: none
+		+areg
+		color: #353458 
+		background: #F8F8F8
+		position: relative
+		margin-top: -1px 
+		&:hover
+			background: darken(#F9FCFD, 2%) 
+	.transfers
+		background: #fff
+		td,th
+			border-bottom: 1px solid #E6EEF2 
+			background: #fff 
+		td
+			height: 50px 
+			vertical-align: middle
+		tr:hover
+			td
+				background: #F9FCFD 
+			.transfers__remove 
+				opacity: 1 
+		.transfers__icon
+			padding-left: 60px 
+			padding-right: 20px 
+			padding-right: 40px 
+			color: #353558
+			font-size: 23px  
+			width: 30px 
+			i
+				position: relative
+				top: 3px 
+		.sort
+			cursor: pointer
+			display: inline-block
+			i
+				font-size: 12px 
+				position: relative
+				top: 2px 
+		.transfers__right
+			text-align: right
+			padding-right: 30px 
+		thead .transfers__right
+			padding-right: 10px 
+		.transfers__status
+			padding-right: 30px 
+		.transfers__left
+			text-align: left
+		.transfers__type
+			width: 230px 
+			font-size: 15px 
+		.transfers__time
+			font-size: 14px 
+			+areg
+			color: #9EA3A6 
+		.transfers__remove
+			color: #ED1847
+			padding-right: 5px  
+			padding-left: 0 
+			font-size: 16px 
+			position: relative
+			top: 1px 
+			opacity: 0 
+			cursor: pointer
+		.transfers__amount
+			text-align: right
+			font-size: 16px 
+			+areg
+			color: #00BFBC 
+			padding-right: 30px 
+			padding-right: 10px 
+			strong
+				+asemi
+				margin-left: 20px 
+				display: inline-block
+				// min-width: 60px 
+				margin-right: 5px 
+			&.is-minus
+				color: #ED1847
+.status
+	display: inline-block
+	width: 100px 
+	text-align: center
+	border: 2px solid #1EBEBB 
+	border-radius: 2px
+	color: #1EBEBB 
+	text-transform: uppercase
+	+psemi
+	font-size: 12px 
+	height: 18px 
+	line-height: 18px 
+	&.is-pending
+		color: #F7CE67
+		border-color: #F7CE67
+	&.is-aborted
+		color: #EA294C 
+		border-color: #EA294C 
+	&.is-cancelled
+		color: #aaa
+		border-color: #aaa  

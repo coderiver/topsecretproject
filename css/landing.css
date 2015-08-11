@@ -1,0 +1,133 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
+
+body, html { height: 100%; }
+
+img, fieldset, a img { border: none; }
+
+input[type="submit"], button { cursor: pointer; }
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner { padding: 0; border: 0; }
+
+textarea { overflow: auto; }
+
+input, button { margin: 0; padding: 0; border: 0; }
+
+div, input, textarea, select, button, h1, h2, h3, h4, h5, h6, a, span, a:focus { outline: none; }
+
+ul, ol { list-style-type: none; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
+table { border-spacing: 0; border-collapse: collapse; width: 100%; }
+
+@font-face { font-family: proxima; src: url("fonts/proximanova-regular-webfont.eot"); src: url("fonts/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-regular-webfont.woff") format("woff"), url("fonts/proximanova-regular-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: lite; src: url("fonts/proximanova-light-webfont.eot"); src: url("fonts/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-light-webfont.woff") format("woff"), url("fonts/proximanova-light-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: bold; src: url("fonts/proximanova-bold-webfont.eot"); src: url("fonts/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-bold-webfont.woff") format("woff"), url("fonts/proximanova-bold-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: semi; src: url("fonts/proximanova-semibold-webfont.eot"); src: url("fonts/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/proximanova-semibold-webfont.woff") format("woff"), url("fonts/proximanova-semibold-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: areg; src: url("fonts/AvenirNext-Regular.eot"); src: url("fonts/AvenirNext-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Regular.woff") format("woff"), url("fonts/AvenirNext-Regular.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: alite; src: url("fonts/AvenirNext-UltraLight.eot"); src: url("fonts/AvenirNext-UltraLight.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-UltraLight.woff") format("woff"), url("fonts/AvenirNext-UltraLight.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: abold; src: url("fonts/AvenirNext-Bold.eot"); src: url("fonts/AvenirNext-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Bold.woff") format("woff"), url("fonts/AvenirNext-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: asemi; src: url("fonts/AvenirNext-DemiBold.eot"); src: url("fonts/AvenirNext-DemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-DemiBold.woff") format("woff"), url("fonts/AvenirNext-DemiBold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: aital; src: url("fonts/AvenirNext-Italic.eot"); src: url("fonts/AvenirNext-Italic.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Italic.woff") format("woff"), url("fonts/AvenirNext-Italic.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: amed; src: url("fonts/AvenirNext-Medium.eot"); src: url("fonts/AvenirNext-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/AvenirNext-Medium.woff") format("woff"), url("fonts/AvenirNext-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+
+body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; line-height: 1.4; background: #f8f8f8; }
+
+.in, .section__content { width: 850px; margin: 0 auto; }
+
+.in_wide { width: 1200px; }
+
+.onoff { width: 50px; height: 30px; font-size: 13px; font-family: amed, sans-serif; font-weight: normal; color: white; height: 30px; line-height: 30px; height: 28px; line-height: 28px; position: relative; display: inline-block; cursor: pointer; -webkit-user-select: none; }
+.onoff input { display: none; }
+.onoff .onoff__bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; border-radius: 4px; background: #ebeff6; background: #48c4c1; border-radius: 28px; -webkit-transition: all 0.15s linear; -moz-transition: all 0.15s linear; -o-transition: all 0.15s linear; transition: all 0.15s linear; border-color: #50aea1; border-color: transparent; background: #f8f8f8; background: rgba(53, 53, 88, 0.3); }
+.onoff .onoff__value { position: absolute; right: 0; top: 0; bottom: 0; width: 43px; background: #dd6a6d; border-top-right-radius: 2px; border-bottom-right-radius: 2px; -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; -webkit-backface-visibility: hidden; width: 26px; height: 26px; background: #ebeff6; border-radius: 26px; top: 1px; right: 1px; box-shadow: inset 0 0 2px #dadee6; }
+.onoff .onoff__on, .onoff .onoff__off { width: 43px; position: absolute; text-align: center; top: 0; left: 0; -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear; transition: all 0.1s linear; display: none; }
+.onoff .onoff__on { opacity: 0; }
+.onoff .onoff__off { right: 0; left: auto; }
+.onoff input:checked + .onoff__bg { background: #48c4c1; }
+.onoff input:checked + .onoff__bg .onoff__on { opacity: 0; }
+.onoff input:checked + .onoff__bg .onoff__off { opacity: 1; }
+.onoff input:checked + .onoff__bg .onoff__value { right: 23px; }
+
+body { background: #e6eef2; }
+
+.in, .section__content { min-width: 1024px; max-width: 1200px; margin: 0 auto; width: 95%; }
+
+.section__content { position: relative; }
+
+.start { height: 100%; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; overflow: hidden; }
+.start .section__content { height: 100%; }
+.start .start__wallet { position: absolute; top: 26px; left: 0; text-decoration: none; text-transform: uppercase; color: white; font-size: 15px; z-index: 500; padding: 0 20px; }
+.start .start__bg { position: absolute; left: 50%; top: 50%; margin-left: -720px; margin-top: -450px; background: #353657; }
+.start .start__bg svg { position: absolute; left: 0; top: 0; background: #353657; }
+.start .start__bg svg path { stroke-dasharray: 1200; stroke-dashoffset: 1200; transition: all 2s linear; }
+.animateme .start .start__bg svg path { stroke-dashoffset: 0; }
+.start .start__right { position: absolute; right: 0; top: 17px; z-index: 500; }
+.start .start__right > div { height: 40px; line-height: 40px; text-decoration: none; text-transform: uppercase; color: white; font-size: 15px; margin-left: 10px; padding: 0 20px; display: inline-block; cursor: pointer; }
+.start .start__right > div.start__signup { box-shadow: inset 0 0 0 2px #f7ce67; color: #f7ce67; }
+.start .start__logo { width: 300px; left: 50%; margin-left: -165px; top: 16px; position: absolute; color: white; text-transform: uppercase; cursor: pointer; text-align: center; letter-spacing: 3px; font-size: 20px; font-family: proxima, sans-serif; font-weight: normal; }
+.start .start__logo i { display: inline-block; margin: 0 16px 0 16px; vertical-align: middle; background: url("../img/svg/logo.svg") no-repeat 0 0; -moz-background-size: 33px 47px 100%; -webkit-background-size: 33px 47px 100%; background-size: 33px 47px 100%; width: 33px; height: 47px; display: inline-block; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; position: relative; top: -2px; }
+.start .start__logo strong { font-weight: normal; font-family: bold, sans-serif; font-weight: normal; color: #f7ce67; }
+.start .start__centerwrap { height: 100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; display: table; width: 100%; z-index: 400; }
+.start .start__centerwrap1 { display: table-cell; vertical-align: middle; width: 100%; }
+.start .start__center { height: 400px; width: 80%; margin: 0 10%; text-align: center; }
+.start .start__center h2 { font-size: 46px; font-weight: normal; text-transform: uppercase; color: white; font-family: bold, sans-serif; font-weight: normal; }
+.start .start__center p, .start .start__center .start__cashout { font-size: 22px; font-family: amed, sans-serif; font-weight: normal; color: white; }
+.start .start__center p strong, .start .start__center .start__cashout strong { float: none; color: #f8cf5e; font-family: abold, sans-serif; font-weight: normal; }
+.start .start__center .start__cashout { margin-top: 230px; }
+.start .start__form { width: 560px; margin: 0 auto; margin-top: 10px; text-align: left; }
+.start .start__form .start__input { margin-right: 4px; display: inline-block; vertical-align: top; }
+.start .start__form .start__input input { width: 350px; border: 2px solid #ea294c; padding: 0 15px; height: 46px; background: transparent; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; line-height: 17px; font-size: 17px; padding: 10px 15px; color: white; border-radius: 2px; font-family: areg, sans-serif; font-weight: normal; }
+.start .start__form .start__input input:-ms-input-placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
+.start .start__form .start__input input:-moz-placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
+.start .start__form .start__input input::-moz-placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
+.start .start__form .start__input input::-webkit-input-placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
+.start .start__form .start__input input::placeholder { color: white; font-size: 17px; line-height: 23px; background: transparent; }
+.start .start__form .start__submit { display: inline-block; vertical-align: top; border-radius: 2px; height: 46px; line-height: 46px; background-image: -moz-linear-gradient(left, #ea294c, #383657); background-image: -webkit-linear-gradient(left, #ea294c, #383657); background-image: linear-gradient(to right, #ea294c, #383657); box-shadow: inset 0 0 0 2px #ea294c; width: 200px; text-align: center; font-size: 17px; font-family: proxima, sans-serif; font-weight: normal; color: white; cursor: pointer; }
+.start .start__form .start__submit em { letter-spacing: 3px; font-style: normal; text-transform: uppercase; margin-left: 6px; }
+.start .start__form .start__submit strong { font-weight: normal; font-family: bold, sans-serif; font-weight: normal; font-size: 17px; }
+
+.cube { position: fixed; top: 50%; left: 50%; z-index: 300; width: 120px; height: 200px; margin-top: -90px; margin-left: -60px; background: url(../img/cube.svg) no-repeat 50% 50%; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; }
+
+.fee { padding: 200px 0 140px; *zoom: 1; }
+.fee:after { content: " "; display: table; clear: both; }
+.fee .fee__zero { float: left; width: 250px; margin-left: 100px; }
+.fee .fee__zero strong { font-weight: normal; font-family: aital, sans-serif; font-weight: normal; font-size: 300px; color: #ed1847; line-height: 200px; }
+.fee .fee__zero strong span { font-size: 70px; vertical-align: top; position: relative; top: -20px; }
+.fee .fee__zero .fee__transaction { font-family: areg, sans-serif; font-weight: normal; font-size: 31px; color: #455473; display: block; padding-top: 10px; }
+.fee .fee__content { float: right; width: 390px; }
+.fee .fee__content h2 { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; font-size: 42px; color: #ed1847; margin-bottom: 30px; line-height: 1.2; }
+.fee .fee__content p { font-family: areg, sans-serif; font-weight: normal; font-size: 22px; color: #455473; line-height: 1.5; }
+
+.scr { background: #353556; background: #353556; }
+.scr .section__content { *zoom: 1; padding: 53px 0; }
+.scr .section__content:after { content: " "; display: table; clear: both; }
+.scr .scr__pic { float: left; }
+.scr .scr__content { float: right; width: 390px; padding-top: 240px; }
+.scr .scr__content h2 { font-size: 42px; font-family: asemi, sans-serif; font-weight: normal; color: #ed1847; line-height: 1.2; margin-bottom: 30px; }
+.scr .scr__content p { line-height: 1.5; font-size: 22px; font-family: areg, sans-serif; font-weight: normal; color: white; }
+
+.bottom { height: 100vh; overflow: hidden; width: 100%; position: relative; }
+.bottom .section__content { height: 100%; z-index: 100; }
+.bottom .bottom__bg { position: absolute; left: 50%; top: 50%; width: 1440px; height: 900px; margin-top: -440px; margin-left: -720px; z-index: 10; }
+.bottom .bottom__bg svg { position: absolute; top: 0; left: 0; }
+.bottom .bottom__bg svg path { stroke-dasharray: 1200; stroke-dashoffset: 1200; transition: all 2s linear; }
+.bottom .bottom__bg svg #cube { opacity: 0; transition: all 0.5s linear; }
+.is-bottom .bottom .bottom__bg svg path { stroke-dashoffset: 0; }
+.is-bottom .bottom .bottom__bg svg #cube { opacity: 1; }
+.bottom .bottom__centerwrap { height: 100%; position: absolute; top: 0; bottom: 0; left: 0; right: 0; display: table; width: 100%; }
+.bottom .bottom__centerwrap1 { display: table-cell; vertical-align: middle; width: 100%; }
+.bottom .bottom__center { width: 80%; margin: 0 10%; text-align: center; position: relative; top: 10px; }
+.bottom .bottom__title, .bottom .bottom__subtitle { font-size: 42px; color: #353458; font-family: amed, sans-serif; font-weight: normal; font-weight: normal; white-space: nowrap; text-align: center; }
+.bottom .bottom__subtitle { padding-top: 570px; }
+.bottom .bottom__subtitle strong { font-weight: normal; font-style: normal; font-family: aital, sans-serif; font-weight: normal; font-weight: bold; color: #ea294c; }
+.bottom .bottom__pic { width: 572px; height: 550px; background: url(../img/pic.png) no-repeat 0 0; position: absolute; left: 434px; top: 176px; z-index: 2000; }
+
+.footer { background: #e5edf1; text-align: center; padding: 40px 0; font-size: 21px; border-top: 1px solid #ccd3db; display: none; font-family: areg, sans-serif; font-weight: normal; color: #455473; }

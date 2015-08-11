@@ -1,0 +1,1091 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+
+<!-- begin l-header  -->
+<div class="l-header">
+	<div class="header">
+		<div class="header__logo">
+			Cubio <span>Wallet</span> <i class="icon-arrowdown"></i>
+		</div>
+		<div class="header__exchange">1 BTC<i class="icon-arrow"></i>329.23 EUR</div>
+		<div class="header__balances">
+			<div class="header__tumblr is-on"><i></i><b class="header__tumblroff">Hide</b><b class="header__tumblron">Show</b></div>
+			<div class="header__balancevalue">5.01234 <div class="header__currencies"><span class="header__balance btc is-active">BTC</span><span class="header__balance eur">EUR</span></div></div>
+		</div>
+		<div class="hprofile">
+			<div class="hprofile__user"><div class="hprofile__av"></div><div class="hprofile__name">Sean Yao</div><i class="icon-arrowdown"></i></div>
+			<div class="hprofile__drop">
+				<div class="hprofile__accounts">
+					<h3><i class="icon-cube_logo_dark"></i>Cash Accounts</h3>
+					<ul class="hprofile__accountslist">
+						<li><span class="hprofile__currency">$</span> 11,000.00 <span>USD</span></li>
+						<li><span class="hprofile__currency">€</span> 2,000.00 <span>EUR</span></li>
+						<li><span class="hprofile__currency">£</span> 230.00 <span>GBP</span></li>
+					</ul>
+				</div>
+				<ul class="hprofile__list">
+					<li><a href="#"><i class="icon-settings"></i>Settings</a></li>
+					<li><a href="#"><i class="icon-help"></i>Help</a></li>
+					<li><a href="#"><i class="icon-logout"></i>Logout</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end notifications -->
+		<!-- begin header__notifications  -->
+		<div class="header__notifications">
+			<i class="icon-notification"><b>3</b></i>
+			<span>Notifications</span>
+		</div>
+		<!-- end header__notifications -->
+
+		<!-- begin header__address  -->
+		<div class="header__address">
+			<i class="icon-qr"></i>
+			<span>Get address</span>
+		</div>
+		<!-- end header__address -->
+	</div>
+</div>
+<!-- end l-header -->
+
+
+<!-- begin l-nav  -->
+<div class="l-nav">
+	<div class="nav">
+		<div class="nav__in">
+			<ul>
+				<li><a href="#"><i class="icon-send"></i><span>SEND MONEY</span></a></li>
+				<li><a href="#"><i class="icon-deposit"></i><span>request MONEY</span></a></li>
+				<li><a href="#" class="is-active"><i class="icon-activity"></i><span>Activity</span></a></li>
+				<li><a href="#"><i class="icon-buy"></i><span>Buy Bitcoin</span></a></li>
+				<li><a href="#"><i class="icon-sell"></i><span>Sell bitcoin</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end l-nav -->
+
+<!-- begin l-content  -->
+<div class="l-content">
+	<div class="in">
+		<ul class="popup-test">
+			<li><a href="#" class="js-popup" data-popup="popup-login">login</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-login2">two factor autentification</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-changepass">popup changepass</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-twofactor">something with <del>fucking</del> qr code inside of it.</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-verifysite">Verify site upload</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-congr">Congr</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-business">Business profile</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-paymentoptions">Payment options</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-paymentbutton">Payment options</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-help">Help</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-privacy">privacy</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-toc">toc</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-phone">phone</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-phone1">phone1</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-alert">alert</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-alert">alert1</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-alert1">alert2</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-alert2">alert3</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-alert3">alert4 jumio</a></li>
+			<li><a href="#" class="js-popup" data-popup="popup-alert3">change password</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end l-content -->
+
+
+
+<div class="overlay" style="display:block"></div>
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-login">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Login</div>
+		<div class="popup__inside">
+			<div class="errormess">Email or password is invalid</div>
+			<div class="input input_small is-error">
+				<input type="text" name="" placeholder="ex. Max Power" id="">
+				<i class="input__icon icon-user"></i>
+			</div>
+			<div class="input input_small">
+				<input type="password" name="" placeholder="ex. Max Power" id="">
+				<i class="input__icon icon-lock"></i>
+			</div>
+			<div class="rememberme">
+				<label class="field field_check">
+					<div class="checkbox">
+						<input type="checkbox" name="asd" id="asd"><i></i>
+					</div>
+					<div class="label">Remember me</div>
+				</label>
+				<div class="forgotpassword"><a href="#">Forgot your password?</a></div>
+			</div>
+			<div class="donthave">
+				Don't have an account? <a href="#">Sign up</a>
+			</div>
+		</div>
+		<div class="submit">Login</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-login2">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">2-FACTOR   AUTHENTICATION</div>
+		<div class="popup__inside">
+			<div class="popup__in">
+				<p>Enter the 6 digit code generated by the Google  Authenticator app on your mobile device.</p>
+			
+				<div class="input input_small">
+					<input type="password" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-lock"></i>
+				</div>
+
+			</div>
+
+
+		</div>
+		<div class="submit">Confirm</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace " id="popup-changepass">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Change password</div>
+		<div class="popup__inside">
+			<div class="input input_small input_error2">
+				<div class="input__label">Current password</div>
+				<input type="text" name="" placeholder="ex. Max Power" id="">
+				<i class="input__icon icon-lock"></i>
+				<div class="error2">Current password is invalid</div>
+				<!-- <div class="error">Please enter your full name</div> -->
+			</div>
+
+			<div class="hr"></div>
+
+			<div class="input input_small input_error2">
+				<div class="input__label">New password <span>(with at least 8 characters and 1 special character)</span></div>
+				<input type="password" name="" placeholder="ex. Max Power" id="">
+				<i class="input__icon icon-lock"></i>
+				<!-- <div class="errorstatus is-ok"><i class="icon-help"></i></div> -->
+				<div class="error2">Needs a special character</div>
+			</div>
+
+			<div class="input input_small input_error2">
+				<input type="password" name="" placeholder="ex. Max Power" id="">
+				<i class="input__icon icon-lock"></i>
+				<!-- <div class="errorstatus"><i class="icon-help"></i>Needs a special character</div> -->
+				<div class="error2">Needs a special character</div>
+			</div>
+
+			<div class="strength"><i style="width:70%"></i></div>
+			<br><br>
+
+		</div>
+		<div class="submit">Confirm</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-twofactor">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">2-FACTOR   AUTHENTICATION 2: Resurrection</div>
+		<div class="popup__inside">
+
+			<div class="twofactor">
+				<p>Open Google Authenticator on your phone, scan the QR code below, and enter the 6-digit authentication code.</p>
+				<div class="popup__qr">
+					<img src="img/qr.jpg" width="300" alt="">
+				</div>
+				<div class="input input_small">
+					<input type="password" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-lock"></i>
+				</div>
+			</div>
+
+
+
+			<div class="popup__bottom">
+				<span>Secret Code: <strong>k1239218231731938</strong></span>
+				Please write down this code. You will need it to login if you lose your mobile device.
+			</div>
+
+
+		</div>
+		<div class="submit">Enable</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_narrow1 popup_nospace" id="popup-verifysite">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<h3 class="popup__title">Your website <span>Step 1 of 2</span></h3>
+		<div class="somerandomblockthatlookslikealotofotherblocksbutnotquite">
+			<div class="somerandomblockthatlookslikealotofotherblocksbutnotquite__in">
+				<h4 class="withdraw__title"><strong>Your website</strong></h4>
+				<div class="input input_icon">
+					<input type="text" value="www.example.com" name="" id="">
+					<div class="input__icon">
+						<i class="icon-link"></i>
+					</div>
+				</div>
+			</div>
+			<div class="hr"></div>
+			<div class="somerandomblockthatlookslikealotofotherblocksbutnotquite__in">
+				<div class="fileupload">
+					<label for="">Upload this file (cubits-1234.html) to your web server</label>
+					<div class="fileupload__button">Download Verification File</div>
+				</div>
+				<div class="fileupload">
+					<label for="">Add this meta tag to the <head> of your index.html Þle</label>
+					<div class="input input_small"><input class="fileupload__input" value='meta name="domain-verify" content="b123eq"' /></div>
+				</div>
+			</div>
+			
+
+			
+			<div class="popup__bottom">
+				Can't upload this file? <a href="#">Verify by metatag</a>
+			</div>
+			<div class="popup__bottom">
+				Can't use this metatag? <a href="#">Verify by upload</a>
+			</div>
+		</div>
+		<div class="submit">Continue</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-congr">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">PROFILE   COMPLETE</div>
+		<div class="popup__inside">
+
+			<div class="congr">
+				<p>Congratulations, you can now accept Bitcoin!</p>
+				<i class="icon-ok"></i>
+			</div>
+
+
+
+		</div>
+		<div class="submit">View my dashboard</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-business">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Business profile <span>step 2 of 2</span></div>
+		<div class="popup__inside">
+			
+			
+			<!-- begin bp  -->
+			<div class="bp">
+				<p class="required">All fields required</p>
+				<!-- begin field -->
+				<div class="field field_smaller">
+					<label for="">Address</label>
+					<div class="field__content">
+						<div class="input input_small">
+							<input type="text" name="" placeholder="Bitcoin avenue" id="">
+						</div>
+						<div class="input input_small input_short">
+							<input type="text" name="" placeholder="Zip code" id="">
+						</div>
+						<div class="input input_small input_short">
+							<input type="text" name="" placeholder="City" id="">
+						</div>
+					</div>
+				</div>
+				<!-- end field -->
+
+				<div class="field field_smaller">
+					<label for="">Country</label>
+					<div class="field__content">
+						<div class="smallselect smallselect_bold">
+							<div class="smallselect__value">Deutche</div><i class="icon-arrowdown"></i>
+							<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+						</div>
+					</div>
+				</div>
+				<!-- end field -->
+				<div class="field field_smaller">
+					<label for="">Business type</label>
+					<div class="field__content">
+						<div class="smallselect smallselect_normal">
+							<div class="smallselect__value">Deutche</div><i class="icon-arrowdown"></i>
+							<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+						</div>
+					</div>
+				</div>
+				<!-- end field -->
+				<div class="field field_smaller">
+					<label for="">Category</label>
+					<div class="field__content">
+						<div class="smallselect smallselect_normal">
+							<div class="smallselect__value">Deutche</div><i class="icon-arrowdown"></i>
+							<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+						</div>
+					</div>
+				</div>
+				<!-- end field -->
+				<!-- begin field -->
+				<div class="field field_smaller">
+					<label for="">Address</label>
+					<div class="field__content">
+						<div class="input input_small">
+							<input type="text" name="" placeholder="Bitcoin avenue" id="">
+						</div>
+					</div>
+				</div>
+				<!-- end field -->
+			</div>
+			<!-- end bp -->
+			
+
+
+
+		</div>
+		<div class="submit">SAVE INFORMATION</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow2 " id="popup-paymentbutton">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Create Payment button</div>
+		<div class="popup__inside">
+			<!-- begin pb  payment button wrapper-->
+			<div class="pb">
+				<div class="pb__title">Choose a button type</div>
+				<div class="pb__buttons">
+					<div class="pb__buttonwrap is-active">
+						<div class="pb__button"><i class="icon-buy"></i>Pay with bitcoin</div>
+					</div>
+					<div class="pb__buttonwrap">
+						<div class="pb__button"><i class="icon-buy"></i>Donate bitcoin</div>
+					</div>
+				</div>
+				<div class="hr"></div>
+
+				<!-- begin pfield  -->
+				<div class="pfield">
+					<div class="pfield__label">
+						Item Name
+					</div>
+					<div class="pfield__content">
+						<div class="input input_small">
+							<input type="text">
+						</div>
+					</div>
+				</div>
+				<!-- end pfield -->
+				<!-- begin pfield  -->
+				<div class="pfield">
+					<div class="pfield__label">
+						Description
+					</div>
+					<div class="pfield__content">
+						<div class="input input_small">
+							<input type="text">
+						</div>
+					</div>
+				</div>
+				<!-- end pfield -->
+				<!-- begin pfield  -->
+				<div class="pfield">
+					<div class="pfield__label">
+						Price
+					</div>
+					<div class="pfield__content">
+						<div class="input input_small input__size1">
+							<input type="text">
+						</div>
+						<div class="smallselect">
+							<div class="smallselect__value">Eur</div><i class="icon-arrowdown"></i>
+							<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+
+						</div>
+					</div>
+				</div>
+				<!-- end pfield -->
+				<div class="pfield__advanced">Advanced settings <i class="icon-arrowdown"></i></div>
+				<div class="pfield__advancedsettings">
+					<!-- begin pfield  -->
+					<div class="pfield">
+						<div class="pfield__label">
+							Reference ID
+						</div>
+						<div class="pfield__content">
+							<div class="input input_small">
+								<input type="text">
+							</div>
+						</div>
+					</div>
+					<!-- end pfield -->
+
+					<!-- begin pfield  -->
+					<div class="pfield">
+						<div class="pfield__label">
+							Callback URL
+						</div>
+						<div class="pfield__content">
+							<div class="input input_small">
+								<input type="text">
+							</div>
+						</div>
+					</div>
+					<!-- end pfield -->
+	
+				</div>
+				<!-- end advanced settings -->
+				<div class="hr"></div>
+				<!-- begin pfield  -->
+				<div class="pfield">
+					<div class="pfield__label">
+						Embed Code
+					</div>
+					<div class="pfield__content">
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</div>
+				</div>
+				<!-- end pfield -->
+
+				<!-- begin pfield  -->
+				<div class="pfield">
+					<div class="pfield__label">
+						preview
+					</div>
+					<div class="pfield__content">
+						<div class="pb__button"><i class="icon-buy"></i>Pay with bitcoin</div>
+					</div>
+				</div>
+				<!-- end pfield -->
+			</div>
+			<!-- end pb -->
+			
+			
+
+
+
+		</div>
+		<div class="submit">SAVE button</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace" id="paymentoptions">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Payment options</div>
+		<div class="popup__inside">
+			
+			
+			<!-- begin po  -->
+			<div class="po">
+				<div class="po__descr">Below, we've ranked our payment options by order of convenience.</div>
+				<table class="po__table">
+					<thead>
+						<tr>
+							<th>
+								#
+							</th>
+							<td class="po__provider">Provider</td>
+							<td class="po__description">Description</td>
+							<td class="po__fee">Fee</td>
+							<td class="po__duration">Duration</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>
+								1
+							</th>
+							<td class="po__provider"><span class="cashaccountprovider"><i class="icon-cash"></i>Cash Account</span></td>
+							<td class="po__description">After making a deposit, you can use the available balance on  your Cubits Cash Account to buy Bitcoin instantly.</td>
+							<td class="po__fee is-red">0 %</td>
+							<td class="po__duration">instant</td>
+						</tr>
+						<tr>
+							<th>
+								2
+							</th>
+							<td class="po__provider"><i class="icon-obt-logo-dark"></i></td>
+							<td class="po__description">OnlineBankTransfer.com (OBT) is supported by major banks within seven European countries. Have your online banking ID, password, and Tan-list ready when selecting OBT.<br> Supported Currencies:  <strong>EUR, GBP, HUF</strong></td>
+							<td class="po__fee">0.80 %</td>
+							<td class="po__duration">instant</td>
+						</tr>
+						<tr>
+							<th>
+								3
+							</th>
+							<td class="po__provider"><i class="icon-sofort"></i></td>
+							<td class="po__description">Sofort is supported by most banks within 10 European member countries. Have your online banking ID, password, and Tan-list ready when selecting Sofort.<br>
+							<span>Supported Currencies:</span> <strong>EUR, GBP, HUF, PLN, CHF</strong></td>
+							<td class="po__fee">1.80 %</td>
+							<td class="po__duration">instant</td>
+						</tr>
+						<tr>
+							<th>
+								4
+							</th>
+							<td class="po__provider"><i class="icon-okpay"></i></td>
+							<td class="po__description">VeriÞed OKPAY users can instantly load, send, receive, and withdraw money to and from their account. If you have a balance on your OKPAY account, buying bitcoin is quick and simple.<br>
+							<span>Supported Currencies:</span> <strong>EUR, GBP, HUF, AUD, CAD, CHF, CZK, DKK, HRK, JPY, NOK, PLN, SEK, USD</strong>
+							</td>
+							<td class="po__fee">0.50&nbsp;%</td>
+							<td class="po__duration">instant</td>
+						</tr>
+
+						<tr>
+							<th>
+								4
+							</th>
+							<td class="po__provider"><i class="icon-sepa"></i></td>
+							<td class="po__description">Use SEPA for bank transfers in the greater European area. SEPA payments are wire transfers to and from our payment bank. We will provide you with the banking information necessary to execute a transfer.
+							</td>
+							<td class="po__fee">0.50&nbsp;!</td>
+							<td class="po__duration">1-3 business days</td>
+						</tr>
+
+						<tr>
+							<th>
+								4
+							</th>
+							<td class="po__provider"><strong>International Bank Transfer</strong></td>
+							<td class="po__description">Use International Bank Transfer for payments outside the EU area. We will provide you with the banking information necessary to execute a transfer.
+							</td>
+							<td class="po__fee">0.15&nbsp;% min. 15.02&nbsp;!</td>
+							<td class="po__duration">3-5 business days</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- end po -->
+			
+
+
+
+		</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace" id="popup-help">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">HOW CAN WE HELP?</div>
+		<div class="popup__inside">
+			
+			<div class="helpmeplease">
+				<div class="helpmeplease__button1">
+					<div class="submit submit_small">Visit Help Center</div>
+				</div>
+				<div class="helpmeplease__button2">
+					<div class="submit submit_small">Visit Help Center</div>
+				</div>
+
+				<div class="helpmeplease__bottom">
+					<strong>Need help now?  Call us at</strong>  <span>0044 203 6951290</span> <br>
+					Available weekdays 10AM to 5 PM GMT 
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace" id="popup-privacy">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Privacy Policy</div>
+		<div class="popup__inside">
+			
+			<div class="scrolltext"><div class="scrolltext__content">Last updated: [DATE]
+Dooga Ltd. company number 4430228, whose registered office is BEC 101, 50 Cambridge Road, Barking, IG11 8FG, trading as Cubits (We) are committed to protecting and respecting your privacy.
+This policy (together with our terms of use and any other documents referred to on it) sets out the basis on which any personal data we collect from you, or that you provide to us, will be processed by us.  Please read the following carefully to understand our views and practices regarding your personal data and how we will treat it. By visiting www.cubits.com you are accepting and consenting to the practices described in this policy. 
+For the purpose of the Data Protection Act 1998 (the Act), the data controller is Dooga Ltd.  Information we may collect from you.
+We may change our privacy policy from time to time. Upon notified of changes to the new privacy policy, if you continue to use the services then you will have deemed to have accepted the new terms. 
+
+We may collect and process the following data about you:
+•	Information you give us. You may give us information about you by filling in forms on our site www.cubits.com (our site) or by corresponding with us by phone, e-mail or otherwise. This includes information you provide when you register to use our site, and use our services and when you report a problem with our site. The information you give us may include your name, address, e-mail address and phone number, financial and credit card information, personal description and photograph. 
+•	Information we collect about you. With regard to each of your visits to our site we may automatically collect the following information:
+•	technical information, including the Internet protocol (IP) address used to connect your computer to the Internet, your login information, browser type and version, time zone setting, browser plug-in types and versions, operating system and platform; 
+•	information about your visit, including the full Uniform Resource Locators (URL) clickstream to, through and from our site (including date and time); products you viewed or searched for; page response times, download errors, length of visits to certain pages, page interaction information (such as scrolling, clicks, and mouse-overs), and methods used to browse away from the page and any phone number used to call our customer service number. 
+•	Information we receive from other sources. We may receive information about you if you use any of the other websites we operate or the other services we provide. In this case we will have informed you when we collected that data that it may be shared internally and combined with data collected on this site. We are also working closely with third parties (including, for example, business partners, sub-contractors in technical, payment and delivery services, advertising networks, analytics providers, search information providers, credit reference agencies) and may receive information about you from them.
+COOKIES
+Our website uses cookies to distinguish you from other users of our website. This helps us to provide you with a good experience when you browse our website and also allows us to improve our site. For detailed information on the cookies we use and the purposes for which we use them see our Cookie policy.
+USES MADE OF THE INFORMATION
+We use information held about you in the following ways:
+•	Information you give to us. We will use this information:
+•	to carry out our obligations arising from any contracts entered into between you and us and to provide you with the information, products and services that you request from us;
+•	to provide you with information about other goods and services we offer that are similar to those that you have already purchased or enquired about;
+•	to provide you, or permit selected third parties to provide you, with information about goods or services we feel may interest you. If you are an existing customer, we will only contact you by electronic means (e-mail or SMS) with information about goods and services similar to those which were the subject of a previous sale or negotiations of a sale to you. If you are a new customer, and where we permit selected third parties to use your data, we (or they) will contact you by electronic means only if you have consented to this. If you do not want us to use your data in this way, or to pass your details on to third parties for marketing purposes, please let us know at support@cubits.com and we will update our records;
+•	to notify you about changes to our service;
+•	to ensure that content from our site is presented in the most effective manner for you and for your computer;
+•	Information we collect about you. We will use this information:
+•	to administer our site and for internal operations, including troubleshooting, data analysis, testing, research, statistical and survey purposes;
+•	to improve our site to ensure that content is presented in the most effective manner for you and for your computer; 
+•	to allow you to participate in interactive features of our service, when you choose to do so;
+•	as part of our efforts to keep our site safe and secure;
+•	to measure or understand the effectiveness of advertising we serve to you and others, and to deliver relevant advertising to you;
+•	to make suggestions and recommendations to you and other users of our site about goods or services that may interest you or them.
+•	Information we receive from other sources. We may combine this information with information you give to us and information we collect about you. We may us this information and the combined information for the purposes set out above (depending on the types of information we receive).
+•	Information we verify. As part of our due diligence process you agree for us to send to third parties your personal data to be verified for identification purposes, this personal data shall include sensitive personal data such as a picture of your passport. You expressly agree for your data to be used in this way. The third parties we work with may be outside of the European Union, in which case, you expressly agree to your data being sent outside of the European Union for this purpose. If you have any queries about this process please do not hesitate to contact us at support@cubits.com.
+DISCLOSURE OF YOUR INFORMATION
+We may share your personal information with any member of our group, which means our subsidiaries, our ultimate holding company and its subsidiaries, as defined in section 1159 of the UK Companies Act 2006.
+We may share your information with selected third parties including:
+•	Business partners, suppliers and sub-contractors for the performance of any contract we enter into with them.
+•	Analytics and search engine providers that assist us in the improvement and optimisation of our site. 
+•	Credit reference agencies or ID verification agencies for the purpose of verifying your identity where this is a condition of us entering into a contract with you.
+
+We may disclose your personal information to third parties:
+•	In the event that we sell or buy any business or assets, in which case we may disclose your personal data to the prospective seller or buyer of such business or assets.
+•	If Dooga Ltd. or substantially all of its assets are acquired by a third party, in which case personal data held by it about its customers will be one of the transferred assets.
+•	If we are under a duty to disclose or share your personal data in order to comply with any legal obligation, or in order to enforce or apply our terms of use and other agreements; or to protect the rights, property, or safety of Dooga Ltd., our customers, or others. This includes exchanging information with other companies and organisations for the purposes of fraud protection and credit risk reduction.
+WHERE WE STORE YOUR PERSONAL DATA
+The data that we collect from you may be transferred to, and stored at, a destination outside the European Economic Area ("EEA"). It may also be processed by staff operating outside the EEA who work for us or for one of our suppliers. Such staff maybe engaged in, among other things,  the fulfilment of your order, the processing of your payment details and the provision of support services. By submitting your personal data, you agree to this transfer, storing or processing. We take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this privacy policy.
+All information you provide to us is stored on our secure servers. Any payment transactions will be encrypted using SSL technology. Where we have given you (or where you have chosen) a password which enables you to access certain parts of our site, you are responsible for keeping this password confidential. We ask you not to share a password with anyone.
+Unfortunately, the transmission of information via the internet is not completely secure. Although we will do our best to protect your personal data, we cannot guarantee the security of your data transmitted to our site; any transmission is at your own risk. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access.
+YOUR RIGHTS
+You have the right to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to any third party for such purposes. You can exercise your right to prevent such processing by checking certain boxes on the forms we use to collect your data.  You can also exercise the right at any time by contacting us at support@cubits.com.
+Our site may, from time to time, contain links to and from the websites of our partner networks, advertisers and affiliates.  If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any responsibility or liability for these policies.  Please check these policies before you submit any personal data to these websites.
+ACCESS TO INFORMATION
+The Act gives you the right to access information held about you. Your right of access can be exercised in accordance with the Act. Any access request may be subject to a fee of £10 to meet our costs in providing you with details of the information we hold about you.
+CHANGES TO OUR PRIVACY POLICY
+Any changes we may make to our privacy policy in the future will be posted on this page and, where appropriate, notified to you by e-mail. Please check back frequently to see any updates or changes to our privacy policy.
+CONTACT
+Questions, comments and requests regarding this privacy policy are welcomed and should be addressed to support@cubits.com.</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace" id="popup-toc">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Privacy Policy</div>
+		<div class="popup__inside">
+			
+			<div class="scrolltext"><div class="scrolltext__content">Terms of Business
+Last updated: [DATE]
+DEFINITIONS
+1.1	In these Terms of Business (the "Terms"), the following words, expressions and phrases shall have the following meanings, save for where otherwise specified or where the context requires otherwise:
+"Applicable Law"	means any applicable law, rules or regulation
+"Cubits IP"	has the meaning given in Clause 12.1
+"Exchange Service"	has the meaning given in Clause 3.1.2
+"Merchant"	has the meaning given in Clause 3.1.1
+"Merchant Service"	has the meaning given in Clause 3.1.1
+"Proceedings" 	has the meaning given in Clause 39.2
+"Services"	has the meaning given in Clause 3.1
+"Taxes"	has the meaning given in Clause 28.1
+"User Content"	has the meaning given in Clause 15.1
+"Wallet Service"	has the meaning given in Clause 3.1.3
+"Website"	means http://www.Cubits.com/
+1.2	In these Terms (except where the context otherwise requires):
+1.2.1	use of the singular includes the plural (and vice versa) and use of any gender includes the other genders; 
+1.2.2	a reference to a Party is to a party to these Terms and shall include that Party's personal representatives, successors or permitted assignees; 
+1.2.3	a reference to persons includes natural persons, firms, partnerships, bodies corporate and corporations, and associations, organisations, governments, states, foundations, trusts and other unincorporated bodies (in each case whether or not having separate legal personality and irrespective of their jurisdiction of origin, incorporation or residence); and 
+1.2.4	a reference to a Recital, Clause or Schedule is to the relevant recital or clause of or schedule to these Terms; a reference to a sub-clause or paragraph is to the relevant sub-clause or paragraph of the Clause or Schedule in which it appears.
+1.3	The Schedule forms an integral part of these Terms and have effect as if set out in full in the body of these Terms. A reference to these Terms includes the Schedule. -- relevant only if there is the Services Schedule.
+1.4	The table of contents and headings are included for convenience only and will not affect the construction or interpretation of these Terms.
+1.5	Any reference to a statute, statutory provision or statutory instrument includes a reference to that statute, statutory provision or statutory instrument together with all rules and regulations made under it as from time to time amended, consolidated or re-enacted.
+2.	ABOUT CUBITS AND TERMS OF BUSINESS
+2.1	We, Dooga Ltd., company number 4430228, whose registered office is BEC 101, 50 Cambridge Road, Barking, IG11 8FG, trading as Cubits ("Cubits", "we", "our" or "us").
+2.2	We are an electronic platform that buys and sells bitcoins and provides bitcoin processing services for merchants; we also operate and maintain bitcoin wallets.
+2.3	These Terms govern your use of the Services provided by us through the Website or through any other means.
+2.4	"You" or "your" mean the customer to which we will be providing the Services and the person signing below or otherwise agreeing to the Terms on behalf of the customer. Please read the Terms carefully; by using the Services, you agree to the Terms and confirm that you accept them.
+3.	SERVICES
+3.1	We may provide you with the following services (the "Services"):
+3.1.1	users who intend to sell goods and/or services (each, a "Merchant") and who wish to accept bitcoin from purchasers as a method of payment may use a suite of tools and related services for this purpose ("Merchant Service");
+3.1.2	users will be able to exchange fiat for bitcoin with us or vice versa ("Exchange Service"); and
+3.1.3	we may host one or more bitcoin accounts that allows users to store, track, transfer and manage their bitcoin and account information and through which Cubits can facilitate bitcoin transactions pursuant to instructions submitted by a user or authorised entity to Cubits ("Wallet Service").
+3.2	You authorise us to receive, hold and disburse funds on your behalf and to take any and all actions that we think are necessary or desirable to provide the Services and to comply with Applicable Law.
+4.	REGISTRATION OF ACCOUNT
+4.1	In order to use the Services, you must open an Cubits account. When you open an account, we will ask you for contact information, including your name, mailing address, phone number, email address, and website. The information that you provide at the time of account opening must be accurate and complete, and you must inform us in a timely fashion of any changes to such information. We may require additional information about you (including any person signing below or otherwise agreeing to the Terms on behalf of the customer) such as, for instance, your date of birth, tax identification number or government-issued identification, and we may also obtain information about you from third parties, such as credit bureaus and identity verification services. We have the right to reject your account registration, or to later close your Cubits account, if you do not provide us with accurate, complete and satisfactory information.
+4.2	If your business enters into what we deem to be a high-risk category then your application will be dealt with by one of our allocated personnel who will contact you to progress your application. Note that our due diligence processes will be more extensive for such businesses and we would invite you to cooperate with the relevant requirements.
+4.3	It is entirely at our discretion whether we accept your application for an Cubits account. Although we make efforts to inform you of the reason for any refusal to open an account for you, we are not bound to do so nor to provide you with any further details. 
+5.	IDENTITY VERIFICATION
+5.1	In order to use certain features of the Services, including certain transfers of bitcoin and/or currency, you may be required to provide Cubits with certain personal information, including, but not limited to, your name, address, telephone number, email address, date of birth, taxpayer identification number and information regarding your bank account (e.g., financial institution, account type, routing number, and account number). Cubits may also require you to answer certain questions or take actions in order to verify your identity, provide the Services to you, or comply with Applicable Law. In submitting this or any other personal information as may be required, you verify that the information is accurate and authentic, and you agree to update Cubits if any information changes. You hereby authorise Cubits to, directly or through third parties, (i) make any inquiries we consider necessary to verify your identity and/or account information, and (ii) request and obtain any consumer report, credit report or similar information relating to you and to take action we reasonably deem necessary based on the results of such inquiries and reports, and hereby authorise any and all third parties to which such inquiries or requests may be directed to fully respond to such inquiries or requests.
+5.2	Should you use the Merchant Service, you are solely responsible for obtaining any information required of those who purchase your goods or services. For instance, if Applicable Law prohibits a sale to persons under the age of 18 years, you must ensure that a purchaser is at least 18 years of age. Similarly, if Applicable Law requires that a purchaser’s identity be verified, you must verify the purchaser’s identity. We will not be responsible for your failure to adequately verify your purchasers’ identities or qualifications.
+6.	REPRESENTATIONS AND WARRANTIES
+6.1	Your use of the Services is subject to several important restrictions. Specifically, you represent and warrant to us that: 
+6.1.1	you have the requisite authority and capacity to enter into these Terms;
+6.1.2	you have the right, power and authority, and have taken all action necessary, to execute, deliver and exercise your rights and perform your obligations under these Terms;
+6.1.3	your obligations under these Terms represent valid and binding obligations enforceable against you in accordance with these Terms;
+6.1.4	the execution of these Terms by you and the performance by you of your obligations and duties hereunder and in relation to the Services do not violate the terms of any agreement to which it is a party or by which it is otherwise bound;
+6.1.5	your use of the Services will not contravene any Applicable Law;
+6.1.6	your use of the Merchant Service will not relate to sales of (i) narcotics, research chemicals or any controlled substances, (ii) cash or cash equivalents, including derivatives, (iii) items that infringe or violate any copyright or trademark, (iv) ammunition, firearms, explosives, weapons or knives regulated under applicable law, or (v) any services which compete with Cubits;
+6.1.7	your use of the Services will not relate to transactions that (i) show the personal information of third parties in violation of Applicable Law, (ii) support pyramid or Ponzi schemes, matrix programs or other “get rich quick” schemes, (iii) are associated with purchases of annuities or lottery contracts, lay-away systems, off-shore banking or transactions to finance or refinance debts funded by a credit card, or (iv) provide credit repair or debt settlement services; and
+6.1.8	your use of the Services will not involve gambling or any other activity with an entry fee and a prize, including, without limitation casino games, sports betting, horse or greyhound racing, lottery tickets, other ventures that facilitate gambling, and sweepstakes, unless you have obtained our prior approval and you (and/or your customers) are located exclusively in jurisdictions where such activities are permitted by law.
+7.	OUR RIGHT TO REJECT
+7.1	We reserve the right to decline to process a sale or trade if we believe that it violates these Terms or would expose you, other customers, purchasers, or other parties to harm. If we reasonably suspect that your Cubits account has been used for an illegal purpose, you authorise us to share information about you, your Cubits account, and your account activity with any law enforcement agency.
+8.	OUR RIGHT TO INSPECT
+8.1	We may ask for permission to inspect your business location, in connection with your use of the Services or specific transactions. If you refuse our request, we may suspend or terminate your Cubits account in accordance with Clause 22.
+9.	YOUR USE OF THIRD PARTY SERVICES
+9.1	In using the Website or the Services, you may be offered services, products and promotions provided by third parties. If you decide to use these third-party services, you do so at your own risk and you are solely responsible for reviewing, understanding and complying with the associated terms and conditions. We expressly disclaim any liability for the third-party services and are not responsible for the performance of the third-party services or servicers.
+10.	SECURITY
+10.1	We have implemented security measures designed to secure your information from accidental loss and from unauthorised access, use, alteration or disclosure. However, we cannot guarantee that unauthorised persons will never gain access to your information, and you acknowledge that you provide your information at your own risk, except as otherwise provided by applicable law.
+11.	HOW WE COLLECT, USE AND SHARE INFORMATION
+11.1	In order to provide the Services, we may share information about you and your Cubits account with third parties, including but not limited to your bank and purchasers.
+12.	OUR OWNERSHIPS OF THE SERVICES AND THE WEBSITE
+12.1	You agree and acknowledge that we own all right, title and interest to and in the Services, the associated software, technology tools and content, the Website, the content displayed on the Website, and other materials produced by and related to Cubits (collectively, the "Cubits IP"). You are only permitted to use the Services and the Cubits IP to accept and receive payments, according to these Terms. When you accept the Terms, we grant you a personal, limited, revocable and non-transferable licence to use the Cubits IP, without the right to sub-license. You shall not rent, lease, sub-license, distribute, transfer, copy, reproduce, download, display, modify or timeshare the Cubits IP or any portion thereof, or use the Cubits IP as a component of or a base for products or services prepared for commercial sale, sub-license, lease, access or distribution.
+13.	WEBSITE ACCURACY
+13.1	Although we intend to provide accurate and timely information on the Website, the Website (including, without limitation, its content) may not always be entirely accurate, complete or current and may also include technical inaccuracies or typographical errors. In an effort to continue to provide you with as complete and accurate information as possible, information may be changed or updated from time to time without notice, including without limitation information regarding our policies, products and services. Accordingly, you should verify all information before relying on it, and all decisions based on information contained on the Website are your sole responsibility and we shall have no liability for such decisions.
+14.	COMPUTER VIRUSES
+14.1	We shall not bear any liability, whatsoever, for any damage or interruptions caused by any computer viruses, spyware, scareware, Trojan horses, worms or other malware that may affect your computer or other equipment, or any phishing, spoofing or other attack. We advise the regular use of a reputable and readily available virus screening and prevention software. You should also be aware that SMS and email services are vulnerable to spoofing and phishing attacks and should use care in reviewing messages purporting to originate from Cubits. Always log into your Cubits account through the Website to review any transactions or required actions if you have any uncertainty regarding the authenticity of any communication or notice.
+15.	ADVERTISING
+15.1	By mutual consent, we may publish your corporate name, artwork, text and logo ("User Content") on the Website and promotional materials to acknowledge you as our customer. You represent and warrant to us that you have the right to provide the User Content to us, and that the use, copying, modification and publication of the User Content by us: (a) will not infringe, violate or misappropriate any copyright, patent, trade secret or other proprietary rights, (b) will not infringe any rights of publicity or privacy, and (c) will not be defamatory or obscene or otherwise violate any law.
+16.	MERCHANT SERVICES
+16.1	To create an invoice, you may post a request to Cubits to collect a specific amount in your local currency, such as sterling or euros, or in bitcoin. Cubits will pull the exchange rate and provide the bitcoin payment instructions to the purchaser. We guarantee the exchange rate to you as long as the purchaser pays within the proper time window after the invoice is created. While we guarantee the exchange rate as long as the purchaser pays within such time window, you agree that you assume the volatility risk of your local currency or bitcoin, as applicable. For instance, if you ask us to collect £150, and the purchaser sends the payment within the time window, we guarantee you will receive exactly £150, minus our fee, but do not guarantee the value of sterling. 
+16.2	When you customer pays your invoice for for your goods/services, we will receive the bitcoins and exchange them into fiat. After we have withdrawn our fees from the transaction amount, we will remit the fiat currency to the bank account that you have designated on your application form. We bear no responsibility for the funds not reaching you due to you not providing us with correct bank account details. The settlement of fiat to your bank account should be done as soon as reasonably possible, we estimate 24-48 hours settlement although we do not guarantee a time frame due to this being dependent on the speed of the banks involved and their respective locations.
+17.	EXCHANGE SERVICES
+17.1	Where you trade bitcoin with us we will present to you a price for bitcoin. If you proceed with the purchase of bitcoin then the transaction is irreversible. You are able to pay for the bitcoins using a number of methods, of which involves the use of third party payment service providers. We bear no responsibility for any malfunction, delay or other issues relating to those third parties and the adequacy of their services. Once we receive confirmation of payment to us then you will immediately have access to your bitcoins in your wallet. You agree not to reverse any transaction for the purchase of bitcoins, such as by recalling a transfer or initiating a chargeback. Instances of reversals by you will be treated seriously and we reserve the right to close your account, seize any bitcoins left to mitigate our losses and, where necessary, take legal action against you to recover any losses we incur as a result of your reversal of a transaction.
+17.2	You agree that the price of bitcoin is volatile and that we do not provide a guarantee on the value of bitcoins. You appreciate that bitcoin is a high risk digital asset when deciding to purchase or deal in bitcoins and use our services. We bear no responsibility for any losses you may incur as a result of the price volatility of bitcoin. 
+18.	FEES
+18.1	We charge a processing fee on all transactions. The proceeds payable to you will equal the amount of the invoice (assuming that we have received the full amount of the invoice from the purchaser), unless you agree to accept less than the amount of the invoice, minus the processing fee. We reserve the right to change our fees and will give you 30 calendar days’ prior notice of any fee increase. Your continued use of the Services after we notify you of any increase in our fees constitutes your acceptance of such change. Current pricing information is provided on the Website.
+18.2	Where we offer a discount or promotion (Promotions) in respect of our fees, we are not bound to maintain such Promotions and we may withdraw the same at any time at our discretion.
+18.3	You will pay our fees on such basis and with such frequency as we request.
+19.	METHODS OF SETTLEMENT
+19.1	We will clear the payments over the bitcoin peer-to-peer payment network and post the balance to your accounting ledger, according to your preference settings. The debits and credits to your accounting ledger are funds temporarily held by Cubits until settlement to your bank account can take place. You can receive a settlement in your local currency, in bitcoins, or in a mixture of both. You assume volatility risks of the currency in which you choose to be settled. If you choose to keep bitcoins, then you assume the volatility risk of the bitcoin value.
+20.	REFUND PROCEDURES
+20.1	In the event that you wish to issue a refund to a purchaser, Cubits can handle this. You can decide to issue a partial refund or the full amount of the initial purchase. You can also decide whether to issue the original amount of the invoice in your local currency or in the number of bitcoins paid. If you do not have enough funds in your Cubits account to cover the refund, Cubits may require you to deposit bitcoins into your Cubits account to cover the refund to the purchaser. Any required currency conversion during the refund process will be calculated at a spot rate available at the time. Under no circumstances do we guarantee a refund of bitcoin at the same price at which the bitcoins were originally exchanged for with the Merchant.  
+21.	DISCLOSURE OF REFUND POLICY
+21.1	Under the Merchant Service, Merchants are required to have a clear refund policy, and to disclose that policy to their customers. We recommend you refund the amount of the initial purchase in the currency in which the item was priced.
+22.	PURCHASER COMPLAINTS
+22.1	Purchasers filing complaints about a purchase will be forwarded to you for resolution. Cubits reserves the right to terminate accounts which receive excessive complaints.
+23.	ACCOUNT TERMINATION
+23.1	You may close your Cubits account at any time. You will still be obligated to us for any fees incurred before the closure and we will remit to you funds not yet paid to you and associated with pre-closure sales. If your account balance is below our documented minimum transfer amount, you may be responsible for any transactions fees that may be incurred in the funds transfer.
+23.2	We may terminate these Terms and close your account, at our discretion, at any time, upon notice to you via email or phone communication. We may also suspend your access to the Services if we suspect that you have failed to comply with these Terms, pose an unacceptable fraud risk to us, or if you provide any false, incomplete, inaccurate or misleading information. We will not be liable to you for any losses that you incur in connection with our closure or suspension of your account.
+23.3	If your Cubits account is closed, you agree: (a) to continue to be bound by these Terms, (b) to immediately stop using the Services, (c) that the licence provided under these Terms shall end, (d) that we reserve the right (but have no obligation) to delete all of your information and account data stored on our servers, and (e) that we shall not be liable to you or any third party for termination of access to the Services or for deletion of your information or account data.
+24.	INDEMNIFICATION
+24.1	You agree to indemnify Cubits, its affiliated and related entities, and any of its officers, directors, employees, agents, joint venturers and representatives from and against any claims, costs, losses, liabilities, damages, expenses and judgments of any and every kind (including, without limitation, costs, expenses, and lawyers' fees) arising out of, relating to, or incurred in connection with any claim, complaint, action, audit, investigation, inquiry, or other proceeding instituted by a person or entity that arises or relates to: (a) any actual or alleged breach of your representations, warranties, or obligations set forth in these Terms; (b) your wrongful or improper use of the Services; (c) the products or services sold by you through the Services, including but not limited to any claims for false advertising, product defects, personal injury, death or property damage; or (d) any other party’s access or use of the Services with your account information.
+25.	LIMITATION OF LIABILITY
+25.1	In no event will we be liable to you or any third party for any direct, indirect, special, incidental, consequential, exemplary or punitive damages or any loss, theft, disappearance, or damages for lost profits, lost revenues, lost data or other intangible losses that result from the use of, inability to use, or unavailability of the Services, regardless of the form of action and whether or not we knew that such damage may have been incurred. In no event will we be liable to you or any third party for any damage, loss or injury resulting from hacking, tampering, virus transmission or other unauthorised access or use of the Services, your Cubits account, or any information contained therein. In no event will our liability for any damages arising in connection with the Services exceed the fees earned by us in connection with your use of the Services during the 6 month period immediately preceding the event giving rise to the claim for liability. The foregoing limitations of liability shall apply to the fullest extent permitted by law in the applicable jurisdiction.
+26.	NO WARRANTIES
+26.1	We provide the Services on an “as is” and “as available” basis, and your use of the Services is at your own risk. To the maximum extent permitted by Applicable Law, we provide the Services without warranties of any kind, whether express or implied (including, without limitation, warranties of merchantability, fitness for a particular purpose, or non-infringement). Without limiting the foregoing, we do not warrant that the Services (and our Website): will operate error-free or that defects or errors will be corrected; will meet your requirements or will be available, uninterrupted or secure at any particular time or location; are free from viruses or other harmful content. We do not endorse, warrant, guarantee or assume responsibility for any product or service offered or advertised by a third party through the Services or through our Website, and we will not be a party to nor monitor any interactions between you and third-party providers of products or services.
+27.	RELEASE OF CUBITS
+27.1	If you have a dispute with one or more users of the Services, you release Cubits, its affiliates and service providers, and each of their respective officers, directors, agents, joint venturers, employees and representatives from any and all claims, demands and damages (actual and consequential) of every kind and nature arising out of or in any way connected with such disputes.
+28.	DISPUTES WITH CUBITS
+28.1	If you think we have made an error, contact us at support@cubits.com or write to us at Dooga Ltd. t/a Cubits, Barking Enterprise Centre, 50 Cambridge Rd, Barking, Essex IG11 8FG, United Kingdom. In your correspondence, you must give us information sufficient to identify you, your Cubits account, and the transaction on which you believe an error occurred. You must contact us within 30 days after the transaction occurred. We will use our best efforts to either correct the error or explain to you why we believe the transaction was correct within 30 days of receiving your request.
+28.2	You agree that any claim you may have arising out of or related to your relationship with Cubits must be filed within one year after such claim arose; otherwise, your claim is permanently barred.
+29.	TAXES
+29.1	You are solely responsible for determining any and all taxes assessed, incurred, or required to be collected, paid, or withheld for any reason in connection your use of our software and services ("Taxes"). You also are solely responsible for collecting, withholding, reporting, and remitting correct Taxes to the appropriate tax authority. We are not obligated to, nor will we determine whether Taxes apply, or calculate, collect, report, or remit any Taxes to any tax authority arising from any transaction.
+30.	ASSIGNMENT
+30.1	You may not transfer or assign these Terms, or any rights granted by these Terms. You agree and acknowledge that we may assign or transfer these Terms.
+31.	CHANGE OF CONTROL
+31.1	In the event that Cubits is acquired by or merged with a third party entity, we reserve the right, in any of these circumstances, to transfer or assign the information we have collected from you as part of such merger, acquisition, sale, or other change of control.
+32.	CONFIDENTIALITY
+32.1	If you receive information about another user through the Services, you must keep the information confidential and only use it in connection with the Services. You may not disclose or distribute a user's information to a third party or use the information except as reasonably necessary to effect a transaction and other functions reasonably incidental thereto such as support, reconciliation and accounting unless you receive the user's express consent to do so. You may not send unsolicited email to a user through the Services.
+33.	AMENDMENT
+33.1	We may update or change these Terms and other policies on this site from time to time. Except as otherwise provided in these Terms, we will notify you of any changes by electronic mail or by posting a link to the amended Terms on our website. If you continue to use the Services after we provide notice of such changes, your continued use constitutes an acceptance of the amended Terms and an agreement to be bound by them. If you do not agree to the amended Terms, you must close your Cubits account and discontinue your use of the Services.
+34.	WAIVERS
+34.1	Our failure to assert any right or provision in these Terms shall not constitute a waiver of such right or provision, and no waiver of any term shall be deemed a further or continuing waiver of such or other term.
+35.	NOTICES
+35.1	You agree to accept communications from us in an electronic format, and agree that all terms, conditions, agreements, notices, disclosures or other communications that we provide to you electronically will be considered to be “in writing.”
+36.	FORCE MAJEURE
+36.1	Neither you nor we will be liable to the other for any delay or non-performance of its obligations under these Terms arising from any cause or causes beyond its reasonable control including without limitation any of the following: act of God, governmental act, war, riots, non-performance of our vendors or suppliers, fire, flood, explosion or civil commotion.
+37.	SEVERABILITY
+37.1	Should any provision of these Terms be determined to be invalid or unenforceable under any law, rule, or regulation, such determination will not affect the validity or enforceability of any other provision of these Terms.
+38.	SURVIVAL
+38.1	All provisions of these Terms, which by their nature extend beyond the expiration or termination of these Terms, shall survive the termination or expiration of these Terms.
+39.	ENTIRE AGREEMENT
+39.1	These Terms, including the Privacy Policy referenced herein], represent the entire agreement between us and you with respect to the matters contained therein. Headings are included for convenience only, and shall not be considered in interpreting these Terms.
+40.	GOVERNING LAW
+40.1	These Terms, and all non-contractual obligations arising from them, shall be governed by, and construed in accordance with the laws of England and Wales.
+40.2	The Parties irrevocably agree that the courts of England and Wales shall have exclusive jurisdiction to settle any claim, dispute or difference concerning these Terms and any matter arising therefore (the "Proceedings") and waive the right to object to Proceedings in such courts whether on the grounds that the Proceedings have been brought in an inconvenient forum or otherwise.
+41.	PRIVACY POLICY
+41.1	Please see our Privacy Policy for information regarding how we collect and use information. The Privacy Policy is part of these Terms, so please make sure that you read it. 
+
+You agree that by ticking the box that you have the authority to accept the Terms and to bind you, and you acknowledge and agree that you: (a) have read and understand the Terms; (b) intend to form a legally binding contract; and (c) will abide by all the Terms.
+
+[CLICK WRAP THE TERMS. CUSTOMER READS THE ABOVE TERMS THEN CLICKS ‘ACCEPT TERMS’ THEN PROCEEDS.]</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-phone">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">VERIFY   PHONE   NUMBER</div>
+		<div class="popup__inside">
+			<div class="popup__in">
+				<p>Enter the 6 digit verification code sent to you via SMS.</p>
+			
+				<div class="input input_small">
+					<input type="password" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-ok"></i>
+				</div>
+
+			</div>
+
+
+		</div>
+		<div class="submit">Confirm</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-phone1">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">VERIFY   PHONE   NUMBER</div>
+		<div class="popup__inside">
+
+				<div class="phoneverify">
+					<p>In order to complete your transaction, we will need to verify your phone number for security purposes.</p>
+					<p><strong>You will not need to do this again for future transactions.</strong></p>
+			
+					
+					<!-- begin pfield  -->
+					<div class="pfield pfield_small">
+						<div class="pfield__label">
+							Country
+						</div>
+						<div class="pfield__content">
+							<div class="smallselect smallselect_bold smallselect_wide">
+								<div class="smallselect__value">Deutche</div><i class="icon-arrowdown"></i>
+								<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+							</div>
+						</div>
+					</div>
+					<!-- end pfield -->
+					<!-- begin pfield  -->
+					<div class="pfield pfield_small">
+						<div class="pfield__label">
+							Your number
+						</div>
+						<div class="pfield__content">
+							<div class="input input_small input_phone">
+								<span class="input__phonecode">+ 49</span>
+								<input type="text">
+							</div>
+						</div>
+					</div>
+					<!-- end pfield -->
+				</div>
+				<!-- end phone verify -->
+
+
+
+
+		</div>
+		<div class="submit">verify me</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-alert">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Delete bank</div>
+		<div class="popup__inside">
+			<div class="popup__in">
+				
+				<div class="icon_big"><i class="icon-warning "></i></div>
+				<div class="icon_big"><i class="icon-cancel "></i></div>
+				<div class="icon_big"><i class="icon-ok "></i></div>
+				
+			</div>
+
+
+		</div>
+		<div class="twobuttons">
+			<div class="cancel">Cancel</div>
+			<div class="submit">Delete</div>
+		</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1 " id="popup-alert1">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">VERIFICATION UNSUCCESSFUL</div>
+
+			<div class="popup__in">
+				<div class="message">
+					<p class="center">We've encountered an error verifying your identity. Please try again</p>
+
+					<div class="icon_big"><i class="icon-cancel "></i></div>
+				</div>
+				
+
+				
+			</div>
+
+
+
+		<div class="submit">Close window</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace" id="popup-alert2">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">REQUEST SENT</div>
+
+			<div class="popup__in">
+				<div class="iconmessage">
+					<i class="icon-deposit"></i>
+					You requested <strong>0.56735 BTC</strong> (157.35 €) from <strong>example@example.com</strong>
+				</div>
+				
+
+				
+			</div>
+
+
+
+		<div class="submit">Done</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow" id="popup-alert3">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">VERIFY   YOUR  ID</div>
+
+			<div class="popup__in">
+				<div class="message center">
+					<p>Verify your ID in less than 2 minutes with</p>
+					<div class="jumio"></div>
+					<p>Simply have a <strong>government issued ID</strong> ready.</p>
+					<div class="smallicon"><i class="icon-lock"></i>SECURE</div>
+				</div>
+				
+
+				
+			</div>
+
+
+
+		<div class="submit">Done</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+<!-- begin popup   -->
+<div class="popup popup_wide is-shown " id="popup-changepass">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="popup__title">Signup</div>
+		<div class="popup__inside">
+			
+			<!-- begin reg  -->
+			<div class="reg">
+				<div class="reg__welcome"><strong>Welcome to Cubio.</strong> Let's get to know each other.</div>
+
+				<div class="input input_small">
+					<div class="input__label">What's your full name?</div>
+					<input type="text" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-user"></i>
+					<div class="error">Please enter your full name</div>
+				</div>
+
+				<div class="hr"></div>
+
+				<div class="input input_small">
+					<div class="input__label">Your desired password? <span>(with at least 8 characters and 1 special character)</span></div>
+					<input type="password" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-lock"></i>
+					<div class="errorstatus is-ok"><i class="icon-ok"></i></div>
+				</div>
+
+				<div class="input input_small">
+					<input type="password" name="" placeholder="ex. Max Power" id="">
+					<i class="input__icon icon-lock"></i>
+					<div class="errorstatus"><i class="icon-close"></i>Passwords don't match</div>
+				</div>
+
+				<div class="strength"><i style="width:70%"></i></div>
+
+
+
+
+				<div class="submit">START   USING   CUBIO   WALLET</div>
+			</div>
+			<!-- end reg -->
+		
+		</div>
+
+	</div>
+</div>
+<!-- end popup  -->
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

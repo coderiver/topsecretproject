@@ -1,0 +1,348 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+
+<!-- begin l-header  -->
+<div class="l-header">
+	<div class="header">
+		<div class="header__logo">
+			Cubio <span>Wallet</span> <i class="icon-arrowdown"></i>
+		</div>
+		<div class="header__exchange">1 BTC<i class="icon-arrow"></i>329.23 EUR</div>
+		<div class="header__balances">
+			<div class="header__tumblr is-on"><i></i><b class="header__tumblroff">Hide</b><b class="header__tumblron">Show</b></div>
+			<div class="header__balancevalue">5.01234 <div class="header__currencies"><span class="header__balance btc is-active">BTC</span><span class="header__balance eur">EUR</span></div></div>
+		</div>
+		<div class="hprofile">
+			<div class="hprofile__user"><div class="hprofile__av"></div><div class="hprofile__name">Sean Yao</div><i class="icon-arrowdown"></i></div>
+			<div class="hprofile__drop">
+				<div class="hprofile__accounts">
+					<h3><i class="icon-cube_logo_dark"></i>Cash Accounts</h3>
+					<ul class="hprofile__accountslist">
+						<li><span class="hprofile__currency">$</span> 11,000.00 <span>USD</span></li>
+						<li><span class="hprofile__currency">€</span> 2,000.00 <span>EUR</span></li>
+						<li><span class="hprofile__currency">£</span> 230.00 <span>GBP</span></li>
+					</ul>
+				</div>
+				<ul class="hprofile__list">
+					<li><a href="#"><i class="icon-settings"></i>Settings</a></li>
+					<li><a href="#"><i class="icon-help"></i>Help</a></li>
+					<li><a href="#"><i class="icon-logout"></i>Logout</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end notifications -->
+		<!-- begin header__notifications  -->
+		<div class="header__notifications">
+			<i class="icon-notification"><b>3</b></i>
+			<span>Notifications</span>
+		</div>
+		<!-- end header__notifications -->
+
+		<!-- begin header__address  -->
+		<div class="header__address">
+			<i class="icon-qr"></i>
+			<span>Get address</span>
+		</div>
+		<!-- end header__address -->
+	</div>
+</div>
+<!-- end l-header -->
+
+
+<!-- begin l-nav  -->
+<div class="l-nav">
+	<div class="nav">
+		<div class="nav__in">
+			<ul>
+				<li><a href="#"><i class="icon-send"></i><span>SEND MONEY</span></a></li>
+				<li><a href="#"><i class="icon-deposit"></i><span>request MONEY</span></a></li>
+				<li><a href="#" class="is-active"><i class="icon-activity"></i><span>Activity</span></a></li>
+				<li><a href="#"><i class="icon-buy"></i><span>Buy Bitcoin</span></a></li>
+				<li><a href="#"><i class="icon-sell"></i><span>Sell bitcoin</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end l-nav -->
+
+<!-- begin l-content  -->
+<div class="l-content">
+
+	<div class="in">
+		<div class="pleaseverify">
+			<div class="pleaseverify__text">
+				Please verify your business to begin accepting Bitcoin.
+			</div>
+			<div class="pleaseverify__button">
+				verify me
+			</div>
+		</div>
+	</div>
+	<div class="in">
+		<div class="tabs__wrap">
+			<ul class="tabs">
+				<li><a href="#" class="is-active">Payment buttons</a></li>
+			</ul>
+			<div class="tabs__add"><i class="icon-addme">+</i></div>
+		</div>
+		<div class="somemessage">
+			<p>Payment buttons are an easy way for you to accept bitcoin on your website. Once a button is genererated, paste the resulting HTML code in your website to add the button to your page.</p>
+			<div class="somemessage__close">X</div>
+		</div>
+
+		<!-- begin pb  payment button wrapper-->
+		<div class="pb">
+			<div class="pb__title">Choose a button type</div>
+			<div class="pb__buttons">
+				<div class="pb__buttonwrap is-active">
+					<div class="pb__button"><i class="icon-buy"></i>Pay with bitcoin</div>
+				</div>
+				<div class="pb__buttonwrap">
+					<div class="pb__button"><i class="icon-buy"></i>Donate bitcoin</div>
+				</div>
+			</div>
+
+			<div class="pfields">
+			<!-- begin pfield  -->
+			<div class="pfield">
+				<div class="pfield__label">
+					Item Name
+				</div>
+				<div class="pfield__content">
+					<div class="input input_small">
+						<input type="text">
+					</div>
+				</div>
+			</div>
+			<!-- end pfield -->
+			<!-- begin pfield  -->
+			<div class="pfield">
+				<div class="pfield__label">
+					Description
+				</div>
+				<div class="pfield__content">
+					<div class="input input_small">
+						<input type="text">
+					</div>
+				</div>
+			</div>
+			<!-- end pfield -->
+			<!-- begin pfield  -->
+			<div class="pfield">
+				<div class="pfield__label">
+					Price
+				</div>
+				<div class="pfield__content">
+					<div class="input input_small input__size1">
+						<input type="text">
+					</div>
+					<div class="smallselect">
+						<div class="smallselect__value">Eur</div><i class="icon-arrowdown"></i>
+						<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+
+					</div>
+				</div>
+			</div>
+			<!-- end pfield -->
+			<div class="pfield__advanced">Advanced settings <i class="icon-arrowdown"></i></div>
+			<div class="pfield__advancedsettings">
+				<!-- begin pfield  -->
+				<div class="pfield">
+					<div class="pfield__label">
+						Reference ID
+					</div>
+					<div class="pfield__content">
+						<div class="input input_small">
+							<input type="text">
+						</div>
+					</div>
+				</div>
+				<!-- end pfield -->
+
+				<!-- begin pfield  -->
+				<div class="pfield">
+					<div class="pfield__label">
+						Callback URL
+					</div>
+					<div class="pfield__content">
+						<div class="input input_small">
+							<input type="text">
+						</div>
+					</div>
+				</div>
+				<!-- end pfield -->
+		
+			</div>
+			<!-- end advanced settings -->
+			<div class="hr"></div>
+			<!-- begin pfield  -->
+			<div class="pfield">
+				<div class="pfield__label">
+					Embed Code
+				</div>
+				<div class="pfield__content">
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</div>
+			</div>
+			<!-- end pfield -->
+
+			<!-- begin pfield  -->
+			<div class="pfield">
+				<div class="pfield__label">
+					preview
+				</div>
+				<div class="pfield__content">
+					<div class="pb__button is-disabled"><i class="icon-buy"></i>Pay with bitcoin</div>
+				</div>
+			</div>
+			<!-- end pfield -->
+			<div class="submit">Create new button</div>
+			<div class="submit"><i class="icon-ok"></i></div>
+			</div>
+			<!-- end pfields -->
+		</div>
+		<!-- end pb -->
+		
+	</div>
+	
+	
+
+	<div class="in">
+		<div class="tabs__wrap">
+			<ul class="tabs">
+				<li><a href="#" class="is-active">Payment buttons</a></li>
+			</ul>
+			<div class="tabs__add"><i class="icon-addme">+</i></div>
+		</div>
+	</div>
+	<!-- begin activities  -->
+	<div class="activities">
+		<!-- begin a  -->
+		<div class="a">
+			<table class="a__table">
+				<tr>
+					<td class="a__buttontitle">
+						Weekend conference pass
+					</td>
+					<td class="a__buttondescr">
+						Weekend 1
+					</td>
+					<td class="a__money">123 <span>EUR</span></td>
+					<td class="a__actions">
+						<div class="a__edit">Edit</div>
+						<div class="a__delete">Delete</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- end a -->
+		<!-- begin a  -->
+		<div class="a">
+			<table class="a__table">
+				<tr>
+					<td class="a__buttontitle">
+						Weekend conference pass
+					</td>
+					<td class="a__buttondescr">
+						Weekend 1
+					</td>
+					<td class="a__money">123 <span>EUR</span></td>
+					<td class="a__actions">
+						<div class="a__edit">Edit</div>
+						<div class="a__delete">Delete</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- end a -->
+		<!-- begin a  -->
+		<div class="a">
+			<table class="a__table">
+				<tr>
+					<td class="a__buttontitle">
+						Weekend conference pass
+					</td>
+					<td class="a__buttondescr">
+						Weekend 1
+					</td>
+					<td class="a__money">123 <span>EUR</span></td>
+					<td class="a__actions">
+						<div class="a__edit">Edit</div>
+						<div class="a__delete">Delete</div>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<!-- end a -->
+	</div>
+	<!-- end activities -->
+</div>
+<!-- end l-content -->
+
+
+<!-- begin l-footer  -->
+<div class="l-footer">
+	<div class="footer">
+		<div class="footer__left">
+			© 2014 Cubio
+		</div>
+		<ul class="footer__links">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Merchants</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end l-footer -->
+
+<div class="overlay"></div>
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace popup_narrow1" id="popup-activity">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<div class="afull">
+			<div class="afull__descr">
+				<i class="icon-buy"></i> I did something <strong>231 BTC</strong>
+			</div>
+			<table class="amoretable">
+				<tr>
+					<th>Status</th>
+					<td class="amore__status"><span class="is-completed">Completed</span></td>
+				</tr>
+				<tr>
+					<th>Time</th>
+					<td>October 5, 2014 at 12:12 PM</td>
+				</tr>
+				<tr>
+					<th>Bitcoin price</th>
+					<td>320 <em>USD</em></td>
+				</tr>
+				<tr>
+					<th>Payment fee</th>
+					<td>320 <em>USD</em></td>
+				</tr>
+				<tr>
+					<th>Reference id</th>
+					<td>QXZ54</td>
+				</tr>
+			</table>
+		</div>
+		<div class="submit submit_subtle">Close window</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+<div class="overlay"></div>
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+.pb
+	padding-bottom: 15px 
+	.pfields
+		background: #FAFCFD
+		margin-top: 25px 
+		
+		padding-top: 22px 
+		box-shadow: inset 0 0 0 3px #EAEAEA 
+	.pb__buttons
+		margin-left: 30px 
+		text-align: center
+	.pb__buttonwrap
+		display: inline-block
+		padding: 20px 50px
+		background: #fff  
+		box-shadow: inset 3px 3px 0 #EAEAEA
+		cursor: pointer
+		margin-right: 30px 
+		&.is-active
+			box-shadow: inset 0 0 0 2px #1EBEBB, inset 5px 5px 0 #EAEAEA
+			border-radius: 2px
+	.pb__title
+		+amed
+		font-size: 14px 
+		color: #353458
+		text-align: center
+		margin-bottom: 13px  
+	.pb__button
+		display: inline-block
+		background: #1EBEBB 
+		border: 2px solid #27E5E1 
+		color: #fff 
+		height: 46px
+		cursor: pointer
+		line-height: 46px
+		text-decoration: none
+		font-size: 16px   
+		+asemi
+		width: 195px 
+		background: #353556
+		border: none  
+		color: #fff 
+		text-align: center
+		&.is-disabled
+			opacity: .5
+			cursor: default 
+		i
+			color: #F7CE67
+			font-size: 20px  
+			vertical-align: middle
+			margin-right: 10px 
+			position: relative
+			top: 2px 
+	.hr
+		margin: 25px 0 
+.pfield__advanced
+	width: 500px - 120px
+	margin: 0 auto 
+	padding-left: 120px 
+	cursor: pointer
+	margin-bottom: 10px 
+	font-size: 15px 
+	+areg
+	color: #00BFBC 
+	i
+		font-size: 10px 
+		margin-left: 5px 
+		color: #353458 
+.pfield
+	width: 500px 
+	margin: 0 auto
+	+clr
+	margin-bottom: 15px  
+	&.pfield_small
+		width: 340px 
+		.pfield__content
+			width: 223px 
+			.smallselect
+				float: none
+				height: 46px 
+				width: auto
+				display: block 
+	.pfield__label
+		float: left
+		width: 114px 
+		font-size: 14px 
+		+amed
+		color: #353458
+		padding-top: 13px  
+	.pfield__content
+		float: right
+		width: 380px 
+		.input
+			width: 100%
+			margin: 0 
+		.smallselect
+			float: right
+			height: 46px 
+			width: 115px 
+		.input__size1
+			width: 260px 
+			float: none
+			display: inline-block
+			vertical-align: top
+			float: left
+		textarea
+			background: #F2F6F8
+			+box
+			width: 100%
+			height: 120px   
+			padding: 5px
+			+preg
+			box-shadow: inset 3px 3px 0 #EBEBEB 
+			border: none 
+.somemessage
+	background: #fff 
+	margin: 30px 0 25px 0
+	box-shadow: inset 3px 3px 0 #EAEAEA
+	padding: 25px 46px  
+	font-size: 16px 
+	+areg
+	color: #353458 
+	position: relative
+	.somemessage__close
+		position: absolute
+		right: 20px 
+		top: 20px 
+		font-size: 19px 
+		color: #93C4D2 
+		cursor: pointer
+		+amed
+.plugins
+	+clr
+	.plugin
+		width: 30%
+		margin-right: 3%
+		display: inline-block
+		vertical-align: top
+		background: #fff   
+		margin-bottom: 32px 
+	.plugin__logo
+		height: 118px 
+		position: relative
+		.plugin__logoholder
+			position: absolute
+			top: 15px 
+			right: 15px 
+			bottom: 15px 
+			left: 15px 
+			-webkit-background-size: contain 
+			-o-background-size: contain 
+			background-size: contain 
+			background-position: 50% 50%
+			background-repeat: no-repeat  
+			&.plugin__wp
+				background-image: url(../img/svg/p-wp.svg)
+			&.plugin__ma
+				background-image: url(../img/svg/p-ma.svg)
+			&.plugin__os
+				background-image: url(../img/svg/p-os.svg)
+			&.plugin__woo
+				background-image: url(../img/svg/p-woo.svg)
+			&.plugin__presta
+				background-image: url(../img/svg/p-presta.svg)
+			&.plugin__shopify
+				background-image: url(../img/svg/p-shopify.svg)
+			&.plugin__opencart
+				background-image: url(../img/svg/p-opencart.png)
+			&.plugin__wpe
+				background-image: url(../img/svg/p-wpe.svg)
+			&.plugin__shopware
+				background-image: url(../img/svg/p-shopware.svg)
+	.plugin__install
+		height: 50px - 2px
+		line-height: 50px - 2px
+		text-align: center
+		text-decoration: none
+		cursor: pointer
+		color: #fff
+		text-transform: uppercase
+		background: #00BFBC   
+		+asemi
+		font-size: 15px 
+		letter-spacing: 3px 
+		border: 2px solid #27E5E1 
+		&:hover
+			background: darken(#00BFBC, 10%)

@@ -1,0 +1,63 @@
+.l-nav
+	height: 83px 
+.nav
+	background: #fff
+	border-bottom: 1px solid #E6EDF2 
+	position: fixed
+	z-index: 100
+	top: 70px  
+	width: 100% 
+	.nav__in
+		@extend %in
+	ul
+		height: 83px 
+		width: 100% 
+		position: relative
+		&:before
+			position: absolute
+			right: 0
+			top: 0
+			content: ' '  
+			right: 0
+			top: 0
+			height: 83px
+			border-right: 1px solid #E6EEF2 
+			z-index: 3 
+		li
+			float: left
+			width: 20% 
+		a
+			text-align: center
+			height: 83px  - 17px
+			padding-top: 17px 
+			text-decoration: none
+			border-left: 1px solid #E6EEF2 
+			text-transform: uppercase
+			font-size: 14px 
+			color: #353458 
+			display: block
+			position: relative
+			&:hover
+				background: #F8F8F8 
+				i
+					color: #363656 
+			&.is-active
+				background: #F8F8F8
+				&:before
+					position: absolute
+					bottom: -1px 
+					left: 0
+					width: 100%
+					background: #F8F8F8   
+					height: 1px 
+					content: ' '
+				i
+					color: #363656 
+			span
+				display: block
+				text-align: center
+			i
+				font-size: 24px 
+				color: #AEAEBC 
+				display: block
+				text-align: center

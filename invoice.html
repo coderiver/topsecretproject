@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+
+<!-- begin l-header  -->
+<div class="l-header">
+	<div class="header">
+		<div class="header__logo">
+			Cubio <span>Wallet</span> <i class="icon-arrowdown"></i>
+		</div>
+		<div class="header__exchange">1 BTC<i class="icon-arrow"></i>329.23 EUR</div>
+		<div class="header__balances">
+			<div class="header__tumblr is-on"><i></i><b class="header__tumblroff">Hide</b><b class="header__tumblron">Show</b></div>
+			<div class="header__balancevalue">5.01234 <div class="header__currencies"><span class="header__balance btc is-active">BTC</span><span class="header__balance eur">EUR</span></div></div>
+		</div>
+		<div class="hprofile">
+			<div class="hprofile__user"><div class="hprofile__av"></div><div class="hprofile__name">Sean Yao</div><i class="icon-arrowdown"></i></div>
+			<div class="hprofile__drop">
+				<div class="hprofile__accounts js-popup" data-popup="popup-cashaccounts">
+					<h3><i class="icon-cube_logo_dark"></i>Cash Accounts</h3>
+					<ul class="hprofile__accountslist">
+						<li><span class="hprofile__currency">$</span> 11,000.00 <span>USD</span></li>
+						<li><span class="hprofile__currency">€</span> 2,000.00 <span>EUR</span></li>
+						<li><span class="hprofile__currency">£</span> 230.00 <span>GBP</span></li>
+					</ul>
+				</div>
+				<ul class="hprofile__list">
+					<li><a href="#"><i class="icon-settings"></i>Settings</a></li>
+					<li><a href="#"><i class="icon-help"></i>Help</a></li>
+					<li><a href="#"><i class="icon-logout"></i>Logout</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end notifications -->
+		<!-- begin header__notifications  -->
+		<div class="header__notifications js-popup" data-popup="popup-notifications">
+			<i class="icon-notification"><b>3</b></i>
+			<span>Notifications</span>
+		</div>
+		<!-- end header__notifications -->
+
+		<!-- begin header__address  -->
+		<div class="header__address js-popup" data-popup="popup-address">
+			<i class="icon-qr"></i>
+			<span>Get address</span>
+		</div>
+		<!-- end header__address -->
+	</div>
+</div>
+<!-- end l-header -->
+
+
+<!-- begin l-nav  -->
+<div class="l-nav">
+	<div class="nav">
+		<div class="nav__in">
+			<ul>
+				<li><a href="#" class="is-active"><i class="icon-send"></i><span>SEND MONEY</span></a></li>
+				<li><a href="#"><i class="icon-deposit"></i><span>request MONEY</span></a></li>
+				<li><a href="#" ><i class="icon-activity"></i><span>Activity</span></a></li>
+				<li><a href="#" ><i class="icon-buy"></i><span>Buy Bitcoin</span></a></li>
+				<li><a href="#"><i class="icon-sell"></i><span>Sell bitcoin</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end l-nav -->
+
+<!-- begin l-content  -->
+<div class="l-content requestpage">
+	<!-- begin in -->
+	<div class="in">
+		<ul class="tabs">
+			<li><a href="#" class="is-active">Send money</a></li>
+		</ul>
+		<div class="input">
+			<input type="text" name="" placeholder='Enter recipient name or bitcoin address' id="">
+			<div class="input__icon icon-qr"></div>
+		</div>
+	</div>
+
+	<div class="hr"></div>
+
+	<div class="in">
+		<!-- begin exchange  -->
+		<div class="exchange exchange_request">
+			<div class="exchange__col">
+				<div class="input">
+					<input type="text" name="" placeholder="Amount to send" id="">
+					<div class="input__currency">EUR</div>
+				</div>
+			</div>
+			<div class="exchange__col">
+				<div class="input is-tilda input_to">
+					<div class="input__tilda">~</div>
+					<input type="text" name="" value="105.50" id="">
+					<div class="input__currency">BTC</div>
+				</div>
+			</div>
+		</div>
+		<!-- end exchange -->
+	</div>
+	<!-- end in -->
+
+	<div class="hr"></div>
+
+	<div class="in">
+		<div class="input">
+			<input type="text" name="" placeholder="What's this for? (optional)" id="">
+		</div>
+	</div>
+
+	<div class="hr"></div>
+	<div class="in">
+		<div class="submit">Make Request</div>
+	</div>
+	
+</div>
+<!-- end l-content -->
+
+
+<!-- begin l-footer  -->
+<div class="l-footer">
+	<div class="footer">
+		<div class="footer__left">
+			© 2014 Cubio
+		</div>
+		<ul class="footer__links">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Merchants</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end l-footer -->
+
+<div class="overlay" style="display:block"></div>
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_narrow" id="popup-address">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<h3 class="popup__title">YOUR   ADDRESS</h3>
+		<div class="popup__subtitle">Use this address to receive payments.</div>
+		<div class="qrcode">2E9mcYUIejfkelJ7hXgRK9sANcd7VPiWVY</div>
+		<div class="qrpic">
+			<img src="img/qr.jpg" alt="">
+		</div>
+		<p>To protect your account, we generate a new bitcoin address for every transfer. All your old addresses can still receive payments.</p>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_narrow" id="popup-notifications">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<h3 class="popup__title">Notifications</h3>
+		<p>notification</p>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_nospace" id="popup-cashaccounts">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<h3 class="popup__title"><i class="logo"></i>Cash accounts</h3>
+		<div class="makedeposit">Make Deposit</div>
+		<table class="actions">
+			<tr>
+				<td class="actions__currency">
+					$
+				</td>
+				<td class="actions__amount">11,000.00 <span>USD</span></td>
+				<td class="actions__time">Last deposited 4 minutes ago</td>
+				<td class="actions__buttons">
+					<div class="button"><i class="icon-buy"></i> Buy</div>
+					<div class="button">Withdraw</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="actions__currency">
+					&euro;
+				</td>
+				<td class="actions__amount">232.00 <span>EUR</span></td>
+				<td class="actions__time">Last deposited 4 minutes ago</td>
+				<td class="actions__buttons">
+					<div class="button"><i class="icon-buy"></i> Buy</div>
+					<div class="button">Withdraw</div>
+				</td>
+			</tr>
+		</table>
+		<h3>Your bank transfers</h3>
+
+		<table class="transfers">
+			<thead>
+				<tr>
+					<td>&nbsp;</td>
+					<td class="transfers__left"><div class="sort">Type <i class="icon-arrowdown"></i></div></td>
+					<td>&nbsp;</td>
+					<td  class="transfers__right"><div class="sort">Currency <i class="icon-arrowdown"></i></div></td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="transfers__icon"><i class="icon-deposit"></i></td>
+					<td class="transfers__type">Deposit</td>
+					<td class="transfers__time">4 hours ago</td>
+					<td class="transfers__amount">+<strong>100</strong> USD</td>
+				</tr>
+				<tr>
+					<td class="transfers__icon"><i class="icon-request"></i></td>
+					<td class="transfers__type">Withdrawal</td>
+					<td class="transfers__time">4 hours ago</td>
+					<td class="transfers__amount is-minus">-<strong>100</strong> USD</td>
+				</tr>
+				<tr>
+					<td class="transfers__icon"><i class="icon-deposit"></i></td>
+					<td class="transfers__type">Deposit</td>
+					<td class="transfers__time">4 hours ago</td>
+					<td class="transfers__amount">+<strong>1012310</strong> USD</td>
+				</tr>
+				<tr>
+					<td class="transfers__icon"><i class="icon-request"></i></td>
+					<td class="transfers__type">Withdrawal</td>
+					<td class="transfers__time">4 hours ago</td>
+					<td class="transfers__amount is-minus">-<strong>1123123100</strong> USD</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="showmore">Show more</div>
+</div>
+<!-- end popup popup_narrow -->
+
+
+
+<!-- begin popup popup_narrow  -->
+<div class="popup popup_invoice  is-shown" id="popup-invoice">
+	<div class="popup__close">X</div>
+	<div class="popup__content">
+		<h3 class="popup__title">BANK   TRANSFER   INVOICE</h3>
+		<div class="invoice">
+			<div class="invoice__text">
+				Please transfer <strong>3123 &euro;</strong> to the following account.<br>
+				Your funds will be added to your wallet within <em>1-3 business days</em>
+			</div>
+			<table class="invoice__data">
+				<tr>
+					<th>Account Name</th>
+					<td>Dooga Limited</td>
+				</tr>
+				<tr>
+					<th>Bank Name</th>
+					<td>Raiffeisen Banka D.D.</td>
+				</tr>
+				<tr>
+					<th>IBAN</th>
+					<td>SI74 8658 34KR EKSI 22</td>
+				</tr>
+				<tr>
+					<th>BIC (Swift)</th>
+					<td>KREKSI22</td>
+				</tr>
+				<tr>
+					<th>Address</th>
+					<td>Dunajska Cesta 50, 1000 Maribor</td>
+				</tr>
+				<tr>
+					<th>Country</th>
+					<td>Slovenia</td>
+				</tr>
+				<tr>
+					<th>Reference Code</th>
+					<td><em>UX7812L</em></td>
+				</tr>
+			</table>
+			<div class="invoice__note">
+				<h3>Important</h3>
+				<p>You must include the Reference Code in your transfer message to ensure that your order is processed swiftly. Third party deposits are prohibited.</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end popup popup_narrow -->
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

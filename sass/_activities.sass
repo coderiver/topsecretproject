@@ -1,0 +1,619 @@
+.activities
+	&.activities_keyval
+		margin-bottom: 20px 
+		
+.a
+	border-bottom: 1px solid #E6EEF2 
+	box-shadow: 0 -1px 0 #E6EEF2
+	cursor: pointer
+	&:hover
+		background: #fff 
+		.a__table td.a__icon
+			color: #363656 
+	&.a_title
+		background: #fff 
+		.a__table
+			height: 60px 
+			td
+				height: 60px 
+				font-size: 15px 
+				+asemi
+				i
+					font-size: 12px 
+					vertical-align: middle
+					margin-left: 10px 
+	.a__table
+		@extend %in
+		height: 82px 
+		td
+			height: 82px 
+			vertical-align: middle
+			&.a__icon
+				width: 81px 
+				text-align: left
+				color: #B3B3BC
+				font-size: 20px  
+				line-height: 1.5 
+			&.a__descr
+				font-size: 16px 
+				color: #353458
+				+areg
+				width: 320px 
+				i
+					vertical-align: middle
+					color: #94C4D1 
+					margin-left: 12px 
+					position: relative
+					top: 2px 
+				strong
+					font-weight: normal
+					+asemi
+				span
+					display: block
+					padding-top: 5px 
+					+aital
+					font-size: 16px 
+					color: #9EA3A6 
+			&.a__time
+				font-size: 14px 
+				color: #9EA3A6
+				+areg
+			&.a__amount
+				text-align: right
+				font-size: 16px 
+				+areg
+				color: #00BFBC 
+				width: 190px 
+				white-space: nowrap
+				.a__sign
+					float: left
+					margin-left: 10px 
+				strong
+					font-weight: normal
+					+asemi
+					margin-left: 20px 
+				&.is-minus
+					color: #EA294C 
+			&.a__status
+				padding-right: 50px 
+				
+				span
+					display: inline-block
+					width: 100px 
+					text-align: center
+					border: 2px solid #1EBEBB 
+					border-radius: 2px
+					color: #1EBEBB 
+					text-transform: uppercase
+					+psemi
+					font-size: 12px 
+					height: 18px 
+					line-height: 18px 
+					&.is-pending
+						color: #F7CE67
+						border-color: #F7CE67 
+					&.is-aborted
+						color: #EA294C
+						border-color: #EA294C  
+					&.is-cancelled
+						color: #aaa 
+						border-color: #aaa 
+			&.a__date
+				width: 130px 
+				font-size: 16px 
+				.date
+					display: inline-block
+					+preg
+					font-size: 17px 
+					text-align: center
+					line-height: .9
+					text-transform: uppercase
+					vertical-align: middle
+					strong
+						display: block
+						+asemi
+						font-size: 30px 
+				.time
+					display: inline-block
+					vertical-align: middle
+					margin-left: 12px 
+			&.a__title
+				width: 380px 
+				font-size: 16px 
+				width: 260px 
+				width: 220px 
+				div
+					width: 180px
+					overflow: hidden 
+					white-space: nowrap
+					overflow: hidden
+					-ms-text-overflow: ellipsis
+					text-overflow: ellipsis
+				strong
+					+asemi
+					font-weight: normal
+				&.a__title_short
+					width: auto 
+			&.a__report
+				text-align: right
+				width: 170px 
+				padding-left: 60px 
+				&.a__invoice
+					border-color: #1EBEBB 
+					color: #1EBEBB 
+					a
+						border-color: #1EBEBB 
+						color: #1EBEBB 
+
+				a
+					display: block
+					border: 2px solid #95C4D1 
+					border-radius: 3px
+					letter-spacing: 3px 
+					+asemi
+					text-align: center
+					text-decoration: none
+					color: #93C4D2
+					font-size: 14px  
+					padding: 0 20px
+					height: 45px  
+					line-height: 45px 
+					text-transform: uppercase
+					font-weight: normal
+					white-space: nowrap
+					border-color: #1EBEBB 
+					color: #1EBEBB 
+			&.a__reporttitle
+				text-align: center
+				color: #93C4D2 
+			&.a__money
+				font-size: 16px 
+				+asemi
+				color: #353458
+				text-align: right
+				span
+					+areg
+					color: #00BFBC  
+			&.a__sum
+				width: 120px 
+				text-align: right
+				font-size: 16px 
+				color: #353458
+				strong
+					font-weight: normal
+					+asemi
+			&.a__filter
+				font-size: 15px 
+				+asemi
+				color: #353458 
+				i.icon-arrowdown
+					margin-right: 20px 
+					margin-left: 5px 
+					font-size: 10px 
+					position: relative
+					top: 3px 
+					vertical-align: middle
+				.to
+					margin: 0 10px
+					display: inline-block
+			&.a__buttontitle
+				text-align: left
+				+asemi
+				font-style: normal 
+				color: #353556 
+				font-size: 16px 
+				width: 250px 
+			&.a__buttondescr
+				+areg
+				font-size: 16px 
+			&.a__actions
+				width: 270px 
+				text-align: right
+				&.a__actions_small
+					width: auto
+					vertical-align: top
+
+					div
+						position: relative
+						top: 12px 
+				&>div
+					display: inline-block
+					text-transform: uppercase
+					letter-spacing: 3px 
+					text-decoration: none
+					cursor: pointer
+					margin-left: 10px 
+					border-radius: 3px
+					text-decoration: none
+					border: 2px solid #93C4D2  
+					+asemi
+					font-size: 14px 
+					width: 107px 
+					text-align: center
+					height: 46px
+					line-height: 46px
+					color: #94C3D0 
+				.a__delete
+					color: #E8294B  
+					border-color: #E8294B 
+			&.a__key
+				label
+					display: inline-block
+					height: 50px 
+					line-height: 50px
+					margin-right: 20px  
+					font-size: 16px 
+					color: #353458
+					+asemi
+					width: 87px 
+					vertical-align: middle
+				.a__value
+					display: inline-block
+					width: 560px 
+					// padding-top: 16px 
+					vertical-align: middle
+					.input
+						width: 300px 
+						float: none
+						margin: 0 
+						input
+							background: #F2F5F9 
+					.input_important
+						width: 550px 
+			.a__secret
+				clear: both
+				+clr
+				padding-bottom: 16px 
+				padding-top: 15px 
+				label
+					vertical-align: top
+				.a__secretd
+					font-size: 16px 
+					+areg
+					color: #00BFBC 
+					margin-top: 8px 
+	&.a_empty
+		background: #fff 
+		text-align: center
+		cursor: default
+		border-bottom: none
+		border-top: 1px solid #E6EEF2  
+		td
+			+aital
+			color: #9EA3A6  
+			font-size: 16px 
+			cursor: default 
+	&.a_withsecret
+		.a__table
+			.a__key
+				padding-top: 10px 
+.dateinput
+	display: inline-block
+	width: 130px 
+	vertical-align: middle
+	position: relative
+	i
+		position: absolute
+		right: 10px 
+		top: 10px
+		color: #95C4D1 
+		font-size: 13px !important
+	input
+		border: 2px solid #95C4D1 
+		border-radius: 3px
+		font-size: 13px 
+		+asemi
+		display: block
+		width: 100%
+		+box
+		padding: 5px 10px  
+
+.amore
+	padding: 15px 0
+	@extend %in
+	.amore__wrap
+		background: #fff 
+		box-shadow: inset 3px 3px 0 #E6E8E9
+		padding: 10px 100px 
+.amoretable
+	width: 100%
+	border-spacing: 0
+	border-collapse: collapse
+	th,td
+		text-align: left
+		padding: 20px 0 
+		border-bottom: 1px solid #E6EDF2 
+	tr:last-child
+		th,td
+			border-bottom: none 
+	th
+		font-weight: normal
+		+asemi
+		font-size: 16px 
+		color: #353458 
+	td
+		text-align: right
+		+areg
+		font-size: 16px 
+		em
+			font-style: normal 
+			color: #00BFBC 
+			margin-left: 6px 
+	.amore__status span
+		display: inline-block
+		width: 100px 
+		text-align: center
+		border: 2px solid #1EBEBB 
+		border-radius: 2px
+		color: #1EBEBB 
+		text-transform: uppercase
+		+psemi
+		font-size: 12px 
+		height: 18px 
+		line-height: 18px 
+		&.is-pending
+			color: #F7CE67
+			border-color: #F7CE67
+		&.is-cancelled
+			color: #aaa 
+			border-color: #aaa 
+.welcome
+	width: 850px 
+	margin: 30px auto
+	.welcome__text
+		margin-bottom: 23px 
+		font-size: 15px 
+		+areg
+		color: #353458 
+		text-align: center
+
+=rightb
+	position: absolute
+	height: 4px 
+	width: 10px 
+	background: #1FBEBA
+	top: 24px  
+	content: ' ' 
+	z-index: 20 
+	right: 0 
+=leftb
+	position: absolute
+	height: 4px 
+	width: 10px 
+	background: #1FBEBA
+	top: 24px  
+	content: ' ' 
+	z-index: 20 
+	left: 0 
+.steps
+	width: 640px
+	margin: 20px auto
+	height: 82px 
+	position: relative
+	
+	.steps__line
+		height: 4px 
+		background: #94C4D1
+		width: 100%
+		position: absolute
+		left: 0
+		top: 24px    
+	.steps__step
+		width: 52px 
+		height: 52px 
+		position: absolute
+		top: 0
+		left: 0
+		background: #94C4D1
+		border-radius: 52px
+		color: #fff 
+		text-align: center
+		line-height: 52px 
+		z-index: 10 
+		font-size: 20px 
+		i
+			position: relative
+			top: 4px 
+			&.icon-invoice
+				left: 3px 
+		&.steps__4
+			right: 0
+			left: auto 
+			 
+		&.steps__2
+			left: 33%
+			margin-left: -26px  
+		&.steps__3
+			left: 66%
+			margin-left: -26px  
+	.steps__title
+		top: 70px 
+		width: 152px 
+		margin-left: -50px
+		text-align: center
+		color: #353556
+		line-height: 1 
+		font-size: 15px   
+		+areg
+		position: absolute
+		left: 0 
+	.steps__fill
+		background: #1FBEBA 
+		height: 4px 
+		width: 0 
+	&.steps_1
+		.steps__1
+			background: #1FBEBA
+			box-shadow: inset 0 0 0 6px #94C4D1 
+	&.steps_2
+		.steps__1,.steps__2
+			background: #1FBEBA
+			box-shadow: inset 0 0 0 6px #94C4D1 
+		.steps__1:before
+			+rightb
+		.steps__2:before
+			+leftb
+		.steps__fill
+			width: 33%
+	&.steps_3
+		.steps__1,.steps__2,.steps__3
+			background: #1FBEBA
+			box-shadow: inset 0 0 0 6px #94C4D1 
+		.steps__1:before
+			+rightb
+		.steps__2:before
+			+leftb
+		.steps__2:after
+			+rightb
+		.steps__3:before
+			+leftb
+		.steps__fill
+			width: 66%
+	&.steps_4
+		.steps__step
+			background: #1FBEBA
+			box-shadow: inset 0 0 0 6px #94C4D1 
+
+		.steps__2:before,.steps__3:before,.steps__4:before
+			+leftb
+		.steps__1:before,.steps__2:after,.steps__3:after
+			+rightb
+		.steps__3:before
+			+leftb
+		.steps__fill
+			width: 66%
+	&.steps_spaced
+		margin-bottom: 50px
+		margin-top: 50px 
+	&.steps_three
+		width: 444px 
+		.steps__step
+			&.steps__1
+				left: 0
+				right: auto 
+			&.steps__2
+				left: 50%
+				margin-left: -26px  
+			&.steps__3
+				right: 0
+				left: auto  
+		&.steps_1
+		&.steps_2
+			.steps__fill
+				width: 50%
+		&.steps_3
+			.steps__fill
+				width: 100%
+	.icon-cubewhite
+		font-size: 36px 
+		position: relative
+		top: 7px !important
+.afull
+	padding: 0px 30px 0 20px 
+	.afull__descr
+		font-size: 16px 
+		color: #353458
+		+areg
+		width: 320px 
+		i
+			text-align: left
+			color: #363656
+			font-size: 30px  
+			display: inline-block
+			position: relative
+			top: 2px 
+			line-height: 1.5 
+			margin-right: 10px
+			vertical-align: middle  
+		strong
+			font-weight: normal
+			+asemi
+	.afull__table
+		@extend .amore__table
+
+.welc,.verif
+	margin: 25px 0
+	background: #F9FCFD
+	box-shadow: 3px 3px 0 #E6E6E6 
+	padding: 25px 30px 25px 45px 
+	position: relative
+	+clr
+.welc
+	.welc__close
+		position: absolute
+		right: 20px 
+		top: 20px 
+		font-size: 20px 
+		color: #95C4D1 
+		cursor: pointer
+	.welc__logo
+		float: left
+		margin-right: 43px 
+		margin-top: 30px 
+		+svg(cubits1,50,50)
+		-webkit-background-size: contain 
+		-o-background-size: contain 
+		background-size: contain 
+		display: inline-block
+	.welc__text
+		overflow: hidden
+		h3
+			font-weight: normal
+			+psemi
+			font-size: 18px 
+			color: #353458
+			letter-spacing: 3px  
+			text-transform: uppercase
+			margin-bottom: 15px 
+		p
+			font-size: 15px 
+			+areg
+			a
+				color: #00BFBC
+				text-decoration: none 
+.verif
+	.verif__icon
+		// float: left
+		margin-right: 41px 
+		border: 1px solid #000
+		border-radius: 50px
+		width: 50px 
+		height: 50px 
+		font-size: 25px 
+		color: #000 
+		text-align: center
+		line-height: 58px 
+		display: inline-block
+		vertical-align: middle
+	.verif__text
+		display: inline-block
+		vertical-align: middle
+		// float: left
+		width: 500px 
+		strong
+			font-weight: normal
+			display: block
+			margin-bottom: 3px 
+			+amed
+			font-size: 17px 
+			padding-top: 5px 
+			color: #353458 
+		span
+			display: block
+			font-size: 14px 
+			+areg
+			color: #9EA3A6 
+	.verif__button
+		display: inline-block
+		cursor: pointer
+		@extend %submit
+		font-size: 15px !important
+		+psemi
+		+areg
+		font-family: preg, sans-serif !important 
+		letter-spacing: 2px 
+		padding: 0 25px 
+		height: 50px !important 
+		line-height: 50px !important
+		letter-spacing: 3px 
+		float: right

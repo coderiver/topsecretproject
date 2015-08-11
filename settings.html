@@ -1,0 +1,553 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Template</title>
+	<link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" media="all" href="css/screen.css" >
+	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+<body>
+
+
+<!-- begin l-header  -->
+<div class="l-header">
+	<div class="header">
+		<div class="header__logo">
+			Cubio <span>Wallet</span> <i class="icon-arrowdown"></i>
+		</div>
+		<div class="header__exchange">1 BTC<i class="icon-arrow"></i>329.23 EUR</div>
+		<div class="header__balances">
+			<div class="header__tumblr is-on"><i></i><b class="header__tumblroff">Hide</b><b class="header__tumblron">Show</b></div>
+			<div class="header__balancevalue">5.01234 <div class="header__currencies"><span class="header__balance btc is-active">BTC</span><span class="header__balance eur">EUR</span></div></div>
+		</div>
+		<div class="hprofile">
+			<div class="hprofile__user"><div class="hprofile__av"></div><div class="hprofile__name">Sean Yao</div><i class="icon-arrowdown"></i></div>
+			<div class="hprofile__drop">
+				<div class="hprofile__accounts">
+					<h3><i class="icon-cube_logo_dark"></i>Cash Accounts</h3>
+					<ul class="hprofile__accountslist">
+						<li><span class="hprofile__currency">$</span> 11,000.00 <span>USD</span></li>
+						<li><span class="hprofile__currency">€</span> 2,000.00 <span>EUR</span></li>
+						<li><span class="hprofile__currency">£</span> 230.00 <span>GBP</span></li>
+					</ul>
+				</div>
+				<ul class="hprofile__list">
+					<li><a href="#"><i class="icon-settings"></i>Settings</a></li>
+					<li><a href="#"><i class="icon-help"></i>Help</a></li>
+					<li><a href="#"><i class="icon-logout"></i>Logout</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- end notifications -->
+		<!-- begin header__notifications  -->
+		<div class="header__notifications">
+			<i class="icon-notification"><b>3</b></i>
+			<span>Notifications</span>
+		</div>
+		<!-- end header__notifications -->
+
+		<!-- begin header__address  -->
+		<div class="header__address">
+			<i class="icon-qr"></i>
+			<span>Get address</span>
+		</div>
+		<!-- end header__address -->
+	</div>
+</div>
+<!-- end l-header -->
+
+
+<!-- begin l-nav  -->
+<div class="l-nav">
+	<div class="nav">
+		<div class="nav__in">
+			<ul>
+				<li><a href="#"><i class="icon-send"></i><span>SEND MONEY</span></a></li>
+				<li><a href="#"><i class="icon-deposit"></i><span>request MONEY</span></a></li>
+				<li><a href="#" class="is-active"><i class="icon-activity"></i><span>Activity</span></a></li>
+				<li><a href="#"><i class="icon-buy"></i><span>Buy Bitcoin</span></a></li>
+				<li><a href="#"><i class="icon-sell"></i><span>Sell bitcoin</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- end l-nav -->
+
+<!-- begin l-content  -->
+<div class="l-content">
+	<div class="in">
+		<!-- begin settings -->
+		<div class="settings">
+			<!-- begin settings__nav  -->
+			<div class="settings__nav">
+				<ul>
+					<li><a href="#s-profile" class="is-active">Profile</a></li>
+					<li><a href="#s-security">Security</a></li>
+					<li><a href="#s-notifications">Notifcations</a></li>
+					<li><a href="#s-savedbanks">Saved Banks</a></li>
+				</ul>
+			</div>
+			<!-- end settings__nav -->
+
+			<!-- begin settings__blocks  -->
+			<div class="settings__blocks">
+				<!-- begin setting  -->
+				<div class="setting" id="s-profile">
+					<h2 class="setting__header">
+						Profile
+					</h2>
+
+					<div class="setting__content">
+						<div class="userinfo">
+							<div class="userinfo__av">
+								<div class="userinfo__avlogo"></div>
+								<div class="userinfo__avimport">IMPORT   PHOTO</div>
+							</div>
+							<div class="userinfo__data">
+								<div class="userinfo__name">Sean Yao</div>
+								<div class="userinfo__email">sean.j.yao@gmail.com</div>
+								<div class="userinfo__address">Ohmstr 10, 10179 Berlin, Germany</div>
+								<div class="userinfo__phone">+49 175 832 4159</div>
+							</div>
+						</div>
+						<!-- end userinfo -->
+						<table class="udata">
+							<tr class="udata__alt">
+								<td class="udata__icon">
+									<i class="icon-user"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Unverifed</strong>
+									<span>Verify to unlock unlimited buy & sell limits</span>
+								</td>
+								<td class="udata__value">
+									<div class="udata__button">Verify</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-lock"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Password</strong>
+								</td>
+								<td class="udata__value">
+									<div class="udata__button udata__button_alt">Change</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-sell"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Preferred Currency</strong>
+
+								</td>
+								<td class="udata__value">
+									<div class="smallselect">
+										<div class="smallselect__value">EUR</div><i class="icon-arrowdown"></i>
+										<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-present"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Preferred Currency</strong>
+
+								</td>
+								<td class="udata__value">
+									<div class="smallselect">
+										<div class="smallselect__value">EUR</div><i class="icon-arrowdown"></i>
+										<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-buy"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Bitcoin Units</strong>
+								</td>
+								<td class="udata__value">
+									<div class="smallselect">
+										<div class="smallselect__value">EUR</div><i class="icon-arrowdown"></i>
+										<select name="" id=""><option value="">Eur</option><option value="USD"></option></select>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- end settings content -->
+				</div>
+				<!-- end setting -->
+
+
+				<!-- begin setting  -->
+				<div class="setting" id="s-profile">
+					<h2 class="setting__header">
+						Business Profile
+					</h2>
+
+					<div class="setting__content">
+						<table class="udata">
+							<tr>
+								<td class="udata__key">
+									<div class="udata__info">
+										<h3>Cubits</h3>
+										<p class='udata__url'>www.cubits.com</p>
+										<p class="udata__address">Alexandrinenstr 2/3, 10969 Berlin, Germany</p>
+									</div>
+								</td>
+								<td class="udata__value">
+									<div class="udata__button udata__button_alt">edit</div>
+								</td>
+							</tr>
+							<tr class="is-expanded">
+								<td class="udata__key">
+									<div class="udata__info">
+										<h4>logo</h4>
+										<span>445x150 image that will appear on your checkout screen <br>Upload at 890x300 for retina or high-res displays</span>
+									</div>
+								</td>
+								<td class="udata__value">
+									<div class="udata__button udata__button_alt">edit</div>
+								</td>
+							</tr>
+							<tr class="udata__img">
+								<td colspan="2">
+									<div class="udata__imgwrap">
+										<img src="img/qr.jpg" width="130" alt="">
+									</div>
+								</td>
+							</tr>
+
+							<tr class="is-expanded">
+								<td class="udata__key">
+									<div class="udata__info">
+										<h4>cover photo</h4>
+										<span>445x150 that will appear on your checkout screen <br>Upload at 890x300 for retina or high-res displays</span>
+									</div>
+								</td>
+								<td class="udata__value">
+									<div class="udata__button udata__button_alt">upload</div>
+								</td>
+							</tr>
+							<tr class="udata__img">
+								<td colspan="2">
+									<div class="udata__imgwrap">
+										<img src="img/qr.jpg" width="130" alt="">
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__key">
+									<div class="udata__info">
+										<h4>Business Info</h4>
+										<span>Type: LLC | Category: Bitcoin Service | Tax ID: 123-45-7890</span>
+									</div>
+								</td>
+								<td class="udata__value">
+									<div class="udata__button udata__button_alt">edit</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- end settings content -->
+				</div>
+				<!-- end setting -->
+
+
+
+				<!-- begin setting  -->
+				<div class="setting" id="s-security">
+					<h2 class="setting__header">
+						Security
+					</h2>
+
+					<div class="setting__content">
+						
+						<table class="udata">
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-googlea"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Two-Factor Authentication</strong>
+									<span>Secures your account by requiring an additional code for login</span>
+								</td>
+								<td class="udata__value">
+									<label class="onoff">
+										<input type="checkbox" name="" id="">
+										<div class="onoff__bg">
+											<div class="onoff__value"></div>
+											<div class="onoff__on">On</div>
+											<div class="onoff__off">Off</div>
+										</div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-mail"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Require email conÞrmation for withdrawals</strong>
+								</td>
+								<td class="udata__value">
+									<label class="onoff">
+										<input type="checkbox" name="" id="">
+										<div class="onoff__bg">
+											<div class="onoff__value"></div>
+											<div class="onoff__on">On</div>
+											<div class="onoff__off">Off</div>
+										</div>
+									</label>
+								</td>
+							</tr>
+						</table>
+					</div>
+					<!-- end settings content -->
+				</div>
+				<!-- end setting -->
+
+				<!-- begin setting  -->
+				<div class="setting" id="s-notifications">
+					<h2 class="setting__header">
+						Notifications
+					</h2>
+
+					<div class="setting__content">
+						<h3 class="setting__subhead">How you receive notifications</h3>
+						<table class="udata udata_small">
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-cube-logo-dark"></i>
+								</td>
+								<td class="udata__key">
+									<strong>On Cubio</strong>
+								</td>
+								<td class="udata__value">
+									<label class="onoff">
+										<input type="checkbox" name="" id="">
+										<div class="onoff__bg">
+											<div class="onoff__value"></div>
+											<div class="onoff__on">On</div>
+											<div class="onoff__off">Off</div>
+										</div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-mail"></i>
+								</td>
+								<td class="udata__key">
+									<strong>By Email</strong>
+								</td>
+								<td class="udata__value">
+									<label class="onoff">
+										<input type="checkbox" name="" id="">
+										<div class="onoff__bg">
+											<div class="onoff__value"></div>
+											<div class="onoff__on">On</div>
+											<div class="onoff__off">Off</div>
+										</div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-mobile"></i>
+								</td>
+								<td class="udata__key">
+									<strong>By Text Message</strong>
+								</td>
+								<td class="udata__value">
+									<label class="onoff">
+										<input type="checkbox" name="" id="">
+										<div class="onoff__bg">
+											<div class="onoff__value"></div>
+											<div class="onoff__on">On</div>
+											<div class="onoff__off">Off</div>
+										</div>
+									</label>
+								</td>
+							</tr>
+						</table>
+
+						<h3 class="setting__subhead">What you get notified about</h3>
+						<table class="udata udata_small">
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-globe"></i>
+								</td>
+								<td class="udata__key">
+									<strong>New Login Location</strong>
+								</td>
+								<td class="udata__value">
+									<label class="onoff">
+										<input type="checkbox" name="" id="">
+										<div class="onoff__bg">
+											<div class="onoff__value"></div>
+											<div class="onoff__on">On</div>
+											<div class="onoff__off">Off</div>
+										</div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-deposit"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Deposits</strong>
+								</td>
+								<td class="udata__value">
+									<label class="onoff">
+										<input type="checkbox" name="" id="">
+										<div class="onoff__bg">
+											<div class="onoff__value"></div>
+											<div class="onoff__on">On</div>
+											<div class="onoff__off">Off</div>
+										</div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-request"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Withdrawals</strong>
+								</td>
+								<td class="udata__value">
+									<label class="onoff">
+										<input type="checkbox" name="" id="">
+										<div class="onoff__bg">
+											<div class="onoff__value"></div>
+											<div class="onoff__on">On</div>
+											<div class="onoff__off">Off</div>
+										</div>
+									</label>
+								</td>
+							</tr>
+							<tr>
+								<td class="udata__icon">
+									<i class="icon-user"></i>
+								</td>
+								<td class="udata__key">
+									<strong>Changes in Personal Data</strong>
+								</td>
+								<td class="udata__value">
+									<label class="onoff">
+										<input type="checkbox" name="" id="">
+										<div class="onoff__bg">
+											<div class="onoff__value"></div>
+											<div class="onoff__on">On</div>
+											<div class="onoff__off">Off</div>
+										</div>
+									</label>
+								</td>
+							</tr>
+						</table>
+						
+					</div>
+					<!-- end settings content -->
+				</div>
+				<!-- end setting -->
+
+
+				<!-- begin setting  -->
+				<div class="setting" id="s-savedbanks">
+					<h2 class="setting__header">
+						Saved Banks
+						<a href="#" class="setting__add">+</a>
+					</h2>
+
+					<div class="setting__content">
+						
+						<div class="mdata">
+							<table class="mdata__table">
+								<tr>
+									<th>Bank Name</th>
+									<td>Deutsche Bank</td>
+								</tr>
+								<tr>
+									<th>IBAN</th>
+									<td>DE74 8658 34KR EKSI 22</td>
+								</tr>
+								<tr>
+									<th>BIC (Swift)</th>
+									<td>PBNKDEFF</td>
+								</tr>
+							</table>
+							<div class="mdata__buttons">
+								<div class="mdata__edit">edit</div>
+								<div class="mdata__delete">delete</div>
+							</div>
+						</div>
+						<div class="hr"></div>
+						<div class="mdata mdata_last">
+							<table class="mdata__table">
+								<tr>
+									<th>Bank Name</th>
+									<td>Raiffeisen Banka D.D.</td>
+								</tr>
+								<tr>
+									<th>Account Number</th>
+									<td>473928059</td>
+								</tr>
+								<tr>
+									<th>Bank Address</th>
+									<td>Dunajska Cesta 50, 1000 Maribor, Slovenia</td>
+								</tr>
+							</table>
+							<div class="mdata__buttons">
+								<div class="mdata__edit">edit</div>
+								<div class="mdata__delete">delete</div>
+							</div>
+						</div>
+						<!-- end mdata -->
+
+						
+					</div>
+					<!-- end settings content -->
+				</div>
+				<!-- end setting -->
+			</div>
+			<!-- end settings__blocks -->
+			
+		</div>
+		<!-- end settings -->
+
+	</div>
+</div>
+<!-- end l-content -->
+
+
+<!-- begin l-footer  -->
+<div class="l-footer">
+	<div class="footer">
+		<div class="footer__left">
+			© 2014 Cubio
+		</div>
+		<ul class="footer__links">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Merchants</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
+</div>
+<!-- end l-footer -->
+
+
+<!-- load scripts -->
+<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+</body>
+</html>

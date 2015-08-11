@@ -1,0 +1,620 @@
+.ps
+	+clr
+	margin-top: 25px 
+	.ps__options
+		float: left
+		width: 335px 
+		background: #fff 
+		border-radius: 4px
+	.ps__screen
+		float: right
+		width: 504px 
+		
+	.ps__option
+		border-bottom: 1px solid #E6EDF2 
+		padding: 25px 30px 
+		+clr
+		.ps__key
+			float: left
+			font-size: 15px 
+			padding-top: 4px 
+			+areg
+			color: #353458 
+			span
+				+aital
+				font-size: 12px 
+				color: #9EA3A6 
+				display: block
+				padding-top: 2px 
+		.ps__value
+			float: right
+		&:last-child
+			border-bottom: none 
+.scr-layout
+	margin: 0 auto
+	width: 500px
+.scr
+	padding: 30px 30px 0 30px 
+	background: #F9FCFD
+	box-shadow: inset -3px -3px 0 #EAEAEA
+	border-radius: 3px 
+	
+	.scr__copy
+		text-align: center
+		+areg
+		font-size: 15px 
+		color: #B9C0CA
+		padding: 10px 0
+		strong
+			font-weight: normal
+			+asemi
+	.scr__pic
+		position: relative
+		min-height: 30px 
+		background: #fff 
+		min-height: 120px 
+		img
+			display: block
+			width: 100% 
+			opacity: .3
+	.scr__textual
+		position: absolute
+		width: 300px 
+		margin-left: -150px 
+		left: 50%
+		top: 50%
+		margin-top: -25px   
+		text-align: center
+		.scr__title
+			+abold
+			font-size: 21px 
+			text-transform: uppercase
+			color: #E6EEEF 
+			// padding: 4px 10px
+			// border: 2px solid #FFFFFF
+			display: inline-block
+			color: #353458 
+			// text-shadow: 1px 1px 0 #fff 
+		.scr__url
+			font-size: 15px 
+			color: #353458
+			line-height: 1 
+			 
+	.scr__timeleft
+		position: absolute
+		right: 5px 
+		top: 5px 
+		font-size: 13px 
+		+aital
+		z-index: 30 
+		color: #747370
+		i
+			display: inline-block
+			margin-right: 4px 
+			position: relative
+			top: 2px 
+	.scr__timer
+		height: 10px 
+		position: relative
+		margin-bottom: 14px 
+		b
+			position: absolute
+			right: 0
+			top: 0
+			bottom: 0
+			height: 10px    
+			background: #00C7C4 
+	.scr__table
+		width: 400px 
+		margin-left: 22px 
+		margin-bottom: 25px 
+		thead
+			th
+				text-align: left
+				font-size: 16px 
+				font-weight: normal
+				+asemi
+				color: #353458 
+				padding-bottom: 6px 
+			td
+				text-align: right
+				font-size: 16px 
+				padding-bottom: 6px 
+				+asemi
+				span
+					color: #00C7C4 
+		tbody
+			th
+				text-align: left
+				font-size: 16px 
+				color: #A1A2AF 
+				+areg
+			td
+				text-align: right
+				color: #A1A2AF 
+				font-size: 16px 
+				+areg
+
+
+
+.scr__paywith
+	box-shadow: inset 2px 2px 0 #EBEBEB
+	background: #FFFFFF 
+	.scr__paywithcontent
+		padding: 20px 15px 
+	.scr__paywithcontent_login
+		padding: 25px 15px 25px 15px
+		.input__label
+			margin-bottom: 14px !important
+			font-size: 16px !important
+	.scr__paywithtabs
+		margin-left: 2px 
+		+clr
+		list-style: none
+		li
+			float: left
+			width: 50% 
+		a
+			display: block
+			height: 54px 
+			line-height: 54px
+			text-align: center
+			border-bottom: 2px solid #D3D3D9  
+			text-decoration: none
+			color: #B8B7C2 
+			font-size: 15px 
+			cursor: pointer
+			+areg
+			&.is-active
+				+asemi
+				color: #353556
+				border-color: #353556  
+			&:hover
+				border-color: #353556  
+	.scr__send
+		text-align: center
+		width: 260px 
+		display: inline-block
+		vertical-align: middle
+		label
+			display: block
+			text-align: center
+			font-size: 15px 
+			margin-bottom: 10px 
+			+areg
+			color: #353458 
+			strong
+				font-weight: normal
+				+asemi
+		input
+			border: 2px solid #95C4D1 
+			width: 100%
+			text-align: center
+			padding: 10px  
+			font-size: 12px 
+			+asemi
+			color: #353458 
+			+box
+			background: #FAFCFD 
+	.scr__qr
+		display: inline-block
+		vertical-align: middle
+		margin-left: 17px 
+.available
+	margin: 20px 17px
+	.available__label	
+		font-size: 15px 
+		color: #485878 
+		margin-bottom: 10px 
+		position: relative
+		.avaliable__notyou
+			position: absolute
+			right: 0
+			text-decoration: none
+			color: #47CECB  
+			top: 0 
+		strong
+			font-weight: normal
+			+amed
+	.available__amount
+		padding: 12px 15px
+		border: 2px solid #95C4D1 
+		+clr
+		font-size: 16px 
+		em
+			font-style: normal 
+			float: left
+		strong
+			float: right
+			font-weight: normal
+			+asemi
+			span
+				color: #1FC7C3 
+.scr__message
+	min-height: 240px - 60px
+	background: #fff 
+	padding-top: 60px 
+	padding-left: 30px 
+	padding-right: 30px 
+	.scr__messagetitle
+		+asemi
+		font-size: 19px 
+		color: #4B4D66
+		font-style: italic  
+		margin-bottom: 19px 
+		text-align: center
+		&.is-ok
+			color: #00BFBC 
+	.scr__messagebox
+		border: 2px solid #F7CE67 
+		padding: 10px 0 10px 10px
+	.scr__messageicon
+		font-size: 30px 
+		color: #EFD172
+		margin-right: 6px  
+		display: inline-block
+		vertical-align: middle
+		line-height: 1 
+	.scr__messagetext
+		font-size: 12px 
+		+areg
+		color: #353458
+		line-height: 1.3
+		display: inline-block
+		vertical-align: middle
+		width: 87%
+		a
+			text-decoration: none
+			+amed
+			color: #00BFBC 
+.upload
+	display: inline-block
+	white-space: nowrap
+	-webkit-user-select: none
+	margin-top: 23px 
+	.upload__button
+		width: 100px
+		height: 20px
+		line-height: 20px
+		border-radius: 2px  
+		background: #93C4D2 
+		font-size: 13px 
+		+asemi
+		display: inline-block
+		cursor: pointer
+		text-align: center
+		color: #fff 
+	.upload__filename
+		+areg
+		font-size: 13px 
+		color: #353458
+		display: inline-block
+		vertical-align: middle 
+		color: #353458
+		margin-left: 5px  
+
+
+.input
+	display: block
+	position: relative
+	input
+		display: block
+		padding: 0 23px
+		// padding-left: 60px 
+		border: 2px solid #95C4D1 
+		border-radius: 2px
+		box-shadow: inset 3px 3px 0 #EAEAEA
+		background: #fff
+		+box
+		height: 66px  
+		line-height: 66px 
+		width: 100% 
+		+amed
+		font-size: 31px 
+		color: #CBCBCB 
+		color: #353556 
+		line-height: normal 
+		&:focus
+			border-color: #1EBEBB 
+			color: #353556 
+		&:focus + .input__currency
+			background-color: #1EBEBB 
+			color: #fff 
+	input[disabled]
+		color: #CBCBCB  !important
+	&.input_icon
+		input
+			padding-right: 70px 
+	&.is-tilda, &.with-tilda
+		input
+			padding-left: 60px 
+	.input__tilda
+		position: absolute
+		left: 26px 
+		top: 0
+		height: 66px  
+		line-height: 66px
+		font-size: 31px  
+		color: #677689 
+		+amed
+		display: none
+	&.with-tilda,&.is-tilda
+		.input__tilda
+			display: block
+	.input__currency
+		width: 60px 
+		height: 46px
+		line-height: 46px
+		text-align: center
+		position: absolute
+		right: 14px   
+		top: 10px 
+		border-radius: 2px
+		background: #95C4D1 
+		font-size: 17px 
+		+asemi
+		color: #fff 
+		&.input__currency_subtle
+			background: transparent
+			color: #1EBEBB  
+		&.input__currency_drop
+			width: 75px 
+			background: #1EBEBB
+			cursor: pointer
+			.input__currencydrop
+				display: none
+			.input__currencyvalue
+				position: relative
+				z-index: 3
+				display: inline-block
+			i
+				display: inline-block
+				color: #fff 
+				vertical-align: middle
+				font-size: 12px 
+			&.is-opendrop
+				z-index: 10 
+				.input__currencyvalue
+					z-index: 12 
+					color: #1EBEBB
+				i
+					color: #353556 
+					position: relative
+					z-index: 20 
+				.input__currencydrop
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					right: 0
+					background: #fff 
+					padding-top: 46px    
+					z-index: 11
+					border: 2px solid #1EBEBB 
+					ul
+						list-style: none
+					li
+						border-top: 1px solid #E6EEF2 
+						height: 27px 
+						line-height: 27px
+						cursor: pointer
+						background: #fff 
+						text-align: center  
+						color: #575770 
+						text-transform: uppercase
+						font-size: 12px 
+						+amed
+						&:hover
+							background: #F9F9F9 
+							color: #1EBEBB 
+						&:first-child
+							border-top: none 
+	.input__type
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		text-align: center
+		line-height: 47px
+		width: 50px
+		text-align: center
+		background: #95C4D1  
+		color: #fff  
+		font-size: 25px 
+	&.input_small
+		width: 340px 
+		margin: 0 auto 15px auto
+		&.input_phone
+			input
+				padding-left: 70px 
+			.input__phonecode
+				position: absolute
+				left: 0
+				top: 0
+				bottom: 0
+				background: #95C4D1
+				border-top-left-radius: 4px    
+				border-bottom-left-radius: 4px    
+				color: #fff
+				line-height: 46px  
+				width: 52px 
+				text-align: center
+				+asemi
+				font-size: 17px 
+				&:before
+					position: absolute
+					content: ' '
+					top: 2px 
+					bottom: 2px 
+					width: 3px
+					right: -3px  
+					background: #EAEAEA 
+		.input__label
+			display: block
+			font-size: 15px
+			+amed 
+			color: #34495E 
+			margin-bottom: 10px 
+			span
+				display: block
+				font-size: 14px 
+				+aital
+				color: #A4A4B0 
+		input
+			font-size: 17px 
+			height: 46px 
+			line-height: 46px  
+			line-height: 1
+			
+			padding: 0 37px 0 17px 
+			padding-top: 0px  
+			line-height: auto
+			line-height: normal 
+			+placeholder
+				// line-height: 17px 
+				// padding-top: 3px 
+		.input__icon
+			position: absolute
+			right: 10px 
+			bottom: 6px 
+			top: auto
+			font-size: 20px 
+			color: #93C4D2 
+	&.input_smaller
+		width: 137px !important
+		display: inline-block
+		float: left
+		// margin: 0 0px 0 10px
+		& + .input_smaller
+			margin-right: 16px 
+	.input__icon
+		position: absolute
+		right: 29px 
+		top: 20px 
+		font-size: 20px 
+		color: #93C4D2
+		font-size: 25px 
+		&.icon-qr
+			border: 2px solid #93C4D2
+			line-height: 1 
+			height: 40px 
+			line-height: 50px 
+			display: inline-block
+			width: 60px 
+			text-align: center
+			top: 11px 
+			right: 10px 
+	input:focus + .input__icon
+		color: #179290 
+	.error
+		position: absolute
+		padding: 14px 
+		background: #F6E0E6 
+		+amed
+		font-size: 13px 
+		color: #ED1847 
+		border-radius: 3px
+		top: 70px
+		left: 0
+		z-index: 200   
+		width: 100% 
+		+box
+		&:before
+			width: 20px 
+			height: 20px 
+			background: #F6E0E6
+			// background: green 
+			content: ' '
+			+rotate(45)
+			left: 60px 
+			top: -9px 
+			position: absolute
+	&.input_small
+		.error
+			top: auto 
+			bottom: -50px 
+	&.input_important
+		input
+			border-color: #1EBEBB 
+			color: #1EBEBB 
+	&.input_error2
+		input
+			border-color: #EA294C 
+		.error2
+			color: #EA294C 
+			font-size: 11px 
+			display: block
+			padding-top: 4px 
+			white-space: nowrap
+		.input__icon
+			bottom: 24px 
+
+.errorstatus
+	position: absolute
+	right: -245px 
+	width: 230px 
+	bottom: 10px 
+	font-size: 15px 
+	+amed
+	color: #ED1847 
+	padding: 0
+	line-height: 1  
+	i
+		font-size: 25px 
+		margin-right: 15px 
+		vertical-align: middle
+		position: relative
+		top: 2px 
+	&.is-ok
+		color: #23C7C4 
+
+
+.donthave
+	text-align: center
+	padding: 10px 0
+	border-top: 1px solid #EBEFF7  
+	font-size: 13px 
+	// margin: 0 -15px -20px -15px
+	+areg
+	a
+		text-decoration: none
+		+asemi
+		color: #00BFBC 
+.rememberme
+	width: 340px 
+	margin: 0 auto
+	text-align: left
+	margin-bottom: 20px 
+	+clr
+	.field
+		padding-left: 0
+		float: left
+		width: 50% 
+		margin: 0 
+	.forgotpassword
+		float: right
+		+asemi
+		padding-top: 3px 
+		a
+			text-decoration: none
+			color: #00BFBC 
+			font-size: 13px 
+.field_check
+	.label
+		display: inline-block
+		font-size: 15px 
+		color: #353556 
+.checkbox
+	display: inline-block
+	vertical-align: middle
+	margin-right: 11px
+	input
+		display: none
+	i
+		display: inline-block
+		width: 20px 
+		height: 20px 
+		background: #00BFBC 
+		box-shadow: inset 0 0 0 2px #BCCDD5
+	input:checked+i
+		background: #BCCDD5

@@ -46,17 +46,159 @@
 // 	+png(blabla)
 // p
 // 	+jpg(bla)
++font(proxima,proximanova-regular-webfont)
++font(lite,proximanova-light-webfont)
++font(bold,proximanova-bold-webfont)
++font(semi,proximanova-semibold-webfont)
+=preg
+	font-family: proxima,sans-serif
+	font-weight: normal 
+=plite
+	font-family: lite,sans-serif
+	font-weight: normal 
+=pbold
+	font-family: bold,sans-serif
+	font-weight: normal 
+=psemi
+	font-family: semi,sans-serif
+	font-weight: normal 
 
 
++font(areg,AvenirNext-Regular)
++font(alite,AvenirNext-UltraLight)
++font(abold,AvenirNext-Bold)
++font(asemi,AvenirNext-DemiBold)
++font(aital,AvenirNext-Italic)
++font(amed,AvenirNext-Medium)
+=areg
+	font-family: areg,sans-serif
+	font-weight: normal 
+=alite
+	font-family: alite,sans-serif
+	font-weight: normal 
+=abold
+	font-family: abold,sans-serif
+	font-weight: normal 
+=asemi
+	font-family: asemi,sans-serif
+	font-weight: normal 
+=amed
+	font-family: amed,sans-serif
+	font-weight: normal 
+=aital
+	font-family: aital,sans-serif
+	font-weight: normal 
+=slite
+	font-family: 'Source Code Pro',sans-serif
+	font-weight: 300
+=sreg
+	font-family: 'Source Code Pro',sans-serif
+	font-weight: 400
+=ssemi
+	font-family: 'Source Code Pro',sans-serif
+	font-weight: 600
+=sbold
+	font-family: 'Source Code Pro',sans-serif
+	font-weight: 700
 body
-	font-family: Arial, sans-serif 
+	+preg
 	font-size: 12px 
 	line-height: 1.4
+	background: #F8F8F8 
+
 
 
 // common blocks      
+%in
+	width: 850px 
+	margin: 0 auto 
+.in
+	@extend %in
+.in_wide
+	width: 1200px 
+	
 
 
+.onoff
+	width: 50px 
+	height: 30px 
+	font-size: 13px 
+	+amed
+	color: #fff 
+	height: 30px
+	line-height: 30px
+	height: 28px 
+	line-height: 28px 
+	position: relative
+	display: inline-block
+	cursor: pointer
+	-webkit-user-select: none 
+	input
+		display: none
+	.onoff__bg  
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0    
+		// border: 1px solid #DD6A6D
+		border-radius: 4px 
+		background: #EBEFF6 
+		// box-shadow: inset 0px 0 0px 2px #DADEE5
+		background: #48C4C1 
+		border-radius: 28px
+		+transition(all .15s linear)
+		
+		border-color: #50AEA1 
+		border-color: transparent 
+		background: #F8F8F8 
+		background: rgba(53, 53, 88, 0.3) 
+	.onoff__value
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		width: 43px    
+		background: #DD6A6D 
+		border-top-right-radius: 2px
+		border-bottom-right-radius: 2px
+		+transition(all .1s linear)
+		// box-shadow:  -2px 0 0px  #DADEE5
+		-webkit-backface-visibility: hidden
+		width: 26px 
+		height: 26px 
+		background: #EBEFF6
+		border-radius: 26px
+		top: 1px  
+		right: 1px 
+		box-shadow: inset 0 0 2px #DADEE6
+	.onoff__on,.onoff__off
+		width: 43px 
+		position: absolute
+		text-align: center
+		top: 0  
+		left: 0 
+		+transition(all .1s linear)
+		display: none
+	.onoff__on
+		opacity: 0 
+	.onoff__off
+		right: 0 
+		left: auto 
+	input:checked +.onoff__bg
+		background: #48C4C1 
+		.onoff__on
+			opacity: 0
+		.onoff__off
+			opacity: 1
+		.onoff__value
+			// background: #50AEA1 
+			// right: 36px 
+			// border-radius: 0
+			// border-top-left-radius: 2px
+			// border-bottom-left-radius: 2px
+			// box-shadow:  2px 0 0px  #DADEE5
+			right: 23px 
 
 
 

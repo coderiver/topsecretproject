@@ -14,11 +14,6 @@ body, html
     height: 100%    
 img,fieldset, a img
     border: none
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea
-    -webkit-appearance: none
 input[type="submit"],
 button
     cursor: pointer
@@ -43,13 +38,3 @@ table
     border-spacing: 0
     border-collapse: collapse
     width: 100%
-
-// box-sizing model reset
-
-html
-    +box
-*
-    +box
-    &:before,
-    &:after
-        +box

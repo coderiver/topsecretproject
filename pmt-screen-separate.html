@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Payment screen</title>
+	<link rel="stylesheet" media="all" href="css/pscreen.css" >
+	<script src="js/lib/jquery.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('.scr__paywithtabs a').click(function(event) {
+			if($(this).hasClass('is-active')){}
+			else{
+				$('.scr__paywithtabs a').toggleClass('is-active');
+				$('.bb').toggle();
+			}
+			return false;
+		});
+	});
+	</script>
+</head>
+<body>
+<div class="scr-layout">
+
+			<!-- begin scr  -->
+			<div class="scr">
+				<div class="scr__content">
+					<div class="scr__pic">
+						<div class="scr__timeleft"><i class="icon-clock"></i>9:45</div>
+						<img src="img/buy.png" alt="">
+					</div>
+					<div class="scr__timer">
+						<b style="width: 80%;"></b>
+					</div>
+					<table class="scr__table">
+						<thead>
+							<tr>
+								<th>Vintage Vinyl Record</th>
+								<td>$ 16.00 <span>USD</span></td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>Amount due</th>
+								<td> 0.0016 <span>BTC</span></td>
+							</tr>
+						</tbody>
+					</table>
+					
+					<!-- begin message -->
+					<div class="scr__message">
+						<div class="scr__messagetitle">Order pending.</div>
+						<div class="scr__messagebox">
+							<div class="scr__messageicon"><i class="icon-warning"></i></div>
+							<div class="scr__messagetext">
+								You seem to have paid <strong>less</strong>  than the requested amount. The transaction was not confirmed. You are advised to contact <a href='#'>support@cubits.com</a> to resolve this issue.
+							</div>
+						</div>
+					</div>
+					<!-- end message -->
+					<!-- begin message -->
+					<div class="scr__message">
+						<div class="scr__messagetitle is-ok">Thank you for your order.</div>
+						<div class="scr__messagebox">
+							<div class="scr__messageicon"><i class="icon-warning"></i></div>
+							<div class="scr__messagetext">
+								You seem to have paid <strong>more</strong>  than the requested amount. The transaction was  confirmed, but are advised to contact <a href='#'>support@cubits.com</a> to resolve this issue.
+							</div>
+						</div>
+					</div>
+					<!-- end message -->
+					<!-- begin paywith  -->
+					<div class="scr__paywith">
+						<ul class="scr__paywithtabs">
+							<li><a href="#" class="is-active">Pay with Cubio Wallet</a></li>
+							<li><a href="#">Pay with Bitcoin Wallet</a></li>
+						</ul>
+						<div class="scr__paywithcontent bb" hidden>
+							<div class="scr__send">
+								<label for="">Send exactly <strong>.25 BTC</strong> to</label>
+								<input type="text" value="asd123asdads">
+							</div>
+							<div class="scr__qr">
+								<img src="img/qr.jpg" width="130" alt="">
+							</div>
+						</div>
+						<div class="scr__paywithcontent bb">
+							<div class="available">
+								<div class="available__label">
+									Logged in as <strong>Sean Yao</strong>
+									<a href="#" class="avaliable__notyou">Not you?</a>
+								</div>
+								<div class="available__amount">
+									<em>Avaliable Balance</em>
+									<strong>501231 <span>BTC</span></strong>
+								</div>
+							</div>
+						</div>
+						<div class="submit submit_subtle submit_small bb " hidden><i class="icon-buy"></i> Open bitcoin client</div>
+						<div class="submit submit_pay submit_small bb">Pay <strong>0.213 BTC</strong></div>
+					</div>
+					<!-- end paywith -->
+					<!-- begin paywith  -->
+					<div class="scr__paywith">
+						<ul class="scr__paywithtabs">
+							<li><a href="#" class="is-active">Pay with Cubio Wallet</a></li>
+							<li><a href="#">Pay with Bitcoin Wallet</a></li>
+						</ul>
+						<div class="scr__paywithcontent bb" hidden>
+							<div class="scr__send">
+								<label for="">Send exactly <strong>.25 BTC</strong> to</label>
+								<input type="text" value="asd123asdads">
+							</div>
+							<div class="scr__qr">
+								<img src="img/qr.jpg" width="130" alt="">
+							</div>
+						</div>
+						<div class="scr__paywithcontent bb scr__paywithcontent_login">
+							<div class="input input_small">
+								<div class="input__label">Login to pay</div>
+								<input type="text" name="" placeholder="ex. Max Power" id="">
+								<i class="input__icon icon-user"></i>
+								<!-- <div class="error">Please enter your full name</div> -->
+							</div>
+							<div class="input input_small">
+								<input type="password" name="" placeholder="ex. Max Power" id="">
+								<i class="input__icon icon-lock"></i>
+								<div class="errorstatus is-ok"><i class="icon-ok"></i></div>
+							</div>
+							<div class="rememberme">
+								<label class="field field_check">
+									<div class="checkbox">
+										<input type="checkbox" name="asd" id="asd"><i></i>
+									</div>
+									<div class="label">Remember me</div>
+								</label>
+								<div class="forgotpassword"><a href="#">Forgot your password?</a></div>
+							</div>
+						</div>
+						<div class="donthave">
+						  Don't have an account? <a href="#">Sign up</a>
+						</div>
+						<div class="submit submit_subtle submit_small bb " hidden><i class="icon-buy"></i> Open bitcoin client</div>
+						<div class="submit submit_pay submit_small bb">Pay <strong>0.213 BTC</strong></div>
+					</div>
+					<!-- end paywith -->
+					<div class="scr__copy">Powered by <strong>cubits.com</strong></div>
+				</div>
+			</div>
+			<!-- end scr -->
+</div>
+</body>
+</html>

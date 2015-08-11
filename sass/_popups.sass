@@ -1,0 +1,686 @@
+.overlay
+	position: absolute
+	top: 70px 
+	// background: #768395
+	// opacity: .9  
+	background: rgba(230,238,242,0.7) 
+	background: rgba(#000, .8) 
+	bottom: 0
+	right: 0
+	left: 0 
+	z-index: 1000   
+	display: none
+.has-popup
+	overflow: hidden
+=transform($val)
+	-moz-transform: $val
+	-ms-transform: $val
+	-webkit-transform: $val
+	transform: $val
+.popup
+	left: 50%
+	z-index: 1001 
+	position: absolute
+	background: #fff 
+	+transition(all 200ms ceaser($easeInOutQuad))
+	+transition(all 500ms ceaser($easeInOutBack) 200ms)
+	// +translate(0,-1000px)
+	+transform(scale(.02))
+	width: 850px 
+	margin-left: -(850px/2)
+	top: 96px  
+	z-index: -1
+	opacity: 0  
+	&.popup_nospace
+		background: #F9FCFD 
+		.popup__content
+			padding: 0 
+			padding-top: 20px 
+			
+	&.is-shown
+		// +translate(0,0)
+		+transform(scale(1))
+		display: block
+		z-index: 10000
+		opacity: 1 
+		 
+	&.popup_narrow
+		width: 500px
+		margin-left: -250px
+	&.popup_narrow1
+		width: 600px 
+		margin-left: -300px 
+		&#popup-activity,&.popup-verify
+			top: 200px 
+	&.popup_narrow2
+		width: 700px 
+		margin-left: -350px 
+	&.popup_invoice
+		width: 700px 
+		margin-left: -350px 
+		background: #F9FCFD 
+		.popup__content
+			width: 500px 
+			margin: 0 auto 
+			padding: 20px 0 
+	&.popup_center
+		top: 50%
+		margin-top: -100px  
+		 
+.popup__content
+	padding: 20px 50px 20px 50px 
+	+areg
+	font-size: 14px 
+	color: #353458 
+	padding: 0 
+.fancybox-wrap,.popup
+	h3
+		letter-spacing: 3px 
+		font-weight: normal
+		text-transform: uppercase
+		text-align: center
+		font-size: 15px 
+		+preg
+		margin-bottom: 27px 
+	.popup__title
+		+preg
+		font-size: 18px 
+		color: #353458
+		text-align: center
+		text-transform: uppercase
+		font-weight: normal
+		margin-bottom: 20px 
+		letter-spacing: 3px 
+		span
+			display: block
+			font-size: 13px 
+			text-align: center
+			+areg
+			color: #A1A2AF 
+			text-transform: none
+			letter-spacing: 0 
+		i
+			vertical-align: middle
+			margin-right: 15px 
+			position: relative
+			top: -2px 
+	.popup__subtitle
+		text-align: center
+	.popup__close
+		position: absolute
+		right: 20px 
+		top: 20px 
+		font-size: 19px 
+		color: #93C4D2 
+		cursor: pointer
+		+amed
+.qrcode
+	border: 2px solid #93C4D2 
+	height: 56px 
+	line-height: 56px 
+	text-align: center
+	margin: 14px 0
+	font-size: 17px  
+	+asemi
+	color: #353558 
+.qrpic
+	margin-bottom: 20px 
+
+
+.field
+	// padding-bottom: 23px 
+	margin-bottom: 23px 
+	position: relative
+	+clr
+	label
+		float: left
+		width: 120px - 16px
+		padding-left: 16px 
+		font-size: 17px 
+		+amed
+		color: #34495E 
+		padding-top: 13px 
+	.input
+		float: right
+		width: 410px 
+		margin-bottom: 0 
+	&.field_small
+		.input
+			width: 280px 
+		.smallselect
+			background: #FFFFFF 
+			width: 280px 
+		label
+			font-size: 14px 
+			width: auto
+			padding-top: 15px 
+	&.field_smaller
+		margin-bottom: 15px 
+		.field__content
+			float: right
+			width: 290px 
+		label
+			font-size: 14px 
+			padding-top: 15px
+		.input
+			width: 100%
+	&.field_check
+		margin: 20px 0
+		padding-left: 110px 
+		cursor: pointer
+		.checkbox
+			display: inline-block
+			vertical-align: middle
+			margin-right: 11px
+			input
+				display: none
+			i
+				display: inline-block
+				width: 20px 
+				height: 20px 
+				background: #00BFBC 
+				box-shadow: inset 0 0 0 2px #BCCDD5
+			input:checked+i
+				background: #BCCDD5 
+		.label
+			display: inline-block
+			+areg
+			font-size: 13px 
+			color: #353458 
+	.smallselect
+		float: right
+		width: 290px 
+		height: 46px
+		line-height: 46px
+		.smallselect__value
+			padding-left: 20px 
+			+amed
+			font-size: 17px 
+.addbank
+	.addbank__content
+		padding: 0px 41px 0 27px 
+		.field
+			padding-bottom: 15px 
+			margin-bottom: 0 
+			label
+				font-size: 14px 
+				+amed
+	.addbank__title
+		font-size: 19px 
+		color: #353458
+		+asemi 
+		margin-bottom: 27px 
+	&.addbank_withdraw
+		width: 400px 
+		margin: 0 auto 
+		.addbank__content
+			padding: 0 
+		.field 
+			label
+				padding-left: 0
+				width: 100px 
+			.input
+				width: 290px
+.withdraw__in,.somerandomblockthatlookslikealotofotherblocksbutnotquite__in
+	width: 400px 
+	margin: 0 auto
+	margin-bottom: 24px 
+	.selectbank
+		// margin-top: 20px 
+	.withdraw__title
+		margin-bottom: 10px 
+		margin-top: 20px 
+		strong
+			font-weight: normal
+			+asemi
+.invoice
+	.invoice__text
+		margin: 20px 0
+		font-size: 15px 
+		text-align: center
+		color: #353458 
+		+areg
+		strong
+			font-weight: normal
+			+abold
+			color: #1EBEBB 
+		em
+			font-style: normal 
+			+asemi
+			color: #353458 
+	.invoice__note
+		font-size: 15px 
+		+areg
+		color: #353458 
+		margin-top: 15px 
+
+		h3
+			font-size: 15px 
+			text-align: left
+			letter-spacing: 0
+			text-transform: none 
+			+asemi
+			color: #ED1847
+			margin-bottom: 8px  
+	.invoice__data
+		th,td
+			border-bottom: 1px solid #F9FCFD 
+			padding: 15px 10px 15px 20px 
+		th
+			text-align: left
+			font-weight: normal
+			background: #fff 
+			font-size: 16px 
+			+areg
+			color: #353458 
+		td
+			+asemi
+			font-size: 16px 
+			color: #353458 
+			background: #E6EEF2 
+			em
+				font-style: normal 
+				color: #EA294C 
+.verify
+	min-height: 220px 
+	text-align: center
+	font-size: 15px 
+	+areg
+	color: #353458
+	p
+		margin-bottom: 2em
+		strong
+			font-weight: normal
+			+asemi
+
+	p.verify__pic
+		margin: 35px 0 
+	.verify__ok
+		font-size: 125px 
+		line-height: 1 
+		color: #00C7C4 
+	.verify__field
+		width: 415px 
+		margin: 0 auto 12px auto
+		+clr
+		label
+			width: 110px 
+			text-align: left
+			float: left
+			+asemi
+			font-size: 14px 
+			color: #353458 
+			padding-top: 15px 
+		.verify__input
+			float: right
+			width: 290px 
+			position: relative
+			.smallselect
+				width: 100%
+			.verify__phone
+				height: 50px 
+				+box
+				padding: 0px 10px 0 10px
+				line-height: 1 
+				width: 239px  
+				border: 2px solid #95C4D1 
+				border-radius: 3px
+				float: right
+				font-size: 17px  
+				border-top-left-radius: 0
+				border-bottom-left-radius: 0
+				+asemi
+				+placeholder
+					color: #D3D3D9 
+			.verify__phonecode
+				position: absolute
+				left: 0
+				top: 0
+				bottom: 0
+				height: 50px    
+				line-height: 50px
+				+asemi
+				font-size: 17px  
+				color: #F9FCFD 
+				width: 52px 
+				background: #95C4D1
+				border-radius: 3px 
+				border-top-right-radius: 0
+				border-bottom-right-radius: 0
+
+
+.popup__inside
+	.errormess
+		text-align: center
+		font-size: 13px 
+		+asemi
+		margin-bottom: 14px 
+		color: #EA294C 
+	.input.is-error
+		input
+			border-color: #EA294C 
+	.popup__in
+		width: 340px 
+		margin: 0 auto
+		padding: 50px 0 
+		p
+			margin-bottom: 1em
+			font-size: 15px  
+			+areg
+			color: #353458 
+	.rememberme
+		width: 340px 
+		margin: 0 auto
+		text-align: left
+		margin-bottom: 20px 
+		+clr
+		.field
+			padding-left: 0
+			float: left
+			width: 50% 
+			margin: 0 
+		.forgotpassword
+			float: right
+			+asemi
+			padding-top: 3px 
+			a
+				text-decoration: none
+				color: #00BFBC 
+				font-size: 13px 
+	.donthave
+		background: #fff 
+		text-align: center
+		padding: 20px 0
+		border-top: 1px solid #EBEFF7  
+		font-size: 13px 
+		+areg
+		a
+			text-decoration: none
+			+asemi
+			color: #00BFBC 
+.popup__bottom
+	background: #fff 
+	border-top: 1px solid #E6EDF2 
+	padding: 15px 20px 
+	+areg
+	font-size: 13px 
+	text-align: center
+	a
+		color: #1EBEBB
+		text-decoration: none
+		+asemi 
+	span
+		display: block
+		font-size: 15px 
+		margin-bottom: 5px 
+		strong
+			font-weight: normal
+			+asemi
+			color: #00BFBC 
+.twofactor
+	text-align: center
+	width: 450px 
+	margin: 0 auto 
+	.popup__qr
+		margin: 20px 0 
+	p
+		text-align: left
+.fileupload
+	margin: 25px auto
+	label
+		font-size: 15px 
+		+asemi
+		color: #353458
+		display: block
+		margin-bottom: 7px  
+	.fileupload__button
+		display: block
+		text-decoration: none
+		background: #95C4D1
+		color: #fff  
+		box-shadow: inset 0 0 0 2px #9CCEDB
+		border-radius: 2px
+		height: 50px 
+		text-align: center
+		font-size: 17px 
+		+asemi
+		cursor: pointer
+		line-height: 50px 
+	.input
+		width: auto
+		input
+			background: #F2F5F9 
+.congr
+	text-align: center
+	p
+		+areg
+		font-size: 15px 
+		color: #353458
+		margin-bottom: 2em  
+	i
+		font-size: 100px 
+		text-align: center
+		color: #00C7C4 
+.bp
+	width: 420px 
+	margin: 0 auto
+	padding-bottom: 15px 
+	.required
+		text-align: center
+		margin-bottom: 20px 
+		color: #353458
+		font-size: 15px  
+		+asemi
+	.input_short
+		display: inline-block
+		width: 142px !important 
+		margin-left: 6px  
+		margin-top: 10px 
+		&:last-child
+			margin-left: 0 
+.po
+	padding: 25px 
+	.po__descr
+		text-align: center
+		font-size: 17px 
+		margin-bottom: 25px 
+	.po__table
+		width: 100%
+
+		thead
+			td,th
+				font-size: 17px  !important
+				+areg
+				color: #353458
+				font-weight: normal 
+				text-align: left
+			th
+				color: #fff 
+				font-size: 21px 
+				+pbold
+
+		td
+			border-right: 2px solid #FFF 
+		td,th
+			text-align: left
+			font-weight: normal
+			border-bottom: 2px solid #fff
+			background: #E6EEF2 
+			padding: 15px 
+			vertical-align: middle
+		th
+			background: #1EBEBB 
+			font-size: 21px 
+			+pbold
+			color: #fff
+			text-align: center 
+		.po__provider
+			font-size: 25px 
+			text-align: center 
+			line-height: 1  
+			i
+				font-size: 70px 
+			
+			strong
+				+asemi
+				font-size: 17px 
+			.cashaccountprovider
+				font-size: 13px 
+				white-space: nowrap
+				vertical-align: middle
+				i
+					+svg(logodark, 18, 18)
+					-webkit-background-size: contain 
+					-o-background-size: contain 
+					background-size: contain 
+					margin-right: 6px 
+					vertical-align: middle
+				
+		.po__description
+			font-size: 13px 
+			color: #353458 
+			line-height: 1.4
+			strong
+				font-weight: normal
+				+asemi
+				overflow: hidden
+				display: block
+			span
+				float: left
+				white-space: nowrap
+				margin-right: 5px 
+		.po__fee
+			font-size: 16px 
+			color: #353458 
+			+psemi
+			text-align: center
+			&.is-red
+				color: #ED1847 
+		.po__duration
+			font-size: 16px 
+			color: #353458 
+			+psemi
+			text-align: center 
+.helpmeplease
+	.helpmeplease__button1,.helpmeplease__button2
+		float: left
+		margin-bottom: 40px 
+		width: 40%
+		margin-left: 7% 
+		margin-top: 20px 
+	.helpmeplease__bottom
+		border-top: 1px solid #E6EDF2 		
+		text-align: center
+		padding: 40px 0
+		clear: both
+		strong
+			font-weight: normal
+			+asemi
+		span
+			color: #1EBEBB 
+		a
+			color: #1EBEBB 
+			text-decoration: none
+
+.scrolltext
+	white-space: pre-wrap
+	white-space: -moz-pre-wrap
+	white-space: -pre-wrap
+	white-space: -o-pre-wrap
+	word-wrap: break-word
+	overflow: auto
+	background: #F2F6F8
+	height: 236px 
+	// padding: 15px 
+	width: 500px
+	margin: 0 auto 20px auto
+	font-size: 13px   
+	line-height: 1.2
+	border: 1px solid #95C4D1 
+	border-radius: 3px
+	+amed
+	color: #353458  
+	box-shadow: inset 3px 3px 0 #EAEAEA
+	.scrolltext__content
+		padding: 15px 
+.phoneverify
+	padding-bottom: 2em 
+	p
+		text-align: center
+		margin: 0 4em 2em 4em 
+		strong
+			font-weight: normal
+			+asemi
+.twobuttons
+	+clr
+	.submit
+		float: right
+		width: 50%
+	.cancel
+		float: left
+		width: 50% 
+		@extend .submit 
+		background: #fff !important
+		color: #95C4D1 !important
+		box-shadow: inset 0 0 0 3px #95C4D1 !important
+		border-color: #95C4D1 !important
+		&:hover
+			background: #fff
+		
+.icon_big
+	font-size: 130px 
+	text-align: center
+	color: #179290 
+	line-height: 100px 
+	.icon-ok
+		color: #27E5E1 
+.message
+	margin-bottom: 30px 
+	p
+		margin-bottom: 20px 
+	strong
+		font-weight: normal
+		+asemi
+	&.message_sep
+		background: #FFFFFF 
+		margin: 25px 0
+		.message__title
+			+preg
+			font-size: 18px 
+			color: #353458
+			text-align: center
+			text-transform: uppercase
+			font-weight: normal
+			padding-top: 25px 
+			letter-spacing: 3px 
+			margin: 0px 0 25px 0
+		.icon_big
+			margin-bottom: 30px 
+.center
+	text-align: center
+.iconmessage
+	text-align: center
+	margin: 50px 0 
+	font-size: 16px 
+	strong
+		font-weight: normal
+		+asemi
+	i
+		font-size: 30px 
+		vertical-align: middle
+		position: relative
+		top: 4px 
+		margin-right: 10px 
+.jumio
+	margin: 0 auto 
+	+svg(jumio,130,40)
+	margin-bottom: 14px 
+.smallicon
+	text-align: center
+	font-size: 14px 
+	color: #00BFBC 
+	i
+		font-size: 25px 
+		margin-right: 8px 
+		vertical-align: middle
+	

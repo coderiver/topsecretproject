@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="180px"
+	 height="180px" viewBox="0 0 180 180" enable-background="new 0 0 180 180" xml:space="preserve">
+<g id="Layer_1">
+	<polyline opacity="0.4" fill="#93C4D2" points="4.769,90 47.389,163.812 132.617,163.812 100.657,108.453 79.349,108.453 
+		68.693,90 	"/>
+	<polyline opacity="0.4" fill="#93C4D2" points="68.693,90 4.769,90 47.389,16.188 132.617,16.188 100.657,71.547 79.349,71.547 
+		68.693,90 	"/>
+</g>
+<g id="Layer_2">
+	<polyline fill="none" stroke="#93C4D2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="132.618,163.812 
+		100.657,108.453 79.35,108.453 68.693,90 	"/>
+	<polyline fill="none" stroke="#93C4D2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="132.618,16.188 
+		100.657,71.547 79.35,71.547 68.693,90 	"/>
+	
+		<line fill="none" stroke="#93C4D2" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" x1="68.693" y1="90" x2="4.769" y2="90"/>
+	<polyline fill="none" stroke="#93C4D2" stroke-width="7" stroke-linejoin="round" points="90.002,90 47.389,163.812 90.002,90 	"/>
+	<line fill="none" stroke="#93C4D2" stroke-width="7" stroke-linejoin="round" x1="90.002" y1="90" x2="47.389" y2="16.188"/>
+	<line fill="none" stroke="#93C4D2" stroke-width="7" stroke-linejoin="round" x1="90.002" y1="90" x2="175.231" y2="90"/>
+	<polyline fill="none" stroke="#93C4D2" stroke-width="9" stroke-linejoin="round" points="132.618,16.188 47.389,16.188 4.769,90 
+		47.389,163.812 132.618,163.812 175.231,90 132.618,16.188 175.231,90 	"/>
+</g>
+</svg>

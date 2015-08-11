@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="123px" height="137px" viewBox="0 0 123 137" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="cube" sketch:type="MSLayerGroup" transform="translate(5.000000, 3.000000)">
+            <path d="M112.34,90.08 L112.34,97.77 L105.68,101.62 L87.52,112.1 L87.52,83.44 L112.34,69.11 L112.34,90.08 L112.34,90.08 Z" id="bezier" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M112.34,53.72 L112.34,61.41 L105.68,65.26 L87.52,75.75 L87.52,47.08 L112.34,32.75 L112.34,53.72 L112.34,53.72 Z" id="bezier2" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M112.34,32.75 L87.52,47.08 L62.69,32.75 L80.86,22.27 L87.52,18.42 L94.18,22.27 L112.34,32.75 L112.34,32.75 Z" id="bezier3" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M80.86,108.25 L80.86,115.95 L74.2,119.79 L56.03,130.28 L56.03,101.62 L80.86,87.28 L80.86,108.25 L80.86,108.25 Z" id="bezier4" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M80.86,71.9 L80.86,79.59 L74.2,83.44 L56.03,93.92 L56.03,65.26 L80.86,50.93 L80.86,71.9 L80.86,71.9 Z" id="bezier5" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M80.86,14.57 L56.03,28.9 L31.21,14.57 L49.37,4.09 L56.03,0.24 L62.69,4.09 L80.86,14.57 L80.86,14.57 Z" id="bezier6" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M80.86,50.93 L56.03,65.26 L31.21,50.93 L49.37,40.44 L56.03,36.6 L62.69,40.44 L80.86,50.93 L80.86,50.93 Z" id="bezier7" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M56.03,101.62 L56.03,130.28 L37.87,119.79 L37.86,119.79 L31.21,115.95 L31.21,108.25 L31.21,87.28 L56.03,101.62 L56.03,101.62 Z" id="bezier8" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M56.03,65.26 L56.03,93.92 L37.87,83.44 L31.21,79.59 L31.21,71.9 L31.21,50.93 L56.03,65.26 L56.03,65.26 Z" id="bezier9" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M49.37,32.75 L24.55,47.08 L-0.28,32.75 L17.89,22.27 L24.55,18.42 L31.21,22.27 L49.37,32.75 L49.37,32.75 Z" id="bezier10" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M24.55,83.44 L24.55,112.1 L6.38,101.62 L-0.28,97.77 L-0.28,90.08 L-0.28,69.11 L24.55,83.44 L24.55,83.44 Z" id="bezier11" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M24.55,47.08 L24.55,75.75 L6.38,65.26 L-0.28,61.41 L-0.28,53.72 L-0.28,32.75 L24.55,47.08 L24.55,47.08 Z" id="bezier12" fill="#F5C64C" sketch:type="MSShapeGroup"></path>
+            <path d="M112.34,69.11 L87.52,83.44 L80.86,79.59 L80.86,71.9 L87.52,75.75 L105.68,65.26 L112.34,69.11 L112.34,69.11 Z" id="bezier13" sketch:type="MSShapeGroup"></path>
+            <path d="M87.52,83.44 L87.52,112.1 L80.86,108.25 L80.86,87.28 L74.2,83.44 L80.86,79.59 L87.52,83.44 L87.52,83.44 Z" id="bezier14" sketch:type="MSShapeGroup"></path>
+            <path d="M87.52,47.08 L87.52,75.75 L80.86,71.9 L80.86,50.93 L62.69,40.44 L62.69,32.75 L87.52,47.08 L87.52,47.08 Z" id="bezier15" sketch:type="MSShapeGroup"></path>
+            <path d="M80.86,14.57 L80.86,22.27 L62.69,32.75 L62.69,40.44 L56.03,36.6 L56.03,28.9 L80.86,14.57 L80.86,14.57 Z" id="bezier16" sketch:type="MSShapeGroup"></path>
+            <path d="M80.86,87.28 L56.03,101.62 L31.21,87.28 L37.87,83.44 L56.03,93.92 L74.2,83.44 L80.86,87.28 L80.86,87.28 Z" id="bezier17" sketch:type="MSShapeGroup"></path>
+            <path d="M56.03,28.9 L56.03,36.6 L49.37,40.44 L49.37,32.75 L31.21,22.27 L31.21,14.57 L56.03,28.9 L56.03,28.9 Z" id="bezier18" sketch:type="MSShapeGroup"></path>
+            <path d="M49.37,40.44 L31.21,50.93 L31.21,71.9 L24.55,75.75 L24.55,47.08 L49.37,32.75 L49.37,40.44 L49.37,40.44 Z" id="bezier19" sketch:type="MSShapeGroup"></path>
+            <path d="M31.21,79.59 L37.87,83.44 L31.21,87.28 L31.21,108.25 L24.55,112.1 L24.55,83.44 L31.21,79.59 L31.21,79.59 Z" id="bezier20" sketch:type="MSShapeGroup"></path>
+            <path d="M31.21,71.9 L31.21,79.59 L24.55,83.44 L-0.28,69.11 L6.38,65.26 L24.55,75.75 L31.21,71.9 L31.21,71.9 Z" id="bezier21" sketch:type="MSShapeGroup"></path>
+            <path d="M56.03,101.62 L80.85,87.28" id="bezier22" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M31.2,87.28 L56.03,101.62" id="bezier23" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M56.03,130.28 L56.03,101.62" id="bezier24" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M87.51,83.44 L112.34,69.1" id="bezier25" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M80.85,79.59 L87.51,83.44" id="bezier26" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M87.51,112.1 L87.51,83.44" id="bezier27" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M31.2,50.93 L56.03,65.26" id="bezier28" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M56.03,36.59 L56.03,28.9" id="bezier29" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M87.51,47.08 L112.34,32.75" id="bezier30" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M62.69,32.75 L87.51,47.08" id="bezier31" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M87.51,75.75 L87.51,47.08" id="bezier32" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M56.03,65.26 L80.85,50.93" id="bezier33" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M56.03,28.9 L80.85,14.57" id="bezier34" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M31.2,14.57 L56.03,28.9" id="bezier35" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M56.03,93.92 L56.03,65.26" id="bezier36" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M24.54,47.08 L49.37,32.75" id="bezier37" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M-0.28,32.75 L24.54,47.08" id="bezier38" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M24.54,75.75 L24.54,47.08" id="bezier39" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M24.54,83.44 L31.2,79.59" id="bezier40" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M-0.28,69.1 L24.54,83.44" id="bezier41" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M24.54,112.1 L24.54,83.44" id="bezier42" stroke="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <path d="M80.85,22.26 L80.85,14.57 L56.03,0.24 L31.2,14.57 L31.2,22.26" id="bezier43" stroke="#282746" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M80.85,108.26 L87.51,112.1 L112.34,97.77 L112.34,69.1 L105.68,65.26" id="bezier44" stroke="#282746" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M37.87,83.44 L31.2,87.28 L31.2,115.95 L56.03,130.28 L80.85,115.95 L80.85,87.28 L74.19,83.44" id="bezier45" stroke="#282746" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M80.85,71.9 L87.51,75.75 L112.34,61.41 L112.34,32.75 L87.51,18.42 L62.69,32.75 L62.69,40.44" id="bezier46" stroke="#282746" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M49.37,40.44 L49.37,32.75 L24.54,18.42 L-0.28,32.75 L-0.28,61.41 L24.54,75.75 L31.2,71.9" id="bezier47" stroke="#282746" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M31.2,79.59 L56.03,93.92 L80.85,79.59 L80.85,50.93 L56.03,36.59 L31.2,50.93 L31.2,79.59 L31.2,79.59 Z" id="bezier48" stroke="#282746" stroke-width="2" sketch:type="MSShapeGroup"></path>
+            <path d="M6.38,65.26 L-0.28,69.1 L-0.28,97.77 L24.54,112.1 L31.2,108.26" id="bezier49" stroke="#282746" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

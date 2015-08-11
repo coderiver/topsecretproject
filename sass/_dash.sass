@@ -1,0 +1,82 @@
+.dashes
+	margin: 25px 0
+	+clr
+	font-size: 0 
+	.dash
+		background: #fff
+		display: inline-block 
+		width: 269px 
+		margin-left: 20px 
+		font-size: 17px 
+		+areg
+		color: #353458 
+		&:first-child
+			margin-left: 0 
+		.dash__top
+			font-weight: normal
+			text-align: center
+			border-bottom: 1px solid #EBEFF6   
+			height: 37px 
+			line-height: 37px 
+		.dash__bottom
+			height: 39px 
+			line-height: 39px
+			font-size: 21px  
+			color: #fff
+			+asemi
+			text-align: center
+			border-bottom-left-radius: 3px 
+			border-bottom-right-radius: 3px 
+			background: #00BFBC 
+			&.is-minus
+				background: #93C4D2 
+		.dash__value
+			height: 75px 
+			line-height: 75px
+			font-size: 32px  
+			+asemi
+			text-align: center
+			span
+				+preg
+				font-size: 13px 
+				color: #00BFBC
+				line-height: 1
+				position: relative
+				top: -1.1em 
+.pleaseverify
+	margin: 25px 0
+	background: #FEFCF7  
+	border: 2px solid #F7CE67 
+	padding: 12px 30px 
+	+clr
+	.pleaseverify__text
+		font-size: 17px 
+		+amed
+		color: #353458 
+		padding: 14px 0 0 0
+		float: left
+		width: 70%  
+	.pleaseverify__button
+		display: inline-block
+		cursor: pointer
+		@extend %submit
+		font-size: 15px 
+		+psemi
+		letter-spacing: 2px 
+		padding: 0 15px 
+		height: 50px 
+		line-height: 50px
+		letter-spacing: 3px 
+		float: right
+.payoutsform
+	margin: 0 auto
+	width: 480px 
+	
+.payoutsform__wrapper
+	background: #F9FCFD
+	box-shadow: 3px 3px 0 #E6E6E6  
+	margin: 25px 0 
+	padding: 25px 0 1px 0 
+	.payoutsform
+		position: relative
+		right: 20px 

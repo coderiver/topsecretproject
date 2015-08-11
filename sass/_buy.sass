@@ -1,0 +1,968 @@
+.tabs
+	+clr
+	margin: 31px 0 25px 
+	list-style: none
+	font-size: 0 
+	text-align: center
+	li
+		display: inline-block
+	a
+		display: inline-block
+		width: 324px 
+		font-size: 17px 
+		+preg
+		color: #B3B3BC 
+		text-transform: uppercase
+		text-decoration: none 
+		border-bottom: 2px solid #CDCDD4 
+		text-align: center
+		letter-spacing: 3px 
+		padding-bottom: 10px 
+		padding-top: 2px 
+		&.is-active
+			color: #353458
+			+psemi
+			border-bottom-color: #353458 
+			border-bottom-color: #1EBEBB 
+		&:hover
+			color: #353458
+			border-bottom-color: #353458 
+	&.tabs_small
+		margin: 18px 0 24px 0 
+		a
+			text-transform: none
+			width: 200px
+			letter-spacing: 0 
+.tabs__wrap
+	position: relative
+	.tabs__add i
+		position: absolute
+		right: 20%
+		color: #94C4D1
+		font-size: 30px   
+		cursor: pointer
+		top: 0 
+		color: #94C4D1
+		text-decoration: none
+		font-size: 20px  
+		background: #1FBFBB
+		width: 28px  
+		height: 28px  
+		line-height: 28px 
+		text-align: center
+		border-radius: 28px
+		box-shadow: 0 1px 1px rgba(53, 53, 88, 0.3)
+		color: #fff 
+		text-decoration: none
+		font-style: normal
+		+asemi
+	.tabs__help i
+		position: absolute
+		right: 20%
+		color: #94C4D1
+		font-size: 24px 
+		text-decoration: none
+		top: 0
+		cursor: pointer 
+		z-index: 5 
+			
+.hr
+	border-top: 1px solid #E6EEF2 
+	margin: 10px 0
+.exchange
+	margin-bottom: 24px 
+	+clr
+	&.exchange_spaced
+		margin-bottom: 50px 
+	.exchange__col
+		float: left
+		width: 420px 
+		&+.exchange__col
+			float: right
+	label
+		font-size: 19px 
+		display: block
+		position: relative
+		margin-bottom: 12px 
+		line-height: 19px 
+		+amed
+		color: #79798C 
+		span
+			+areg
+			font-size: 17px 
+			color: #C5C5C5 
+			position: absolute
+			right: 0 
+	.input .error
+		padding: 10px 
+		font-size: 10px 
+
+.input
+	display: block
+	position: relative
+	input
+		display: block
+		padding: 0 23px
+		// padding-left: 60px 
+		border: 2px solid #95C4D1 
+		border-radius: 2px
+		box-shadow: inset 3px 3px 0 #EAEAEA
+		background: #fff
+		+box
+		height: 66px  
+		line-height: 66px 
+		width: 100% 
+		+amed
+		font-size: 31px 
+		color: #CBCBCB 
+		color: #353556 
+		line-height: normal 
+		&:focus
+			border-color: #1EBEBB 
+			color: #353556 
+		&:focus + .input__currency
+			background-color: #1EBEBB 
+			color: #fff 
+	input[disabled]
+		color: #CBCBCB  !important
+	&.input_icon
+		input
+			padding-right: 70px 
+	&.is-tilda, &.with-tilda
+		input
+			padding-left: 60px 
+	.input__tilda
+		position: absolute
+		left: 26px 
+		top: 0
+		height: 66px  
+		line-height: 66px
+		font-size: 31px  
+		color: #677689 
+		+amed
+		display: none
+	&.with-tilda,&.is-tilda
+		.input__tilda
+			display: block
+	.input__currency
+		width: 60px 
+		height: 46px
+		line-height: 46px
+		text-align: center
+		position: absolute
+		right: 14px   
+		top: 10px 
+		border-radius: 2px
+		background: #95C4D1 
+		font-size: 17px 
+		+asemi
+		color: #fff 
+		&.input__currency_subtle
+			background: transparent
+			color: #1EBEBB  
+		&.input__currency_drop
+			width: 75px 
+			background: #1EBEBB
+			cursor: pointer
+			.input__currencydrop
+				display: none
+			.input__currencyvalue
+				position: relative
+				z-index: 3
+				display: inline-block
+			i
+				display: inline-block
+				color: #fff 
+				vertical-align: middle
+				font-size: 12px 
+			&.is-opendrop
+				z-index: 10 
+				.input__currencyvalue
+					z-index: 12 
+					color: #1EBEBB
+				i
+					color: #353556 
+					position: relative
+					z-index: 20 
+				.input__currencydrop
+					display: block
+					position: absolute
+					left: 0
+					top: 0
+					right: 0
+					background: #fff 
+					padding-top: 46px    
+					z-index: 11
+					border: 2px solid #1EBEBB 
+					ul
+						list-style: none
+					li
+						border-top: 1px solid #E6EEF2 
+						height: 27px 
+						line-height: 27px
+						cursor: pointer
+						background: #fff 
+						text-align: center  
+						color: #575770 
+						text-transform: uppercase
+						font-size: 12px 
+						+amed
+						&:hover
+							background: #F9F9F9 
+							color: #1EBEBB 
+						&:first-child
+							border-top: none 
+	.input__type
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		text-align: center
+		line-height: 47px
+		width: 50px
+		text-align: center
+		background: #95C4D1  
+		color: #fff  
+		font-size: 25px 
+	&.input_small
+		width: 340px 
+		margin: 0 auto 15px auto
+		&.input_phone
+			input
+				padding-left: 70px 
+			.input__phonecode
+				position: absolute
+				left: 0
+				top: 0
+				bottom: 0
+				background: #95C4D1
+				border-top-left-radius: 4px    
+				border-bottom-left-radius: 4px    
+				color: #fff
+				line-height: 46px  
+				width: 52px 
+				text-align: center
+				+asemi
+				font-size: 17px 
+				&:before
+					position: absolute
+					content: ' '
+					top: 2px 
+					bottom: 2px 
+					width: 3px
+					right: -3px  
+					background: #EAEAEA 
+		.input__label
+			display: block
+			font-size: 15px
+			+amed 
+			color: #34495E 
+			margin-bottom: 10px 
+			span
+				display: block
+				font-size: 14px 
+				+aital
+				color: #A4A4B0 
+		input
+			font-size: 17px 
+			height: 46px 
+			line-height: 46px  
+			line-height: 1
+			
+			padding: 0 37px 0 17px 
+			padding-top: 0px  
+			line-height: auto
+			line-height: normal 
+			+placeholder
+				// line-height: 17px 
+				// padding-top: 3px 
+		.input__icon
+			position: absolute
+			right: 10px 
+			bottom: 6px 
+			top: auto
+			font-size: 20px 
+			color: #93C4D2 
+	&.input_smaller
+		width: 137px !important
+		display: inline-block
+		float: left
+		// margin: 0 0px 0 10px
+		& + .input_smaller
+			margin-right: 16px 
+	.input__icon
+		position: absolute
+		right: 29px 
+		top: 20px 
+		font-size: 20px 
+		color: #93C4D2
+		font-size: 25px 
+		&.icon-qr
+			border: 2px solid #93C4D2
+			line-height: 1 
+			height: 40px 
+			line-height: 50px 
+			display: inline-block
+			width: 60px 
+			text-align: center
+			top: 11px 
+			right: 10px 
+	input:focus + .input__icon
+		color: #179290 
+	.error
+		position: absolute
+		padding: 14px 
+		background: #F6E0E6 
+		+amed
+		font-size: 13px 
+		color: #ED1847 
+		border-radius: 3px
+		top: 70px
+		left: 0
+		z-index: 200   
+		width: 100% 
+		+box
+		&:before
+			width: 20px 
+			height: 20px 
+			background: #F6E0E6
+			// background: green 
+			content: ' '
+			+rotate(45)
+			left: 60px 
+			top: -9px 
+			position: absolute
+	&.input_small
+		.error
+			top: auto 
+			bottom: -50px 
+	&.input_important
+		input
+			border-color: #1EBEBB 
+			color: #1EBEBB 
+	&.input_error2
+		input
+			border-color: #EA294C 
+		.error2
+			color: #EA294C 
+			font-size: 11px 
+			display: block
+			padding-top: 4px 
+			white-space: nowrap
+		.input__icon
+			bottom: 24px 
+
+.errorstatus
+	position: absolute
+	right: -245px 
+	width: 230px 
+	bottom: 10px 
+	font-size: 15px 
+	+amed
+	color: #ED1847 
+	padding: 0
+	line-height: 1  
+	i
+		font-size: 25px 
+		margin-right: 15px 
+		vertical-align: middle
+		position: relative
+		top: 2px 
+	&.is-ok
+		color: #23C7C4 
+.paywith
+	margin: 26px 0 
+	color: #79798C 
+	+clr
+	h3
+		font-size: 19px 
+		color: #79798C 
+		position: relative
+		margin-bottom: 10px 
+		font-weight: normal
+		+amed
+		a
+			// position: absolute
+			// right: 0
+			color: #94C4D1  
+			text-decoration: none
+			font-size: 22px 
+			display: inline-block
+			margin-left: 10px 
+			vertical-align: middle
+			position: relative
+			top: 2px 
+			&:hover
+				color: #1EBEBB 
+	.paywith__services
+		list-style: none
+		li
+			float: left
+			width: 205px 
+			margin-right: 10px 
+			&:last-child
+				margin: 0 
+
+		a
+			display: block
+			text-align: center
+			text-decoration: none
+			color: #353556
+			font-size: 70px  
+			height: 66px 
+			line-height: 66px
+			background: #FFFFFF 
+			border-radius: 2px
+			box-shadow: inset 0 0 0 2px #95C4D1,0 0 2px rgba(53, 53, 88, 0.3)
+			position: relative
+			line-height: normal 
+			i
+				// position: absolute
+				// left: 0
+				// width: 100%
+				// text-align: center
+				// top: 0
+				// line-height: 50px    
+				// font-size: 100px 
+				// background: red 
+				// line-height: normal 
+			.icon-skrill,.icon-sofort,.icon-okpay-text,.icon-okpay,.icon-obt-logo-dark
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				text-align: center    
+				line-height: normal 
+				transform: scale(1.3)
+			.icon-obt-logo-dark
+				top: 2px 
+			.icon-sofort 
+				top: 3px 
+			.icon-okpay-text,.icon-okpay
+				top: 2px 
+				// background: red 
+			// .icon-skrill
+			// 	// position: relative
+			// 	// top: -19px 
+			// 	font-size: 100px 
+			// .icon-sofort
+			// 	font-size: 130px 
+			// 	// vertical-align: top
+			// 	// line-height: 20px
+			// 	// position: relative
+			// 	// top: -32px  
+			// .icon-okpay-text,.icon-okpay
+			// 	font-size: 120px  
+			// 	// position: relative
+			// 	// top: -28px 
+			
+			&.is-active,&:hover
+				box-shadow: inset 0 0 0 4px #1EBEBB
+				background: #F2FCFB 
+			&.is-disabled,&.is-disabled:hover
+				box-shadow: inset 0 0 0 2px #F6F6F6
+				background: #FFF 
+				i
+					opacity: .4 
+			&.cashaccountoption
+				font-weight: normal
+				text-align: center
+				font-size: 12px 
+				text-transform: uppercase
+				letter-spacing: 3px 
+				// margin-bottom: 11px 
+				+areg
+				i
+					+svg(cubits,26,26)
+					-webkit-background-size: contain
+					-o-background-size: contain
+					background-size: contain
+					display: inline-block
+					vertical-align: middle
+					margin-right: 10px
+				&.is-disabled
+					box-shadow: inset 0 0 0 2px #E6EEF2
+					+gray
+					opacity: .5
+				&.is-active
+					line-height: 1 
+					padding-top: 14px 
+					height: 66px - 14px 
+					+asemi
+					// +box
+					span
+						display: block
+ 
+						letter-spacing: 0 
+						color: #353458
+						b
+							font-weight: normal
+							color: #1EBEBB 
+				&.is-filled
+					line-height: 1 
+					padding-top: 14px 
+					height: 66px - 14px 
+					// +box
+					span
+						display: block
+						line-height: 1 
+						letter-spacing: 0 
+						color: #353458
+						b
+							font-weight: normal
+							color: #1EBEBB 
+	&.paywith_dos
+		.paywith__services
+			li
+				width: 420px 
+			li+li
+				float: right
+				width: 420px 
+			.paywith__text
+				font-size: 16px 
+				text-transform: uppercase
+				line-height: 66px 
+				color: #353458 
+				+preg
+				letter-spacing: 3px 
+.cashout
+	@extend .paywith
+	.cashaccount
+		width: 420px 
+	.selectbank
+		width: 420px 
+		float: left
+		float: right
+		
+	.selectbank,.cash
+		position: relative
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			content: ' '
+			z-index: -1     
+			box-shadow: 0 0 2px rgba(53, 53, 88, 0.3)
+.selectbank
+	height: 66px
+	line-height: 66px
+	box-shadow: inset 0 0 0 2px #95C4D1  
+	cursor: pointer
+	background: #fff 
+	position: relative
+	border-radius: 2px
+	&:hover
+		box-shadow: inset 0 0 0 4px #1EBEBB  
+		background: #F2FCFB 
+	&.is-active
+		box-shadow: inset 0 0 0 4px #1EBEBB  
+		background: #F2FCFB 
+	.selectbank__title
+		overflow: hidden
+		-ms-text-overflow: ellipsis
+		text-overflow: ellipsis
+		font-size: 17px 
+	.selectbank__value
+		font-size: 21px 
+		+amed
+		color: #353458 
+		position: relative
+		z-index: 4 
+		.selectbank__addvalue
+			letter-spacing: 2px 
+			color: #353458
+			text-transform: uppercase
+			font-size: 15px  
+			text-align: center
+			.icon-add
+				font-size: 20px 
+				display: inline-block
+				vertical-align: middle
+				color: #93C4D2
+				margin-right: 6px  
+				position: relative
+				top: 2px 
+		.selectbank__currency
+			position: absolute
+			right: 0
+			top: 0 
+			text-transform: uppercase
+			color: #1EBEBB  
+		i
+			position: absolute
+			right: 15px 
+			top: 24px 
+			line-height: 1 
+			font-size: 15px 
+	.selectbank__valuewrap
+		margin: 0 46px 0 28px
+		display: block 
+		position: relative
+	.selectbank__drop
+		display: none
+		ul
+			list-style: none
+			li
+				position: relative
+				font-size: 21px 
+				
+				+amed
+				color: #353458 
+				border-top: 1px solid #E6EEF2 
+				padding: 10px 0 
+				padding-left: 28px 
+				&:hover
+					background: #fafafa 
+			.selectbank__currency
+				position: absolute
+				right: 46px
+				top: 10px
+				text-transform: uppercase
+				color: #1EBEBB 
+	&.is-open
+		.selectbank__drop
+			display: block
+			background: #fff
+			line-height: 1  
+			position: absolute
+			left: 0
+			right: 0
+			top: 0
+			padding-top: 66px    
+			z-index: 3 
+			border: 2px solid #353557 
+			border-radius: 2px
+.cashaccount
+	float: right
+	width: 205px 
+	box-shadow: inset  0 0 0 2px #95C4D1
+	border-radius: 2px
+	height: 66px
+	line-height: 66px  
+	text-align: center
+	background: #fff 
+	cursor: pointer
+	position: relative
+	&.is-left
+		float: left
+	&.is-disabled
+		box-shadow: inset 0 0 0 2px #E6EEF2
+		.cashaccount__value
+			h3
+				+gray
+				opacity: .4 
+	.cashaccount__money
+		font-size: 13px 
+		+asemi
+		color: #353458
+		span
+			color: #00BFBC 
+	.cashaccount__drop
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		padding-top: 66px    
+		background: #fff 
+		z-index: 3 
+		border: 2px solid #353556 
+		border-radius: 2px
+		display: none
+		ul
+			list-style: none
+			li
+				border-bottom: 1px solid #E6EEF2 
+				cursor: pointer
+				padding-left: 25px 
+				position: relative
+				text-align: left
+				font-size: 15px 
+				height: 43px
+				line-height: 43px  
+				+asemi
+				color: #353458 
+				span
+					position: absolute
+					right: 25px 
+					color: #00BFBC 
+				&:hover
+					background: #F9F9F9 
+				&:last-child
+					border: none 
+	.cashaccount__value
+		position: relative
+		z-index: 10 
+		h3
+			font-weight: normal
+			text-align: center
+			font-size: 12px 
+			text-transform: uppercase
+			letter-spacing: 2px 
+			color: #353556 
+			margin-bottom: 0 
+			+amed
+			i
+				margin-left: 4px 
+				margin-right: 0 
+			i.icon-cube_logo_dark
+				+svg(cubits,26,26)
+				-webkit-background-size: contain
+				-o-background-size: contain
+				background-size: contain
+				display: inline-block
+				vertical-align: middle
+				margin-right: 10px 
+	&.is-filled
+		.cashaccount__value
+			line-height: 45px 
+			.icon-arrowdown
+				position: relative
+				top: 7px 
+		.cashaccount__money
+			line-height: 15px 
+			position: relative
+			top: -10px 
+	&.is-drop
+		.cashaccount__drop
+			display: block
+			
+.cash
+	font-weight: normal
+	text-align: center
+	font-size: 16px 
+	text-transform: uppercase
+	letter-spacing: 2px 
+	color: #353458 
+	margin-bottom: 0 
+	+areg
+	float: right
+	width: 420px 
+	box-shadow: inset 0 0 0 2px #95C4D1
+	height: 66px
+	line-height: 66px
+	text-align: center  
+	background: #fff 
+	cursor: pointer
+	float: left
+	border-radius: 2px
+	&.is-active,&:hover
+		box-shadow: inset 0 0 0 4px #1EBEBB
+		background: #F2FCFB 
+	i
+		margin-left: 4px 
+		margin-right: 0 
+	i.icon-cube_logo_dark
+		+svg(cubits,26,26)
+		-webkit-background-size: contain 
+		-o-background-size: contain 
+		background-size: contain 
+		display: inline-block
+		vertical-align: middle
+		margin-right: 10px 
+
+.confirm
+	+clr
+	.confirm__button
+		float: right
+		width: 205px 
+		height: 205px 
+		line-height: 205px 
+		background: #1EBEBB 
+		font-size: 20px 
+		letter-spacing: 3px
+		text-align: center
+		+pbold
+		color: #fff
+		text-transform: uppercase
+		text-decoration: none
+		cursor: pointer
+		box-shadow: inset 0 0 0 3px #27E5E1  
+		+transition(all .1s ease)
+		&.is-small
+			height: 156px 
+			line-height: 156px 
+		&:hover
+			background: darken(#1EBEBB,10% )
+		&:active
+			position: relative
+			top: 2px 
+		&.is-disabled,&.is-disabled:hover,&.is-disabled:active
+			background: #95C4D1 
+			box-shadow: inset 0 0 0 3px #A2D6E4 
+
+	.confirm__amount
+		float: left
+		width: 635px
+
+.table
+	width: 100%
+	border-spacing: 0
+	border-collapse: collapse
+	border-radius: 2px
+	
+	td,th
+		height: 49px 
+		vertical-align: middle
+		padding: 0 24px
+		background: #fff 
+		&:first-child
+			border-left: 2px solid #E6EEF2
+		&:last-child
+			border-right: 2px solid #E6EEF2
+	thead,tfoot
+		td,th
+			text-align: left
+			font-weight: bold
+			border-top: 2px solid #E6EEF2
+			border-bottom: 2px solid #E6EEF2  
+			+asemi
+			&:first-child
+				border-left: 2px solid #E6EEF2
+			&:last-child
+				border-right: 2px solid #E6EEF2
+			&.table__amount
+				+sbold
+	thead
+		td,th
+			border-bottom-width: 3px 
+	tfoot
+		td,th
+			background: #E6EEF2 
+	.table__text
+		color: #353458
+		font-size: 17px  
+	.table__amount
+		+sreg
+		text-align: right
+		font-size: 17px 
+		color: #0E2354
+	.table__currency
+		color: #00C7C4 
+	tbody
+		.confirm__amount &
+			td
+				// text-transform: uppercase
+				+areg
+	&.table_confirm
+		border: none 
+		td,th
+			border: none
+			background: #FFFFFF 
+		thead
+			td,th
+				border: none
+				border-bottom: 3px solid #E6EEF2 
+		tfoot
+			td,th
+				padding-top: 20px 
+				border: none 
+				// border-top: 10px solid #E6EEF2 
+				background: none 
+
+		.table__status
+			td
+				height: 10px 
+				padding: 0
+				background: #fff  
+				height: 10px
+				text-align: right
+				.table__counter
+					display: block
+					position: relative
+					height: 10px
+					width: 100%  
+					&.is-done
+						background: #E6EEF2 
+					i
+						background: #00C7C4 
+						position: absolute
+						right: 0
+						height: 10px  
+
+					
+					
+.confirmation
+	width: 510px - 60px 
+	margin: 0 auto
+	background: #F9FCFD 
+	margin-top: 25px  
+	padding: 30px 30px 47px 30px 
+	box-shadow: inset -3px -3px 0 #EAEAEA
+	.confirmation__wrap
+		position: relative
+	.confirmation__timeleft
+		text-align: right
+		width: 100px 
+		top: -20px 
+		position: absolute
+		right: 0
+		font-size: 13px  
+		+aital
+		color: #ABACBA 
+		i
+			color: #B8BAC5 
+			margin-right: 4px 
+			position: relative
+			top: 2px 
+	.confirmation__go
+		background: #fff 
+		box-shadow: inset 3px 3px 0 #EBEBEB
+		margin-top: 30px 
+		.confirmation__goin
+			text-align: center
+			padding: 24px 30px 
+			&.confirmation__goin_alt
+				padding: 50px 0 
+		.confirmation__icon
+			font-size: 110px 
+			color: #00C7C4 
+			line-height: 1
+			 
+		h3
+			font-weight: normal
+			+asemi
+			font-style: italic 
+			color: #00C7C4 
+			font-size: 19px
+			margin-bottom: 10px 
+		p
+			+areg
+			font-size: 15px 
+			color: #353458
+			strong
+				font-weight: normal
+				+abold
+				margin-right: 4px 
+				span
+					color: #00C3C0 
+	.confirmation__send
+		text-align: center
+		width: 260px 
+		display: inline-block
+		vertical-align: middle
+		label
+			display: block
+			text-align: center
+			font-size: 15px 
+			margin-bottom: 10px 
+			+areg
+			color: #353458 
+			strong
+				font-weight: normal
+				+asemi
+		input
+			border: 2px solid #95C4D1 
+			width: 100%
+			text-align: center
+			padding: 10px  
+			font-size: 12px 
+			+asemi
+			color: #353458 
+			+box
+			background: #FAFCFD 
+	.confirmation__qr
+		display: inline-block
+		vertical-align: middle
+		margin-left: 17px 

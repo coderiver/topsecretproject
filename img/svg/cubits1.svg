@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="187px" height="166px" viewBox="0 0 187 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Cubits_Logo_Settings" sketch:type="MSLayerGroup" transform="translate(9.000000, 8.000000)">
+            <path d="M-0.231,74 L42.389,147.812 L127.617,147.812 L95.657,92.453 L74.349,92.453 L63.693,74" id="Fill-1" fill="#F9CF5E" sketch:type="MSShapeGroup"></path>
+            <path d="M63.6929,74 L-0.2311,74 L42.3889,0.188 L127.6169,0.188 L95.6569,55.547 L74.3489,55.547 L63.6929,74 Z" id="Fill-2" fill="#F9CF5E" sketch:type="MSShapeGroup"></path>
+            <path d="M127.6182,147.8115 L95.6572,92.4535 L74.3492,92.4535 L63.6932,73.9995" id="Stroke-3" stroke="#353558" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            <path d="M127.6182,0.1885 L95.6572,55.5465 L74.3492,55.5465 L63.6932,74.0005" id="Stroke-4" stroke="#353558" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" sketch:type="MSShapeGroup"></path>
+            <g id="Group-15" stroke="#353558" sketch:type="MSShapeGroup" stroke-linejoin="round">
+                <path d="M63.6934,74 L-0.2306,74" id="Stroke-5" stroke-width="5" stroke-linecap="round"></path>
+                <path d="M85.002,74 L42.389,147.812 L85.002,74" id="Stroke-7" stroke-width="9"></path>
+                <path d="M85.002,74 L42.389,0.188" id="Stroke-9" stroke-width="9"></path>
+                <path d="M85.002,74 L170.231,74" id="Stroke-11" stroke-width="9"></path>
+                <path d="M127.6182,0.1885 L42.3892,0.1885 L-0.2308,74.0005 L42.3892,147.8115 L127.6182,147.8115 L170.2312,74.0005 L127.6182,0.1885 L170.2312,74.0005" id="Stroke-13" stroke-width="11"></path>
+            </g>
+        </g>
+    </g>
+</svg>
