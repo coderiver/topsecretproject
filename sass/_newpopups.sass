@@ -2,13 +2,20 @@
 	text-transform: uppercase
 	margin-bottom: 50px 
 
-.popup_type1
+.popup_type1,.popup_type2
 	background: #F9F9F9
 	border-radius: 4px 
 	.popup__inside
 		padding: 0 88px 60px 88px
 	.pfield__label
 		text-align: left
+.popup_type2
+	width: 400px 
+	margin-left: -200px 
+	.popup__inside
+		padding: 20px 
+	.pfield.pfield_small
+		width: auto
 .popup__message,.popup__box
 	padding: 66px 30px 30px 30px
 	background: #F9FCFD  
@@ -47,6 +54,17 @@
 		float: left
 		& + .popup__boxcol
 			float: right
+	&.popup__box_noborder
+		border: none 
+		background: transparent
+		margin-bottom: 20px  
+		padding-bottom: 0  
+		padding-left: 15px 
+		padding-right: 15px 
+		.pfield.pfield_small
+			width: 380px 
+			.pfield__content
+				width: 260px 
 .popup__buttons
 	+clr
 	.submit
@@ -65,6 +83,9 @@
 		box-shadow: inset 0 0 0 3px #6792A2 
 		&:hover
 			box-shadow: inset 0 0 0 3px #27E5E1
+.submit_short
+	width: 400px 
+	margin: 0 auto 
 .submit.submit_bleach
 	background-color: #94C3D0 
 	box-shadow: inset 0 0 0 3px #6792A2 
@@ -87,6 +108,7 @@
 		box-shadow: inset 0 0 0 3px #AFAFAF
 .pfield_title
 	min-height: 32px 
+	+pbold
 .pfield__value
 	text-align: left 
 	font-size: 14px  
@@ -136,4 +158,21 @@
 				position: absolute
 				right: 0
 				top: 0
-				padding-right: 25px   
+				padding-right: 25px 
+.popup__subnote
+	margin-top: 25px 
+	padding-bottom: 15px 
+	font-size: 14px 
+	color: #353557 
+.popup__buttoncenter
+	width: 360px 
+	margin:  0 auto 
+.popup__see
+	text-align: center
+	.popup__money
+		font-size: 18px 
+		color: #343656 
+		margin: 40px 0 
+		strong
+			+pbold
+			color: #1EBDB9 

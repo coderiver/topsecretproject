@@ -786,9 +786,13 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .popup__subtitle { text-transform: uppercase; margin-bottom: 50px; }
 
-.popup_type1 { background: #f9f9f9; border-radius: 4px; }
-.popup_type1 .popup__inside { padding: 0 88px 60px 88px; }
-.popup_type1 .pfield__label { text-align: left; }
+.popup_type1, .popup_type2 { background: #f9f9f9; border-radius: 4px; }
+.popup_type1 .popup__inside, .popup_type2 .popup__inside { padding: 0 88px 60px 88px; }
+.popup_type1 .pfield__label, .popup_type2 .pfield__label { text-align: left; }
+
+.popup_type2 { width: 400px; margin-left: -200px; }
+.popup_type2 .popup__inside { padding: 20px; }
+.popup_type2 .pfield.pfield_small { width: auto; }
 
 .popup__message, .popup__box { padding: 66px 30px 30px 30px; background: #f9fcfd; border: 1px solid #b8b7c2; text-align: center; font-size: 18px; color: #353557; line-height: 1.4; margin-bottom: 30px; }
 .popup__message p, .popup__box p { margin-bottom: 30px; }
@@ -800,6 +804,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup__box.popup__box_wide { width: auto; margin-left: -88px; margin-right: -88px; }
 .popup__box .popup__boxcol { width: 380px; float: left; }
 .popup__box .popup__boxcol + .popup__boxcol { float: right; }
+.popup__box.popup__box_noborder { border: none; background: transparent; margin-bottom: 20px; padding-bottom: 0; padding-left: 15px; padding-right: 15px; }
+.popup__box.popup__box_noborder .pfield.pfield_small { width: 380px; }
+.popup__box.popup__box_noborder .pfield.pfield_small .pfield__content { width: 260px; }
 
 .popup__buttons { *zoom: 1; }
 .popup__buttons:after { content: " "; display: table; clear: both; }
@@ -810,6 +817,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup__buttons .submit_back { background-color: #94c3d0; box-shadow: inset 0 0 0 3px #6792a2; }
 .popup__buttons .submit_back:hover { box-shadow: inset 0 0 0 3px #27e5e1; }
 
+.submit_short { width: 400px; margin: 0 auto; }
+
 .submit.submit_bleach, .twobuttons .submit_bleach.cancel { background-color: #94c3d0; box-shadow: inset 0 0 0 3px #6792a2; }
 .submit.submit_bleach:hover, .twobuttons .submit_bleach.cancel:hover { box-shadow: inset 0 0 0 3px #27e5e1; background-color: #179290; }
 .submit.submit_bleach.submit_short, .twobuttons .submit_bleach.submit_short.cancel { width: 420px; display: block; margin: 0 auto; }
@@ -818,7 +827,7 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .submit.submit_inactive, .twobuttons .submit_inactive.cancel, .submit[disabled], .twobuttons [disabled].cancel { background: #bdbdbd; box-shadow: inset 0 0 0 3px #afafaf; cursor: default; }
 .submit.submit_inactive:hover, .twobuttons .submit_inactive.cancel:hover, .submit.submit_inactive:active, .twobuttons .submit_inactive.cancel:active, .submit[disabled]:hover, .twobuttons [disabled].cancel:hover, .submit[disabled]:active, .twobuttons [disabled].cancel:active { background: #bdbdbd; box-shadow: inset 0 0 0 3px #afafaf; }
 
-.pfield_title { min-height: 32px; }
+.pfield_title { min-height: 32px; font-family: bold, sans-serif; font-weight: normal; }
 
 .pfield__value { text-align: left; font-size: 14px; padding-top: 13px; color: #343656; }
 
@@ -832,6 +841,14 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup__currency ul li { height: 54px; line-height: 54px; position: relative; font-size: 17px; color: #343656; padding-left: 28px; cursor: pointer; }
 .popup__currency ul li:hover, .popup__currency ul li.is-selected { background: #f2f6f8; }
 .popup__currency ul li span { position: absolute; right: 0; top: 0; padding-right: 25px; }
+
+.popup__subnote { margin-top: 25px; padding-bottom: 15px; font-size: 14px; color: #353557; }
+
+.popup__buttoncenter { width: 360px; margin: 0 auto; }
+
+.popup__see { text-align: center; }
+.popup__see .popup__money { font-size: 18px; color: #343656; margin: 40px 0; }
+.popup__see .popup__money strong { font-family: bold, sans-serif; font-weight: normal; color: #1ebdb9; }
 
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
