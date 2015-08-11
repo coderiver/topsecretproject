@@ -785,6 +785,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .smallicon i { font-size: 25px; margin-right: 8px; vertical-align: middle; }
 
 .popup__subtitle { text-transform: uppercase; margin-bottom: 50px; }
+.popup__subtitle.popup__subtitle_normagin { margin-bottom: 10px; }
+
+.popup__subsubtitle { font-family: semi, sans-serif; font-weight: normal; font-size: 18px; color: #353557; text-align: center; }
 
 .popup_type1, .popup_type2 { background: #f9f9f9; border-radius: 4px; }
 .popup_type1 .popup__inside, .popup_type2 .popup__inside { padding: 0 88px 60px 88px; }
@@ -841,6 +844,9 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup__currency ul li { height: 54px; line-height: 54px; position: relative; font-size: 17px; color: #343656; padding-left: 28px; cursor: pointer; }
 .popup__currency ul li:hover, .popup__currency ul li.is-selected { background: #f2f6f8; }
 .popup__currency ul li span { position: absolute; right: 0; top: 0; padding-right: 25px; }
+
+.choosecurrency { margin: 35px 0 35px 0; }
+.choosecurrency label { display: block; font-size: 18px; margin-bottom: 8px; color: #353557; font-family: semi, sans-serif; font-weight: normal; }
 
 .popup__subnote { margin-top: 25px; padding-bottom: 15px; font-size: 14px; color: #353557; }
 

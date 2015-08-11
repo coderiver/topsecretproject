@@ -1,7 +1,13 @@
 .popup__subtitle
 	text-transform: uppercase
 	margin-bottom: 50px 
-
+	&.popup__subtitle_normagin
+		margin-bottom: 10px 
+.popup__subsubtitle
+	+psemi
+	font-size: 18px 
+	color: #353557
+	text-align: center 
 .popup_type1,.popup_type2
 	background: #F9F9F9
 	border-radius: 4px 
@@ -159,6 +165,14 @@
 				right: 0
 				top: 0
 				padding-right: 25px 
+.choosecurrency
+	margin: 35px 0 35px 0 
+	label
+		display: block
+		font-size: 18px 
+		margin-bottom: 8px  
+		color: #353557 
+		+psemi
 .popup__subnote
 	margin-top: 25px 
 	padding-bottom: 15px 
