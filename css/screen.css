@@ -856,6 +856,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .popup__see .popup__money { font-size: 18px; color: #343656; margin: 40px 0; }
 .popup__see .popup__money strong { font-family: bold, sans-serif; font-weight: normal; color: #1ebdb9; }
 
+.pfield__content .error2 { color: #ea294c; font-size: 11px; display: block; padding-top: 4px; white-space: nowrap; }
+
 .reg { margin: 25px 0; background: white; float: left; width: 100%; }
 .reg .reg__welcome { font-size: 18px; color: #34495e; font-family: areg, sans-serif; font-weight: normal; text-align: center; margin: 22px 0 25px 0; }
 .reg .reg__welcome strong { font-weight: normal; font-family: asemi, sans-serif; font-weight: normal; }
