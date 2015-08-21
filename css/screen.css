@@ -256,6 +256,8 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 
 .icon-present:before { content: "y"; }
 
+.icon-visamaster { display: inline-block; width: 126px; height: 43px; background: url("../img/visamaster.png") no-repeat 50% 50%; -webkit-background-size: contain; -o-background-size: contain; background-size: contain; position: relative; top: -9px; }
+
 .activities.activities_keyval { margin-bottom: 20px; }
 
 .a { border-bottom: 1px solid #e6eef2; box-shadow: 0 -1px 0 #e6eef2; cursor: pointer; }
@@ -499,6 +501,10 @@ body { font-family: proxima, sans-serif; font-weight: normal; font-size: 12px; l
 .paywith.paywith_dos .paywith__services li, .paywith_dos.cashout .paywith__services li { width: 420px; }
 .paywith.paywith_dos .paywith__services li + li, .paywith_dos.cashout .paywith__services li + li { float: right; width: 420px; }
 .paywith.paywith_dos .paywith__services .paywith__text, .paywith_dos.cashout .paywith__services .paywith__text { font-size: 16px; text-transform: uppercase; line-height: 66px; color: #353458; font-family: proxima, sans-serif; font-weight: normal; letter-spacing: 3px; }
+.paywith.paywith_cinco .paywith__services li, .paywith_cinco.cashout .paywith__services li { width: 162px; }
+.paywith.paywith_cinco .cashaccount, .paywith_cinco.cashout .cashaccount { width: 162px; }
+.paywith.paywith_cinco .cashaccount .cashaccount__value h3, .paywith_cinco.cashout .cashaccount .cashaccount__value h3 { font-size: 10px; letter-spacing: 1px; }
+.paywith.paywith_cinco .cashaccount .cashaccount__value h3 i.icon-cube_logo_dark, .paywith_cinco.cashout .cashaccount .cashaccount__value h3 i.icon-cube_logo_dark { margin-right: 6px; }
 
 .cashout .cashaccount { width: 420px; }
 .cashout .selectbank { width: 420px; float: left; float: right; }
